@@ -35,6 +35,7 @@ server has no package dependencies and listens only on this computer.
 - Explicit opt-in controls for privacy-safe anonymous community totals
 - Validated local explorer-data export, restore, and confirmed browser-data reset
 - Accessible in-app release notices for safe offline-shell updates
+- Multilingual clue-first fallbacks when live maps or tiles are unavailable
 - English, French, and Swedish interfaces
 - Responsive, keyboard-accessible interaction
 - Product vision and technical architecture documents
@@ -60,3 +61,5 @@ Once a page has been visited over HTTP, its local experience shell is cached for
 resilient loading. Live map tiles still require a network connection.
 When a new shell is ready, Atlas Beyond asks the explorer before activating and
 refreshing it; journal progress remains in browser storage throughout.
+If MapLibre or live map tiles cannot load, the expedition explains the problem
+and moves focus to the next evidence or region-list action.

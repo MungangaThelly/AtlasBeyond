@@ -5,6 +5,8 @@
   if (!document.querySelector('script[src^="explorer-data.js"]')) { const script = document.createElement('script'); script.src = 'explorer-data.js?v=1.0.0'; document.body.appendChild(script); }
   if (!document.querySelector('link[href^="update-manager.css"]')) { const style = document.createElement('link'); style.rel = 'stylesheet'; style.href = 'update-manager.css?v=1.0.0'; document.head.appendChild(style); }
   if (!document.querySelector('script[src^="update-manager.js"]')) { const script = document.createElement('script'); script.src = 'update-manager.js?v=1.0.0'; document.body.appendChild(script); }
+  if (!document.querySelector('link[href^="map-fallback.css"]')) { const style = document.createElement('link'); style.rel = 'stylesheet'; style.href = 'map-fallback.css?v=1.0.0'; document.head.appendChild(style); }
+  if (!document.querySelector('script[src^="map-fallback.js"]')) { const script = document.createElement('script'); script.src = 'map-fallback.js?v=1.0.0'; document.body.appendChild(script); }
   if (document.body.classList.contains('community-body') && !document.querySelector('script[src^="community-privacy.js"]')) { const script = document.createElement('script'); script.src = 'community-privacy.js?v=1.0.0'; document.body.appendChild(script); }
   if (!document.querySelector('link[href^="page-navigation.css"]')) { const style = document.createElement('link'); style.rel = 'stylesheet'; style.href = 'page-navigation.css?v=1.0.0'; document.head.appendChild(style); }
   if (!document.querySelector('script[src^="page-navigation.js"]')) { const script = document.createElement('script'); script.src = 'page-navigation.js?v=1.0.0'; document.body.appendChild(script); }

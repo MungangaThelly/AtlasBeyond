@@ -24,6 +24,12 @@ worker pre-caches its shell but remains waiting until the explorer accepts the
 localized update notice. Activation then refreshes once, without clearing
 browser-held journal or profile data.
 
+Map rendering is an enhancement rather than a gate. The Iceland map, world
+atlas, and reusable regional player detect missing MapLibre or network access
+and expose a localized, keyboard-accessible route back to their clue and list
+interfaces. Live tiles may fail while evidence, progress, and journals remain
+usable from the cached application shell.
+
 ## Boundaries
 
 ```text

@@ -31,6 +31,7 @@ server has no package dependencies and listens only on this computer.
 - A third playable expedition across East Africa’s Serengeti and Ngorongoro landscape
 - A fourth playable expedition across Central Asia’s Silk Roads
 - A global globe atlas with filters, completion state, and future-region paths
+- A multilingual daily evidence briefing with streaks and rare field seals
 - English, French, and Swedish interfaces
 - Responsive, keyboard-accessible interaction
 - Product vision and technical architecture documents

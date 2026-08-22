@@ -1,4 +1,5 @@
 (function () {
+  if (document.body.classList.contains('public-passport-body')) return;
   if (document.querySelector('.journey-footer')) return;
 
   const path = location.pathname.split('/').pop() || 'index.html';

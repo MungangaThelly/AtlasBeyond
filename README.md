@@ -37,6 +37,7 @@ server has no package dependencies and listens only on this computer.
 - Accessible in-app release notices for safe offline-shell updates
 - Multilingual clue-first fallbacks when live maps or tiles are unavailable
 - A multilingual offline recovery page with live retry and cached-hub access
+- Locally vendored and integrity-checked MapLibre runtime assets
 - English, French, and Swedish interfaces
 - Responsive, keyboard-accessible interaction
 - Product vision and technical architecture documents
@@ -64,3 +65,5 @@ When a new shell is ready, Atlas Beyond asks the explorer before activating and
 refreshing it; journal progress remains in browser storage throughout.
 If MapLibre or live map tiles cannot load, the expedition explains the problem
 and moves focus to the next evidence or region-list action.
+MapLibre GL JS 5.24.0 is served from the application itself and cached with the
+offline shell; reviewed hashes and its license are tracked in the repository.

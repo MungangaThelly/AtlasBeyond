@@ -8,7 +8,7 @@ const required = {
   '/': ['id="onboarding"', 'app.js', 'iceland-expansion.js', 'skills.js', 'skills.css', 'canonical-content.js', 'canonical-adapter.js', 'resilience.js', 'manifest.webmanifest', 'install.js', 'achievements.js'],
   '/atlas.html': ['id="atlas-map"', 'atlas.js', 'resilience.js'],
   '/region-player.html?expedition=patagonia-continents-end': ['id="region-map"', 'class="region-global-nav"', 'id="region-sound-toggle"', 'region-player.js?v=1.2.0', 'region-controls.js?v=1.0.5', 'east-africa-data.js', 'central-asia-data.js', 'resilience.js'],
-  '/sw.js': ['atlas-beyond-v33', 'SKIP_WAITING', 'accessibility.js', 'accessibility.css', 'community-privacy.js', 'explorer-data.js', 'update-manager.js', 'map-fallback.js', 'offline.js'],
+  '/sw.js': ['atlas-beyond-v34', 'SKIP_WAITING', 'accessibility.js', 'accessibility.css', 'community-privacy.js', 'explorer-data.js', 'update-manager.js', 'map-fallback.js', 'offline.js', 'vendor/maplibre-gl/maplibre-gl.js'],
   '/offline.html': ['id="retry-connection"', 'offline.js', 'offline.css']
   ,'/offline.js': ['Keep your place.', 'Gardez votre place.', 'Behåll din plats.']
   ,'/passport.html': ['id="public-passport"', 'passport-page.js']
@@ -18,6 +18,9 @@ const required = {
   ,'/explorer-data.js': ['AtlasExplorerData', 'Download my data', 'Restore from archive', 'Erase permanently']
   ,'/update-manager.js': ['controllerchange', 'Update now', 'Mettre à jour', 'Uppdatera nu']
   ,'/map-fallback.js': ['real-map', 'atlas-map', 'region-map', 'Continue with clues']
+  ,'/vendor/maplibre-gl/maplibre-gl.js': ['maplibregl']
+  ,'/vendor/maplibre-gl/maplibre-gl.css': ['maplibregl-map']
+  ,'/vendor/maplibre-gl/LICENSE.txt': ['Copyright']
   ,'/daily.html': ['id="daily-challenge"', 'daily.js']
   ,'/seals.html': ['id="seal-grid"', 'seals.js']
   ,'/page-navigation.js': ['journey-footer', 'journey-menu', 'aria-current']

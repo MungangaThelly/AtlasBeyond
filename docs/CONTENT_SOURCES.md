@@ -29,7 +29,7 @@ scientific sources. Text is summarized and localized rather than copied.
 
 ## Map
 
-- Map rendering: [MapLibre GL JS](https://maplibre.org/maplibre-gl-js/docs/)
+- Map rendering: [MapLibre GL JS 5.24.0](https://maplibre.org/maplibre-gl-js/docs/), vendored with its BSD-3-Clause license and reviewed SHA-256 hashes
 - Map data and prototype tiles: [OpenStreetMap contributors](https://www.openstreetmap.org/copyright)
 - Public tile usage must continue to follow the [OpenStreetMap tile usage
   policy](https://operations.osmfoundation.org/policies/tiles/). No bulk

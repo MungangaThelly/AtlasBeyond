@@ -34,6 +34,10 @@ Navigation to an uncached route falls back to a localized recovery page. It
 tracks browser connectivity, tests the network without relying on stale cache,
 and retains a direct path to the cached expedition hub.
 
+MapLibre GL JS is version-pinned and vendored with its upstream license. Build
+checks verify the JavaScript, CSS, and license hashes and reject map pages that
+reintroduce a CDN runtime dependency. Live raster tiles remain external.
+
 ## Boundaries
 
 ```text

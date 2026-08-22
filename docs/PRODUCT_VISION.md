@@ -28,9 +28,10 @@ conclusions, and reveal places by paying attention.
    scalable text, contrast, and reduced motion are requirements.
 
 The explorer-data controls make journal ownership practical: explorers can
-download a structured JSON copy of every Atlas Beyond record in their browser
-or permanently erase those records through an explicit confirmation. The reset
-is deliberately scoped and never removes unrelated browser storage.
+download a structured JSON copy of every Atlas Beyond record in their browser,
+restore a validated archive on another device, or permanently erase those
+records through an explicit confirmation. Restore and reset are deliberately
+scoped and never modify unrelated browser storage.
 
 The Iceland vertical slice now demonstrates knowledge as progression: starter
 field notes establish Ecology, History, and Navigation paths, while accumulated

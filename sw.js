@@ -1,4 +1,4 @@
-const CACHE = 'atlas-beyond-v29';
+const CACHE = 'atlas-beyond-v30';
 const SHELL = [
   './', './index.html', './atlas.html', './region-player.html?expedition=patagonia-continents-end',
   './styles.css', './map.css', './onboarding.css', './evidence.css', './progression.css', './page-navigation.js', './page-navigation.css', './accessibility.js', './accessibility.css', './explorer-data.js', './explorer-data.css',

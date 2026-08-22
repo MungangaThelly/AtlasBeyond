@@ -24,4 +24,13 @@ if ('unrelated-setting' in exported.data) throw new Error('Export included unrel
 if (api.clear(storage) !== 2) throw new Error('Reset did not report the expected Atlas records.');
 if (storage.getItem('atlas-profile') !== null || storage.getItem('atlas-journal') !== null) throw new Error('Reset left Atlas records behind.');
 if (storage.getItem('unrelated-setting') !== 'keep-me') throw new Error('Reset removed unrelated browser data.');
-console.log('Explorer data audit passed: portable export is scoped, and reset removes only Atlas Beyond records.');
+const invalid = { product: 'Atlas Beyond', version: 1, data: { 'unrelated-setting': 'attack' } };
+if (api.validate(invalid)) throw new Error('Validation accepted an archive containing an unrelated key.');
+let rejected = false;
+try { api.restore(invalid, storage); } catch { rejected = true; }
+if (!rejected || storage.getItem('unrelated-setting') !== 'keep-me') throw new Error('Invalid restore altered browser data.');
+const valid = { product: 'Atlas Beyond', version: 1, data: { 'atlas-profile': { name: 'Restored Explorer' }, 'atlas-journal': ['geysir'] } };
+if (!api.validate(valid) || api.restore(valid, storage) !== 2) throw new Error('Valid archive was not restored.');
+if (JSON.parse(storage.getItem('atlas-profile')).name !== 'Restored Explorer' || JSON.parse(storage.getItem('atlas-journal'))[0] !== 'geysir') throw new Error('Restored progress does not match the archive.');
+if (storage.getItem('unrelated-setting') !== 'keep-me') throw new Error('Restore changed unrelated browser data.');
+console.log('Explorer data audit passed: export, validation, restore, and reset remain strictly scoped to Atlas Beyond.');

@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://atlas.nuhar.se/schemas/expedition.schema.json",
+  "title": "Atlas Beyond Expedition Package",
+  "description": "Canonical, reviewable content package for one evidence-led expedition.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "id", "legacyStorageKey", "status", "sequence", "region", "interests", "knowledgePaths", "editorial", "sources", "locales", "discoveries"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "id": { "$ref": "#/$defs/stableId" },
+    "legacyStorageKey": { "type": "string", "pattern": "^atlas-[a-z0-9-]+$" },
+    "status": { "enum": ["draft", "review", "available", "retired"] },
+    "sequence": { "type": "integer", "minimum": 1 },
+    "region": {
+      "type": "object", "additionalProperties": false,
+      "required": ["name", "center", "zoom"],
+      "properties": { "name": { "type": "string", "minLength": 1 }, "center": { "$ref": "#/$defs/coordinates" }, "zoom": { "type": "number", "minimum": 0, "maximum": 22 } }
+    },
+    "interests": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "enum": ["archaeology", "astronomy", "cartography", "culture", "ecology", "geology", "history", "navigation", "photography", "wildlife"] } },
+    "knowledgePaths": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "enum": ["archaeology", "cartography", "culture", "ecology", "geology", "history", "navigation", "wildlife"] } },
+    "editorial": { "$ref": "#/$defs/editorial" },
+    "sources": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/source" } },
+    "locales": { "$ref": "#/$defs/expeditionLocales" },
+    "discoveries": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/discovery" } }
+  },
+  "$defs": {
+    "stableId": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$", "minLength": 3, "maxLength": 80 },
+    "coordinates": { "type": "array", "minItems": 2, "maxItems": 2, "items": { "type": "number" } },
+    "editorial": {
+      "type": "object", "additionalProperties": false,
+      "required": ["contentVersion", "reviewStatus", "reviewedBy", "reviewedAt"],
+      "properties": {
+        "contentVersion": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$" },
+        "reviewStatus": { "enum": ["draft", "in-review", "reviewed", "changes-requested"] },
+        "reviewedBy": { "type": ["string", "null"] },
+        "reviewedAt": { "type": ["string", "null"], "format": "date-time" }
+      }
+    },
+    "source": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "title", "publisher", "url", "accessedAt", "license"],
+      "properties": {
+        "id": { "$ref": "#/$defs/stableId" }, "title": { "type": "string", "minLength": 1 }, "publisher": { "type": "string", "minLength": 1 },
+        "url": { "type": "string", "format": "uri" }, "accessedAt": { "type": "string", "format": "date" },
+        "license": {
+          "type": "object", "additionalProperties": false, "required": ["status", "notes"],
+          "properties": { "status": { "enum": ["approved", "review-required", "restricted"] }, "notes": { "type": "string", "minLength": 1 } }
+        }
+      }
+    },
+    "expeditionLocales": {
+      "type": "object", "additionalProperties": false, "required": ["en", "fr", "sv"],
+      "properties": { "en": { "$ref": "#/$defs/expeditionCopy" }, "fr": { "$ref": "#/$defs/expeditionCopy" }, "sv": { "$ref": "#/$defs/expeditionCopy" } }
+    },
+    "expeditionCopy": {
+      "type": "object", "additionalProperties": false, "required": ["title", "eyebrow", "intro"],
+      "properties": { "title": { "type": "string", "minLength": 1 }, "eyebrow": { "type": "string", "minLength": 1 }, "intro": { "type": "string", "minLength": 1 } }
+    },
+    "discovery": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "order", "optional", "coordinates", "categories", "knowledgeReward", "claims", "locales"],
+      "properties": {
+        "id": { "$ref": "#/$defs/stableId" }, "order": { "type": "integer", "minimum": 1 }, "optional": { "type": "boolean" },
+        "coordinates": { "$ref": "#/$defs/coordinates" }, "categories": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+        "knowledgeReward": {
+          "type": "object", "additionalProperties": false, "required": ["path", "points", "unlockLevel"],
+          "properties": { "path": { "type": "string", "minLength": 1 }, "points": { "type": "integer", "minimum": 0 }, "unlockLevel": { "type": "integer", "minimum": 0 } }
+        },
+        "claims": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/claim" } },
+        "locales": { "$ref": "#/$defs/discoveryLocales" }
+      }
+    },
+    "claim": {
+      "type": "object", "additionalProperties": false, "required": ["id", "text", "sourceIds", "reviewStatus", "uncertainty"],
+      "properties": {
+        "id": { "$ref": "#/$defs/stableId" }, "text": { "type": "string", "minLength": 1 },
+        "sourceIds": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "$ref": "#/$defs/stableId" } },
+        "reviewStatus": { "enum": ["draft", "reviewed", "changes-requested"] },
+        "uncertainty": { "enum": ["low", "medium", "high"] }
+      }
+    },
+    "discoveryLocales": {
+      "type": "object", "additionalProperties": false, "required": ["en", "fr", "sv"],
+      "properties": { "en": { "$ref": "#/$defs/discoveryCopy" }, "fr": { "$ref": "#/$defs/discoveryCopy" }, "sv": { "$ref": "#/$defs/discoveryCopy" } }
+    },
+    "discoveryCopy": {
+      "type": "object", "additionalProperties": false,
+      "required": ["place", "clue", "fieldNote", "evidence", "question", "options", "correct", "reveal"],
+      "properties": {
+        "place": { "type": "string", "minLength": 1 }, "clue": { "type": "string", "minLength": 1 }, "fieldNote": { "type": "string", "minLength": 1 },
+        "evidence": { "type": "array", "minItems": 3, "items": { "$ref": "#/$defs/evidence" } },
+        "question": { "type": "string", "minLength": 1 }, "options": { "type": "array", "minItems": 2, "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+        "correct": { "type": "integer", "minimum": 0 }, "reveal": { "type": "string", "minLength": 1 }
+      }
+    },
+    "evidence": {
+      "type": "object", "additionalProperties": false, "required": ["label", "text", "claimIds"],
+      "properties": { "label": { "type": "string", "minLength": 1 }, "text": { "type": "string", "minLength": 1 }, "claimIds": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "$ref": "#/$defs/stableId" } } }
+    }
+  }
+}

@@ -18,8 +18,13 @@ type, title, and summary.
 - Sensitive sites can omit or blur coordinates.
 - New catalog versions require validation before release.
 
-The next production step is to move this JavaScript object into validated JSON
-or a content API with a formal JSON Schema and editorial review status.
+The formal Draft 2020-12 contract now lives at
+`content/schema/expedition.schema.json`. It defines stable IDs, localization,
+evidence-to-claim relationships, source licensing, uncertainty, knowledge
+rewards, and editorial review status. `npm run check:schema` validates both the
+structural contract and semantic relationships that JSON Schema cannot express
+alone. The next step is to migrate the existing expedition objects into this
+contract without changing their released IDs or browser progress keys.
 
 `region-player.html` and `region-player.js` now demonstrate a reusable runtime:
 an expedition data object supplies its map center, localized discoveries,

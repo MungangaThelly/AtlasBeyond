@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "example-evidence-journey",
+  "legacyStorageKey": "atlas-example-journal",
+  "status": "draft",
+  "sequence": 99,
+  "region": { "name": "Example Region", "center": [10.5, 59.9], "zoom": 6 },
+  "interests": ["geology", "history"],
+  "knowledgePaths": ["geology", "cartography"],
+  "editorial": { "contentVersion": "0.1.0", "reviewStatus": "draft", "reviewedBy": null, "reviewedAt": null },
+  "sources": [{ "id": "example-source", "title": "Example source", "publisher": "Example institution", "url": "https://example.org/source", "accessedAt": "2026-08-23", "license": { "status": "review-required", "notes": "Fixture only; not publishable content." } }],
+  "locales": {
+    "en": { "title": "An example expedition", "eyebrow": "Field expedition 099", "intro": "A validation fixture." },
+    "fr": { "title": "Une expédition exemple", "eyebrow": "Expédition 099", "intro": "Un exemple de validation." },
+    "sv": { "title": "En expelexpedition", "eyebrow": "Fältexpedition 099", "intro": "Ett valideringsexempel." }
+  },
+  "discoveries": [{
+    "id": "example-landform", "order": 1, "optional": false, "coordinates": [10.5, 59.9], "categories": ["landform"],
+    "knowledgeReward": { "path": "geology", "points": 1, "unlockLevel": 0 },
+    "claims": [{ "id": "example-claim", "text": "The example landform records a process.", "sourceIds": ["example-source"], "reviewStatus": "draft", "uncertainty": "low" }],
+    "locales": {
+      "en": { "place": "Example landform", "clue": "Read the shape", "fieldNote": "Compare three observations.", "evidence": [{ "label": "Form", "text": "A visible form.", "claimIds": ["example-claim"] }, { "label": "Material", "text": "A visible material.", "claimIds": ["example-claim"] }, { "label": "Pattern", "text": "A repeated pattern.", "claimIds": ["example-claim"] }], "question": "Which conclusion fits?", "options": ["The supported conclusion", "An unsupported conclusion"], "correct": 0, "reveal": "The evidence supports the first conclusion." },
+      "fr": { "place": "Relief exemple", "clue": "Lisez la forme", "fieldNote": "Comparez trois observations.", "evidence": [{ "label": "Forme", "text": "Une forme visible.", "claimIds": ["example-claim"] }, { "label": "Matière", "text": "Une matière visible.", "claimIds": ["example-claim"] }, { "label": "Motif", "text": "Un motif répété.", "claimIds": ["example-claim"] }], "question": "Quelle conclusion convient ?", "options": ["La conclusion étayée", "Une conclusion non étayée"], "correct": 0, "reveal": "Les indices soutiennent la première conclusion." },
+      "sv": { "place": "Exempellandskap", "clue": "Läs formen", "fieldNote": "Jämför tre observationer.", "evidence": [{ "label": "Form", "text": "En synlig form.", "claimIds": ["example-claim"] }, { "label": "Material", "text": "Ett synligt material.", "claimIds": ["example-claim"] }, { "label": "Mönster", "text": "Ett upprepat mönster.", "claimIds": ["example-claim"] }], "question": "Vilken slutsats passar?", "options": ["Slutsatsen som stöds", "En slutsats utan stöd"], "correct": 0, "reveal": "Spåren stöder den första slutsatsen." }
+    }
+  }]
+}

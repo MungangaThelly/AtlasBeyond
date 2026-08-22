@@ -11,6 +11,7 @@ const required = {
   '/sw.js': ['atlas-beyond-v1'],
   '/offline.html': ['Keep your place']
   ,'/passport.html': ['id="public-passport"', 'passport-page.js']
+  ,'/community.html': ['id="community-stats"', 'community.js']
   ,'/assets/expeditions/iceland.jpg': []
   ,'/assets/expeditions/patagonia.jpg': []
   ,'/assets/expeditions/east-africa.jpg': []

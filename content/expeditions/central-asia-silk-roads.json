@@ -35,7 +35,11 @@
       "accessedAt": "2026-08-23",
       "license": {
         "status": "review-required",
-        "notes": "Authoritative factual reference; link and summary usage require editorial licensing review before package release."
+        "usage": "facts-only",
+        "termsUrl": "https://whc.unesco.org/en/licenses",
+        "reviewedAt": "2026-08-23",
+        "reviewedBy": "Atlas Beyond rights audit",
+        "notes": "UNESCO licenses are work-specific. Retain link and independently written factual summary; verify the source page license before release."
       }
     },
     {
@@ -46,7 +50,11 @@
       "accessedAt": "2026-08-23",
       "license": {
         "status": "review-required",
-        "notes": "Authoritative factual reference; link and summary usage require editorial licensing review before package release."
+        "usage": "facts-only",
+        "termsUrl": "https://whc.unesco.org/en/licenses",
+        "reviewedAt": "2026-08-23",
+        "reviewedBy": "Atlas Beyond rights audit",
+        "notes": "UNESCO licenses are work-specific. Retain link and independently written factual summary; verify the source page license before release."
       }
     },
     {
@@ -57,7 +65,11 @@
       "accessedAt": "2026-08-23",
       "license": {
         "status": "review-required",
-        "notes": "Authoritative factual reference; link and summary usage require editorial licensing review before package release."
+        "usage": "facts-only",
+        "termsUrl": "https://whc.unesco.org/en/licenses",
+        "reviewedAt": "2026-08-23",
+        "reviewedBy": "Atlas Beyond rights audit",
+        "notes": "UNESCO licenses are work-specific. Retain link and independently written factual summary; verify the source page license before release."
       }
     }
   ],

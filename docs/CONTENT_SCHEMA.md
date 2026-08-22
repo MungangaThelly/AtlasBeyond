@@ -26,8 +26,11 @@ structural contract and semantic relationships that JSON Schema cannot express
 alone. The four released expeditions now also exist as review-stage packages in
 `content/expeditions/`. `npm run check:migration` proves parity with the live
 prototype, including expedition identity, browser progress keys, coordinates,
-localized options, and correct deductions. The runtime remains on its existing
-JavaScript data until the packages complete licensing and editorial review.
+localized options, and correct deductions. `npm run build:content` produces a
+checked browser bundle from these packages; the runtime adapter now activates
+that canonical bundle while preserving existing journals. Editorial status is
+still enforced independently, so technical delivery cannot silently approve a
+source or claim.
 
 `region-player.html` and `region-player.js` now demonstrate a reusable runtime:
 an expedition data object supplies its map center, localized discoveries,

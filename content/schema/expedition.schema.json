@@ -44,8 +44,15 @@
         "id": { "$ref": "#/$defs/stableId" }, "title": { "type": "string", "minLength": 1 }, "publisher": { "type": "string", "minLength": 1 },
         "url": { "type": "string", "format": "uri" }, "accessedAt": { "type": "string", "format": "date" },
         "license": {
-          "type": "object", "additionalProperties": false, "required": ["status", "notes"],
-          "properties": { "status": { "enum": ["approved", "review-required", "restricted"] }, "notes": { "type": "string", "minLength": 1 } }
+          "type": "object", "additionalProperties": false, "required": ["status", "usage", "termsUrl", "reviewedAt", "reviewedBy", "notes"],
+          "properties": {
+            "status": { "enum": ["approved", "review-required", "restricted"] },
+            "usage": { "enum": ["facts-only", "attributed-summary", "licensed-content"] },
+            "termsUrl": { "type": ["string", "null"], "format": "uri" },
+            "reviewedAt": { "type": ["string", "null"], "format": "date" },
+            "reviewedBy": { "type": ["string", "null"] },
+            "notes": { "type": "string", "minLength": 1 }
+          }
         }
       }
     },

@@ -23,6 +23,8 @@ const regions = regionContext.window.__value;
 assert(catalog.expeditions.length === 4, 'Runtime catalog must contain four expeditions');
 const packages = await Promise.all(catalog.expeditions.map(item => readPackage(item.id)));
 assert(new Set(packages.map(item => item.id)).size === packages.length, 'Migrated expedition IDs must be unique');
+const generated = await load('canonical-content.js', 'window.AtlasCanonicalContent');
+for (const content of packages) assert(JSON.stringify(generated[content.id]) === JSON.stringify(content), `${content.id} generated browser bundle is stale; run npm run build:content`);
 
 const icelandPackage = packages[0];
 assert(icelandPackage.id === 'iceland-fire-ice' && icelandPackage.legacyStorageKey === 'atlas-journal', 'Iceland progress identity changed');

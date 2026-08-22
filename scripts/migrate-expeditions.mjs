@@ -32,7 +32,15 @@ const publisherFor = url => {
   return host;
 };
 const sourceIdFor = url => `source-${slug(new URL(url).hostname)}-${Math.abs([...url].reduce((hash, char) => (hash * 31 + char.charCodeAt(0)) | 0, 7)).toString(36)}`;
-const sourceRecord = (url, title) => ({ id: sourceIdFor(url), title, publisher: publisherFor(url), url, accessedAt: '2026-08-23', license: { status: 'review-required', notes: 'Authoritative factual reference; link and summary usage require editorial licensing review before package release.' } });
+const rightsFor = url => {
+  const host = new URL(url).hostname;
+  if (host.includes('nasa.gov')) return { status: 'approved', usage: 'attributed-summary', termsUrl: 'https://www.nasa.gov/nasa-brand-center/images-and-media/', reviewedAt: '2026-08-23', reviewedBy: 'Atlas Beyond rights audit', notes: 'NASA permits factual, informational use without implied endorsement; Atlas Beyond uses original summaries and attribution only.' };
+  if (host.includes('si.edu')) return { status: 'restricted', usage: 'facts-only', termsUrl: 'https://www.si.edu/termsofuse', reviewedAt: '2026-08-23', reviewedBy: 'Atlas Beyond rights audit', notes: 'No Smithsonian text or media may be reproduced. Commercial use requires separate clearance unless the specific asset is CC0.' };
+  if (host.includes('unesco.org')) return { status: 'review-required', usage: 'facts-only', termsUrl: 'https://whc.unesco.org/en/licenses', reviewedAt: '2026-08-23', reviewedBy: 'Atlas Beyond rights audit', notes: 'UNESCO licenses are work-specific. Retain link and independently written factual summary; verify the source page license before release.' };
+  if (host.includes('argentina.gob.ar')) return { status: 'review-required', usage: 'facts-only', termsUrl: 'https://www.argentina.gob.ar/transparencia-activa/portales-de-datos-abiertos', reviewedAt: '2026-08-23', reviewedBy: 'Atlas Beyond rights audit', notes: 'Argentina promotes reuse of designated open datasets, but these park webpages do not expose a verified dataset license.' };
+  return { status: 'review-required', usage: 'facts-only', termsUrl: null, reviewedAt: '2026-08-23', reviewedBy: 'Atlas Beyond rights audit', notes: 'No explicit reuse terms located. Retain link and independently written factual summary; obtain permission or legal review before release.' };
+};
+const sourceRecord = (url, title) => ({ id: sourceIdFor(url), title, publisher: publisherFor(url), url, accessedAt: '2026-08-23', license: rightsFor(url) });
 const editorial = { contentVersion: '1.0.0', reviewStatus: 'in-review', reviewedBy: null, reviewedAt: null };
 
 function packageBase(catalogEntry, sequence, region, center, zoom, storageKey, localCopy) {
@@ -63,7 +71,7 @@ function migrateRegion(catalogEntry, sequence, region) {
 }
 
 function migrateIceland(catalogEntry) {
-  const localCopy = Object.fromEntries(locales.map(locale => [locale, { title: iceland.copy[locale].fireIce, eyebrow: iceland.copy[locale].eyebrow, intro: iceland.copy[locale].intro }]));
+  const localCopy = Object.fromEntries(locales.map(locale => [locale, { title: iceland.copy[locale].title, eyebrow: iceland.copy[locale].eyebrow, intro: iceland.copy[locale].intro }]));
   const result = packageBase(catalogEntry, 1, 'Iceland', [-16.7, 64.03], 6.2, 'atlas-journal', localCopy);
   result.sources = iceland.places.map(place => sourceRecord(place.source, place.name));
   result.discoveries = iceland.places.map((place, index) => {

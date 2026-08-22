@@ -34,8 +34,12 @@
       "url": "https://science.nasa.gov/earth/earth-observatory/perito-moreno-glacier-argentina-78754/",
       "accessedAt": "2026-08-23",
       "license": {
-        "status": "review-required",
-        "notes": "Authoritative factual reference; link and summary usage require editorial licensing review before package release."
+        "status": "approved",
+        "usage": "attributed-summary",
+        "termsUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "reviewedAt": "2026-08-23",
+        "reviewedBy": "Atlas Beyond rights audit",
+        "notes": "NASA permits factual, informational use without implied endorsement; Atlas Beyond uses original summaries and attribution only."
       }
     },
     {
@@ -46,7 +50,11 @@
       "accessedAt": "2026-08-23",
       "license": {
         "status": "review-required",
-        "notes": "Authoritative factual reference; link and summary usage require editorial licensing review before package release."
+        "usage": "facts-only",
+        "termsUrl": "https://www.argentina.gob.ar/transparencia-activa/portales-de-datos-abiertos",
+        "reviewedAt": "2026-08-23",
+        "reviewedBy": "Atlas Beyond rights audit",
+        "notes": "Argentina promotes reuse of designated open datasets, but these park webpages do not expose a verified dataset license."
       }
     }
   ],

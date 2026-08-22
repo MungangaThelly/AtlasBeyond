@@ -8,7 +8,7 @@
   "interests": ["geology", "history"],
   "knowledgePaths": ["geology", "cartography"],
   "editorial": { "contentVersion": "0.1.0", "reviewStatus": "draft", "reviewedBy": null, "reviewedAt": null },
-  "sources": [{ "id": "example-source", "title": "Example source", "publisher": "Example institution", "url": "https://example.org/source", "accessedAt": "2026-08-23", "license": { "status": "review-required", "notes": "Fixture only; not publishable content." } }],
+  "sources": [{ "id": "example-source", "title": "Example source", "publisher": "Example institution", "url": "https://example.org/source", "accessedAt": "2026-08-23", "license": { "status": "review-required", "usage": "facts-only", "termsUrl": null, "reviewedAt": null, "reviewedBy": null, "notes": "Fixture only; not publishable content." } }],
   "locales": {
     "en": { "title": "An example expedition", "eyebrow": "Field expedition 099", "intro": "A validation fixture." },
     "fr": { "title": "Une expédition exemple", "eyebrow": "Expédition 099", "intro": "Un exemple de validation." },

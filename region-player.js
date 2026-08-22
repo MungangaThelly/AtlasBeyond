@@ -1,3 +1,4 @@
+window.AtlasApplyRegionalContent?.(regionExpeditions);
 const expeditionId=new URLSearchParams(location.search).get('expedition')||'patagonia-continents-end';
 const expedition=regionExpeditions[expeditionId];
 if(!expedition)location.href='index.html';

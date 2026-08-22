@@ -35,7 +35,11 @@
       "accessedAt": "2026-08-23",
       "license": {
         "status": "review-required",
-        "notes": "Authoritative factual reference; link and summary usage require editorial licensing review before package release."
+        "usage": "facts-only",
+        "termsUrl": null,
+        "reviewedAt": "2026-08-23",
+        "reviewedBy": "Atlas Beyond rights audit",
+        "notes": "No explicit reuse terms located. Retain link and independently written factual summary; obtain permission or legal review before release."
       }
     },
     {
@@ -46,7 +50,11 @@
       "accessedAt": "2026-08-23",
       "license": {
         "status": "review-required",
-        "notes": "Authoritative factual reference; link and summary usage require editorial licensing review before package release."
+        "usage": "facts-only",
+        "termsUrl": "https://whc.unesco.org/en/licenses",
+        "reviewedAt": "2026-08-23",
+        "reviewedBy": "Atlas Beyond rights audit",
+        "notes": "UNESCO licenses are work-specific. Retain link and independently written factual summary; verify the source page license before release."
       }
     },
     {
@@ -57,23 +65,27 @@
       "accessedAt": "2026-08-23",
       "license": {
         "status": "review-required",
-        "notes": "Authoritative factual reference; link and summary usage require editorial licensing review before package release."
+        "usage": "facts-only",
+        "termsUrl": null,
+        "reviewedAt": "2026-08-23",
+        "reviewedBy": "Atlas Beyond rights audit",
+        "notes": "No explicit reuse terms located. Retain link and independently written factual summary; obtain permission or legal review before release."
       }
     }
   ],
   "locales": {
     "en": {
-      "title": "Iceland · A story of fire and ice",
+      "title": "Read the land. Follow the water.",
       "eyebrow": "Field expedition 001 · Iceland",
       "intro": "A glacier has written a story across Iceland's south coast. Follow three verified traces and reveal how ice, water, and fire shape the road to the sea."
     },
     "fr": {
-      "title": "Islande · Une histoire de feu et de glace",
+      "title": "Lisez la terre. Suivez l’eau.",
       "eyebrow": "Expédition 001 · Islande",
       "intro": "Un glacier a écrit une histoire sur la côte sud de l’Islande. Suivez trois traces vérifiées et découvrez comment la glace, l’eau et le feu façonnent le chemin vers la mer."
     },
     "sv": {
-      "title": "Island · En berättelse om eld och is",
+      "title": "Läs landskapet. Följ vattnet.",
       "eyebrow": "Fältexpedition 001 · Island",
       "intro": "En glaciär har skrivit en berättelse längs Islands sydkust. Följ tre verifierade spår och upptäck hur is, vatten och eld formar vägen mot havet."
     }

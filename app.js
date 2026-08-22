@@ -16,6 +16,7 @@ const copy={
     discoveries:[["Ett landskap av moräner","Breiðármörk bevarar ryggar och sediment från glaciärernas framryckningar och reträtter. Moräner gör tidigare iskanter läsbara i dagens terräng."],["Skeiðarársandurs sandurslätt","Smältvatten och plötsliga jökulhlaup sprider vulkaniskt och glacialt sediment mot havet och skapar en vidsträckt, föränderlig sandurslätt."],["Glaciärlagunen Jökulsárlón","Jökulsárlón ligger i ett djupt bäcken urholkat av Breiðamerkurjökull. När glaciären drar sig tillbaka och kalvar färdas isberg genom lagunen mot Atlanten."]]}
 };
 
+window.AtlasApplyIcelandContent?.({places,copy,investigationCopy});
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
 let language=localStorage.getItem("atlas-language")||"en";
 let completed=JSON.parse(localStorage.getItem("atlas-journal")||"[]").filter(id=>places.some(place=>place.id===id));

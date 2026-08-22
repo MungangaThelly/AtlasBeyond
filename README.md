@@ -2,6 +2,8 @@
 
 **One planet. Thousands of languages. Infinite stories.**
 
+Live site: <https://atlas.nuhar.se>
+
 Atlas Beyond is a curiosity-driven exploration platform where the real Earth is
 the open world. Players follow clues, interpret evidence, discover places, and
 preserve what they learn in an Explorer's Journal.

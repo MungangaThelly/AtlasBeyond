@@ -8,14 +8,16 @@ const required = {
   '/': ['id="onboarding"', 'app.js', 'resilience.js', 'manifest.webmanifest', 'install.js'],
   '/atlas.html': ['id="atlas-map"', 'atlas.js', 'resilience.js'],
   '/region-player.html?expedition=patagonia-continents-end': ['id="region-map"', 'region-player.js', 'east-africa-data.js', 'central-asia-data.js', 'resilience.js'],
-  '/sw.js': ['atlas-beyond-v5'],
+  '/sw.js': ['atlas-beyond-v6'],
   '/offline.html': ['Keep your place']
   ,'/passport.html': ['id="public-passport"', 'passport-page.js']
   ,'/community.html': ['id="community-stats"', 'community.js']
   ,'/daily.html': ['id="daily-challenge"', 'daily.js']
   ,'/seals.html': ['id="seal-grid"', 'seals.js']
-  ,'/manifest.webmanifest': ['"display": "standalone"', 'atlas-icon.svg']
+  ,'/manifest.webmanifest': ['"display": "standalone"', 'atlas-icon-192.png', 'atlas-icon-512.png']
   ,'/assets/atlas-icon.svg': ['<svg']
+  ,'/assets/atlas-icon-192.png': []
+  ,'/assets/atlas-icon-512.png': []
   ,'/assets/expeditions/iceland.jpg': []
   ,'/assets/expeditions/patagonia.jpg': []
   ,'/assets/expeditions/east-africa.jpg': []

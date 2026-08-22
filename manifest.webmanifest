@@ -9,10 +9,14 @@
   "theme_color": "#071a1f",
   "orientation": "any",
   "categories": ["education", "travel", "games"],
-  "icons": [{"src":"./assets/atlas-icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}],
+  "icons": [
+    {"src":"./assets/atlas-icon-192.png","sizes":"192x192","type":"image/png","purpose":"any maskable"},
+    {"src":"./assets/atlas-icon-512.png","sizes":"512x512","type":"image/png","purpose":"any maskable"},
+    {"src":"./assets/atlas-icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}
+  ],
   "shortcuts": [
-    {"name":"Daily Field Briefing","short_name":"Daily clue","url":"./daily.html","icons":[{"src":"./assets/atlas-icon.svg","sizes":"any","type":"image/svg+xml"}]},
-    {"name":"World Atlas","short_name":"Atlas","url":"./atlas.html","icons":[{"src":"./assets/atlas-icon.svg","sizes":"any","type":"image/svg+xml"}]},
-    {"name":"Field Seals","short_name":"Seals","url":"./seals.html","icons":[{"src":"./assets/atlas-icon.svg","sizes":"any","type":"image/svg+xml"}]}
+    {"name":"Daily Field Briefing","short_name":"Daily clue","url":"./daily.html","icons":[{"src":"./assets/atlas-icon-192.png","sizes":"192x192","type":"image/png"}]},
+    {"name":"World Atlas","short_name":"Atlas","url":"./atlas.html","icons":[{"src":"./assets/atlas-icon-192.png","sizes":"192x192","type":"image/png"}]},
+    {"name":"Field Seals","short_name":"Seals","url":"./seals.html","icons":[{"src":"./assets/atlas-icon-192.png","sizes":"192x192","type":"image/png"}]}
   ]
 }

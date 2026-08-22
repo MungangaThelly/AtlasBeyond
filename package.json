@@ -14,7 +14,8 @@
     "check:accessibility": "node tests/audit-accessibility.mjs",
     "check:localization": "node tests/audit-localization.mjs",
     "check:community-privacy": "node --check community-privacy.js && node tests/audit-community-privacy.mjs",
+    "check:explorer-data": "node --check explorer-data.js && node tests/audit-explorer-data.mjs",
     "test:smoke": "node tests/smoke.mjs",
-    "check": "npm run check:syntax && npm run check:schema && npm run check:migration && npm run check:skills && npm run check:content && npm run check:accessibility && npm run check:localization && npm run check:community-privacy && npm run test:smoke"
+    "check": "npm run check:syntax && npm run check:schema && npm run check:migration && npm run check:skills && npm run check:content && npm run check:accessibility && npm run check:localization && npm run check:community-privacy && npm run check:explorer-data && npm run test:smoke"
   }
 }

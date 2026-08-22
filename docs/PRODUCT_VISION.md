@@ -27,6 +27,11 @@ conclusions, and reveal places by paying attention.
 7. **Accessible wonder.** Keyboard, screen-reader, captions, audio description,
    scalable text, contrast, and reduced motion are requirements.
 
+The explorer-data controls make journal ownership practical: explorers can
+download a structured JSON copy of every Atlas Beyond record in their browser
+or permanently erase those records through an explicit confirmation. The reset
+is deliberately scoped and never removes unrelated browser storage.
+
 The Iceland vertical slice now demonstrates knowledge as progression: starter
 field notes establish Ecology, History, and Navigation paths, while accumulated
 Geology knowledge unlocks progressively richer observations. Required

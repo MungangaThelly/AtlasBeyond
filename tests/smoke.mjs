@@ -8,12 +8,13 @@ const required = {
   '/': ['id="onboarding"', 'app.js', 'iceland-expansion.js', 'skills.js', 'skills.css', 'canonical-content.js', 'canonical-adapter.js', 'resilience.js', 'manifest.webmanifest', 'install.js', 'achievements.js'],
   '/atlas.html': ['id="atlas-map"', 'atlas.js', 'resilience.js'],
   '/region-player.html?expedition=patagonia-continents-end': ['id="region-map"', 'class="region-global-nav"', 'id="region-sound-toggle"', 'region-player.js?v=1.2.0', 'region-controls.js?v=1.0.5', 'east-africa-data.js', 'central-asia-data.js', 'resilience.js'],
-  '/sw.js': ['atlas-beyond-v28', 'accessibility.js', 'accessibility.css', 'community-privacy.js'],
+  '/sw.js': ['atlas-beyond-v29', 'accessibility.js', 'accessibility.css', 'community-privacy.js', 'explorer-data.js'],
   '/offline.html': ['Keep your place']
   ,'/passport.html': ['id="public-passport"', 'passport-page.js']
   ,'/community.html': ['id="community-stats"', 'community.js', 'community-client.js']
   ,'/community-client.js': ['atlas-community-participation', 'setParticipation', 'participates']
   ,'/community-privacy.js': ['aria-pressed', 'Your privacy', 'Stop sharing updates']
+  ,'/explorer-data.js': ['AtlasExplorerData', 'Download my data', 'Erase permanently']
   ,'/daily.html': ['id="daily-challenge"', 'daily.js']
   ,'/seals.html': ['id="seal-grid"', 'seals.js']
   ,'/page-navigation.js': ['journey-footer', 'journey-menu', 'aria-current']

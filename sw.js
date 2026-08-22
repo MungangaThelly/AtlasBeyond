@@ -1,7 +1,7 @@
-const CACHE = 'atlas-beyond-v28';
+const CACHE = 'atlas-beyond-v29';
 const SHELL = [
   './', './index.html', './atlas.html', './region-player.html?expedition=patagonia-continents-end',
-  './styles.css', './map.css', './onboarding.css', './evidence.css', './progression.css', './page-navigation.js', './page-navigation.css', './accessibility.js', './accessibility.css',
+  './styles.css', './map.css', './onboarding.css', './evidence.css', './progression.css', './page-navigation.js', './page-navigation.css', './accessibility.js', './accessibility.css', './explorer-data.js', './explorer-data.css',
   './living-world.css', './hub.css', './navigation.css', './atlas.css', './region-player.css', './region-shell.css', './region-controls.js', './region-controls.css', './region-night.css', './region-polish.css',
   './app.js', './investigations.js', './progression.js', './catalog.js', './iceland-expansion.js', './skills.js', './skills.css', './living-world.js', './endgame.js', './endgame.css', './canonical-content.js', './canonical-adapter.js',
   './atlas.js', './patagonia-data.js', './east-africa-data.js', './central-asia-data.js', './region-player.js', './passport.html', './passport.js', './passport-page.js', './passport.css', './community.html', './community.js', './community-client.js', './community-config.js', './community-privacy.js', './community.css', './resilience.js', './resilience.css', './visual-art.css', './daily.html', './daily.js', './daily.css', './seals.html', './seals.js', './seals.css', './synthesis.html', './synthesis.js', './synthesis.css',

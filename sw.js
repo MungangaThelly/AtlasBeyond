@@ -1,11 +1,11 @@
-const CACHE = 'atlas-beyond-v8';
+const CACHE = 'atlas-beyond-v9';
 const SHELL = [
   './', './index.html', './atlas.html', './region-player.html?expedition=patagonia-continents-end',
   './styles.css', './map.css', './onboarding.css', './evidence.css', './progression.css',
   './living-world.css', './hub.css', './navigation.css', './atlas.css', './region-player.css',
   './app.js', './investigations.js', './progression.js', './catalog.js', './living-world.js',
   './atlas.js', './patagonia-data.js', './east-africa-data.js', './central-asia-data.js', './region-player.js', './passport.html', './passport.js', './passport-page.js', './passport.css', './community.html', './community.js', './community-client.js', './community-config.js', './community.css', './resilience.js', './resilience.css', './visual-art.css', './daily.html', './daily.js', './daily.css', './seals.html', './seals.js', './seals.css',
-  './manifest.webmanifest', './install.js', './install.css', './assets/atlas-icon.svg', './assets/atlas-icon-192.png', './assets/atlas-icon-512.png', './assets/expeditions/iceland.jpg', './assets/expeditions/patagonia.jpg', './assets/expeditions/east-africa.jpg', './assets/expeditions/central-asia.jpg', './offline.html'
+  './manifest.webmanifest', './install.js', './install.css', './achievements.js', './achievements.css', './assets/atlas-icon.svg', './assets/atlas-icon-192.png', './assets/atlas-icon-512.png', './assets/expeditions/iceland.jpg', './assets/expeditions/patagonia.jpg', './assets/expeditions/east-africa.jpg', './assets/expeditions/central-asia.jpg', './offline.html'
 ];
 
 self.addEventListener('install', event => {

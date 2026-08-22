@@ -1,0 +1,1 @@
+.achievement-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:.65rem}.achievement-grid .achievement{min-height:88px}.achievement-grid .achievement>span{flex:0 0 48px}@media(max-width:600px){.achievement-grid{grid-template-columns:1fr}}

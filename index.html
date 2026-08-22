@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="navigation.css?v=1.0.0">
   <link rel="stylesheet" href="visual-art.css?v=1.0.0">
   <link rel="stylesheet" href="install.css?v=1.1.0">
+  <link rel="stylesheet" href="achievements.css?v=1.0.0">
   <style>[hidden]{display:none!important}.install-app{top:1rem!important;right:1rem!important;bottom:auto!important;left:auto!important;z-index:120!important;display:flex!important}</style>
 </head>
 <body>
@@ -175,8 +176,14 @@
       <div class="skill"><span class="skill-icon">△</span><div><b id="geology-label">Geology</b><small id="geology-level">Level 0</small><div class="skill-track"><i id="geology-bar"></i></div></div><strong id="geology-points">0</strong></div>
       <div class="skill"><span class="skill-icon">⌖</span><div><b id="cartography-label">Cartography</b><small id="cartography-level">Level 0</small><div class="skill-track"><i id="cartography-bar"></i></div></div><strong id="cartography-points">0</strong></div>
     </section>
-    <section class="achievement-section"><div class="section-heading"><h3 id="achievement-title">Achievements</h3><small id="achievement-count">0 / 1</small></div>
-      <article class="achievement locked" id="fire-ice-achievement"><span>❖</span><div><b id="achievement-name">Reader of Fire & Ice</b><small id="achievement-copy">Complete the Iceland field expedition.</small></div></article>
+    <section class="achievement-section"><div class="section-heading"><h3 id="achievement-title">Achievements</h3><small id="achievement-count">0 / 6</small></div><div class="achievement-grid">
+      <article class="achievement locked"><span>❖</span><div><b>First Evidence</b><small>Record your first discovery.</small></div></article>
+      <article class="achievement locked" id="fire-ice-achievement"><span>△</span><div><b id="achievement-name">Reader of Fire & Ice</b><small id="achievement-copy">Complete the Iceland field expedition.</small></div></article>
+      <article class="achievement locked"><span>⌁</span><div><b>Four Horizons</b><small>Complete all four expeditions.</small></div></article>
+      <article class="achievement locked"><span>☼</span><div><b>Returning Observer</b><small>Build a three-day streak.</small></div></article>
+      <article class="achievement locked"><span>✦</span><div><b>Seal Keeper</b><small>Reveal a rare field seal.</small></div></article>
+      <article class="achievement locked"><span>◇</span><div><b>Master Interpreter</b><small>Master any expedition.</small></div></article>
+    </div>
     </section>
     <section class="passport-section"><div class="section-heading"><h3 id="passport-title">Expedition passport</h3><small id="passport-stamp-count">0 / 4 stamps</small></div><div class="passport-stamps" id="passport-stamps"></div><a href="seals.html">View field seal collection →</a></section>
     <button class="primary passport-share" id="share-passport"><span id="share-passport-label">Share explorer passport</span><b>↗</b></button>
@@ -215,6 +222,7 @@
   <script src="app.js?v=0.8.0"></script>
   <link rel="stylesheet" href="passport.css?v=1.0.0">
   <script src="passport.js?v=1.0.0"></script>
+  <script src="achievements.js?v=1.0.0"></script>
   <script src="community-config.js?v=1.0.0"></script>
   <script src="community-client.js?v=1.1.0"></script>
   <link rel="stylesheet" href="resilience.css?v=1.0.0">

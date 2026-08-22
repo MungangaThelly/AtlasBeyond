@@ -34,6 +34,7 @@ server has no package dependencies and listens only on this computer.
 - A multilingual daily evidence briefing with streaks and rare field seals
 - Explicit opt-in controls for privacy-safe anonymous community totals
 - Validated local explorer-data export, restore, and confirmed browser-data reset
+- Accessible in-app release notices for safe offline-shell updates
 - English, French, and Swedish interfaces
 - Responsive, keyboard-accessible interaction
 - Product vision and technical architecture documents
@@ -57,3 +58,5 @@ smoke-tests the hub, world atlas, region player, offline shell, and 404 behavior
 
 Once a page has been visited over HTTP, its local experience shell is cached for
 resilient loading. Live map tiles still require a network connection.
+When a new shell is ready, Atlas Beyond asks the explorer before activating and
+refreshing it; journal progress remains in browser storage throughout.

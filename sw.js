@@ -1,7 +1,7 @@
-const CACHE = 'atlas-beyond-v30';
+const CACHE = 'atlas-beyond-v31';
 const SHELL = [
   './', './index.html', './atlas.html', './region-player.html?expedition=patagonia-continents-end',
-  './styles.css', './map.css', './onboarding.css', './evidence.css', './progression.css', './page-navigation.js', './page-navigation.css', './accessibility.js', './accessibility.css', './explorer-data.js', './explorer-data.css',
+  './styles.css', './map.css', './onboarding.css', './evidence.css', './progression.css', './page-navigation.js', './page-navigation.css', './accessibility.js', './accessibility.css', './explorer-data.js', './explorer-data.css', './update-manager.js', './update-manager.css',
   './living-world.css', './hub.css', './navigation.css', './atlas.css', './region-player.css', './region-shell.css', './region-controls.js', './region-controls.css', './region-night.css', './region-polish.css',
   './app.js', './investigations.js', './progression.js', './catalog.js', './iceland-expansion.js', './skills.js', './skills.css', './living-world.js', './endgame.js', './endgame.css', './canonical-content.js', './canonical-adapter.js',
   './atlas.js', './patagonia-data.js', './east-africa-data.js', './central-asia-data.js', './region-player.js', './passport.html', './passport.js', './passport-page.js', './passport.css', './community.html', './community.js', './community-client.js', './community-config.js', './community-privacy.js', './community.css', './resilience.js', './resilience.css', './visual-art.css', './daily.html', './daily.js', './daily.css', './seals.html', './seals.js', './seals.css', './synthesis.html', './synthesis.js', './synthesis.css',
@@ -9,7 +9,11 @@ const SHELL = [
 ];
 
 self.addEventListener('install', event => {
-  event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(SHELL)).then(() => self.skipWaiting()));
+  event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(SHELL)));
+});
+
+self.addEventListener('message', event => {
+  if (event.data?.type === 'SKIP_WAITING') self.skipWaiting();
 });
 
 self.addEventListener('activate', event => {

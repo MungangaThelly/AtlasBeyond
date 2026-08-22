@@ -19,6 +19,11 @@ remain separate so the platform can start with one region and expand safely.
 The current prototype uses plain HTML, CSS, and JavaScript to validate the
 interaction rather than prematurely committing to production infrastructure.
 
+The progressive web app uses a consent-based update lifecycle. A new service
+worker pre-caches its shell but remains waiting until the explorer accepts the
+localized update notice. Activation then refreshes once, without clearing
+browser-held journal or profile data.
+
 ## Boundaries
 
 ```text

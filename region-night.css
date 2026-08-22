@@ -1,0 +1,1 @@
+.night-mode #region-map{filter:brightness(.7) saturate(.78)}.night-mode .region-intro{position:relative}.night-mode .region-intro:after{content:"✦  ·  ˚  ✧   ·  ✦";position:absolute;right:12%;top:20%;color:#dce8ff88;font-size:1.2rem;letter-spacing:1.3rem;pointer-events:none}@media(max-width:760px){.night-mode .region-intro:after{display:none}}

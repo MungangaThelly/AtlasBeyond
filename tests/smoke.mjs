@@ -7,8 +7,8 @@ const server = spawn(process.execPath, ['server.mjs'], { cwd: new URL('../', imp
 const required = {
   '/': ['id="onboarding"', 'app.js', 'resilience.js', 'manifest.webmanifest', 'install.js', 'achievements.js'],
   '/atlas.html': ['id="atlas-map"', 'atlas.js', 'resilience.js'],
-  '/region-player.html?expedition=patagonia-continents-end': ['id="region-map"', 'class="region-global-nav"', 'id="region-sound-toggle"', 'region-player.js?v=1.2.0', 'region-controls.js', 'east-africa-data.js', 'central-asia-data.js', 'resilience.js'],
-  '/sw.js': ['atlas-beyond-v12'],
+  '/region-player.html?expedition=patagonia-continents-end': ['id="region-map"', 'class="region-global-nav"', 'id="region-sound-toggle"', 'region-player.js?v=1.2.0', 'region-controls.js?v=1.0.1', 'east-africa-data.js', 'central-asia-data.js', 'resilience.js'],
+  '/sw.js': ['atlas-beyond-v13'],
   '/offline.html': ['Keep your place']
   ,'/passport.html': ['id="public-passport"', 'passport-page.js']
   ,'/community.html': ['id="community-stats"', 'community.js']

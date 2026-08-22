@@ -18,7 +18,9 @@
   ],
   "knowledgePaths": [
     "geology",
-    "cartography"
+    "ecology",
+    "history",
+    "navigation"
   ],
   "editorial": {
     "contentVersion": "1.0.0",
@@ -29,7 +31,7 @@
   "sources": [
     {
       "id": "source-www-vatnajokulsthjodgardur-is-kceqte",
-      "title": "Breiðármörk",
+      "title": "A ridge born under a glacier",
       "publisher": "Vatnajökull National Park",
       "url": "https://www.vatnajokulsthjodgardur.is/en/melting-glaciers/glaciology",
       "accessedAt": "2026-08-23",
@@ -71,6 +73,81 @@
         "reviewedBy": "Atlas Beyond rights audit",
         "notes": "No explicit reuse terms located. Retain link and independently written factual summary; obtain permission or legal review before release."
       }
+    },
+    {
+      "id": "source-www-vatnajokulsthjodgardur-is-fgekas",
+      "title": "Ice on black sand",
+      "publisher": "Vatnajökull National Park",
+      "url": "https://www.vatnajokulsthjodgardur.is/en/areas/jokulsarlon/afangastadur-fellsfjara",
+      "accessedAt": "2026-08-23",
+      "license": {
+        "status": "review-required",
+        "usage": "facts-only",
+        "termsUrl": null,
+        "reviewedAt": "2026-08-23",
+        "reviewedBy": "Atlas Beyond rights audit",
+        "notes": "No explicit reuse terms located. Retain link and independently written factual summary; obtain permission or legal review before release."
+      }
+    },
+    {
+      "id": "source-www-vatnajokulsthjodgardur-is-fawyaq",
+      "title": "A living skin over volcanic ground",
+      "publisher": "Vatnajökull National Park",
+      "url": "https://www.vatnajokulsthjodgardur.is/en/nature--history/biome",
+      "accessedAt": "2026-08-23",
+      "license": {
+        "status": "review-required",
+        "usage": "facts-only",
+        "termsUrl": null,
+        "reviewedAt": "2026-08-23",
+        "reviewedBy": "Atlas Beyond rights audit",
+        "notes": "No explicit reuse terms located. Retain link and independently written factual summary; obtain permission or legal review before release."
+      }
+    },
+    {
+      "id": "source-www-vatnajokulsthjodgardur-is-c1eeku",
+      "title": "Stone that remembers cooling",
+      "publisher": "Vatnajökull National Park",
+      "url": "https://www.vatnajokulsthjodgardur.is/en/areas/skaftafell/destination-svartifoss",
+      "accessedAt": "2026-08-23",
+      "license": {
+        "status": "review-required",
+        "usage": "facts-only",
+        "termsUrl": null,
+        "reviewedAt": "2026-08-23",
+        "reviewedBy": "Atlas Beyond rights audit",
+        "notes": "No explicit reuse terms located. Retain link and independently written factual summary; obtain permission or legal review before release."
+      }
+    },
+    {
+      "id": "source-www-vatnajokulsthjodgardur-is-kyt7f2",
+      "title": "The river that divided a country",
+      "publisher": "Vatnajökull National Park",
+      "url": "https://www.vatnajokulsthjodgardur.is/en/areas/skaftafell",
+      "accessedAt": "2026-08-23",
+      "license": {
+        "status": "review-required",
+        "usage": "facts-only",
+        "termsUrl": null,
+        "reviewedAt": "2026-08-23",
+        "reviewedBy": "Atlas Beyond rights audit",
+        "notes": "No explicit reuse terms located. Retain link and independently written factual summary; obtain permission or legal review before release."
+      }
+    },
+    {
+      "id": "source-www-vatnajokulsthjodgardur-is-po2os",
+      "title": "Farms between paths of danger",
+      "publisher": "Vatnajökull National Park",
+      "url": "https://www.vatnajokulsthjodgardur.is/en/melting-glaciers/vatnajokullglacier",
+      "accessedAt": "2026-08-23",
+      "license": {
+        "status": "review-required",
+        "usage": "facts-only",
+        "termsUrl": null,
+        "reviewedAt": "2026-08-23",
+        "reviewedBy": "Atlas Beyond rights audit",
+        "notes": "No explicit reuse terms located. Retain link and independently written factual summary; obtain permission or legal review before release."
+      }
     }
   ],
   "locales": {
@@ -93,6 +170,7 @@
   "discoveries": [
     {
       "id": "moraine",
+      "kind": "investigation",
       "order": 1,
       "optional": false,
       "coordinates": [
@@ -231,6 +309,7 @@
     },
     {
       "id": "sandur",
+      "kind": "investigation",
       "order": 2,
       "optional": false,
       "coordinates": [
@@ -369,6 +448,7 @@
     },
     {
       "id": "lagoon",
+      "kind": "investigation",
       "order": 3,
       "optional": false,
       "coordinates": [
@@ -502,6 +582,420 @@
           ],
           "correct": 2,
           "reveal": "Observationerna binder samman glacial erosion, reträtt, kalvning och resan mot havet."
+        }
+      }
+    },
+    {
+      "id": "fellsfjara-ice",
+      "kind": "field-note",
+      "order": 4,
+      "optional": true,
+      "coordinates": [
+        -16.1778,
+        64.0448
+      ],
+      "categories": [
+        "photography"
+      ],
+      "knowledgeReward": {
+        "path": "geology",
+        "points": 1,
+        "unlockLevel": 0
+      },
+      "claims": [
+        {
+          "id": "fellsfjara-ice-field-claim",
+          "text": "Glacier ice from Jökulsárlón often reaches Fellsfjara and rests on the black beach. The arrangement changes continually with waves, weather, and new ice.",
+          "sourceIds": [
+            "source-www-vatnajokulsthjodgardur-is-fgekas"
+          ],
+          "reviewStatus": "reviewed",
+          "uncertainty": "low"
+        }
+      ],
+      "locales": {
+        "en": {
+          "place": "Ice on black sand",
+          "clue": "Optional field note · Photography",
+          "reveal": "Glacier ice from Jökulsárlón often reaches Fellsfjara and rests on the black beach. The arrangement changes continually with waves, weather, and new ice."
+        },
+        "fr": {
+          "place": "La glace sur le sable noir",
+          "clue": "Note facultative · Photographie",
+          "reveal": "La glace de Jökulsárlón atteint souvent Fellsfjara et repose sur la plage noire. La disposition change avec les vagues, la météo et les nouveaux fragments."
+        },
+        "sv": {
+          "place": "Is på svart sand",
+          "clue": "Valfri fältanteckning · Fotografi",
+          "reveal": "Glaciäris från Jökulsárlón når ofta Fellsfjara och vilar på den svarta stranden. Mönstret förändras med vågor, väder och ny is."
+        }
+      }
+    },
+    {
+      "id": "breidamerkur-birds",
+      "kind": "field-note",
+      "order": 5,
+      "optional": true,
+      "coordinates": [
+        -16.42,
+        64.035
+      ],
+      "categories": [
+        "wildlife"
+      ],
+      "knowledgeReward": {
+        "path": "ecology",
+        "points": 1,
+        "unlockLevel": 0
+      },
+      "claims": [
+        {
+          "id": "breidamerkur-birds-field-claim",
+          "text": "Breiðamerkursandur is important nesting habitat for birds including great skua and barnacle goose. Newly exposed terrain becomes a place to observe ecosystems forming.",
+          "sourceIds": [
+            "source-www-vatnajokulsthjodgardur-is-fawyaq"
+          ],
+          "reviewStatus": "reviewed",
+          "uncertainty": "low"
+        }
+      ],
+      "locales": {
+        "en": {
+          "place": "Life follows retreating ice",
+          "clue": "Optional field note · Wildlife",
+          "reveal": "Breiðamerkursandur is important nesting habitat for birds including great skua and barnacle goose. Newly exposed terrain becomes a place to observe ecosystems forming."
+        },
+        "fr": {
+          "place": "La vie suit le recul de la glace",
+          "clue": "Note facultative · Faune",
+          "reveal": "Breiðamerkursandur est une zone de nidification importante, notamment pour le grand labbe et la bernache nonnette. Les terres révélées accueillent de nouveaux écosystèmes."
+        },
+        "sv": {
+          "place": "Livet följer den vikande isen",
+          "clue": "Valfri fältanteckning · Djurliv",
+          "reveal": "Breiðamerkursandur är ett viktigt häckningsområde för bland annat storlabb och vitkindad gås. På den blottlagda marken växer nya ekosystem fram."
+        }
+      }
+    },
+    {
+      "id": "svartifoss-columns",
+      "kind": "field-note",
+      "order": 6,
+      "optional": true,
+      "coordinates": [
+        -16.975,
+        64.027
+      ],
+      "categories": [
+        "geology"
+      ],
+      "knowledgeReward": {
+        "path": "geology",
+        "points": 1,
+        "unlockLevel": 0
+      },
+      "claims": [
+        {
+          "id": "svartifoss-columns-field-claim",
+          "text": "At Svartifoss, unusually regular basalt columns formed when a lava flow cooled slowly, contracted, and split perpendicular to its cooling surface.",
+          "sourceIds": [
+            "source-www-vatnajokulsthjodgardur-is-c1eeku"
+          ],
+          "reviewStatus": "reviewed",
+          "uncertainty": "low"
+        }
+      ],
+      "locales": {
+        "en": {
+          "place": "Stone that remembers cooling",
+          "clue": "Optional field note · Geology",
+          "reveal": "At Svartifoss, unusually regular basalt columns formed when a lava flow cooled slowly, contracted, and split perpendicular to its cooling surface."
+        },
+        "fr": {
+          "place": "La pierre se souvient du refroidissement",
+          "clue": "Note facultative · Géologie",
+          "reveal": "À Svartifoss, des colonnes régulières de basalte se sont formées lorsqu’une coulée de lave a refroidi lentement, s’est contractée et s’est fendue perpendiculairement à sa surface de refroidissement."
+        },
+        "sv": {
+          "place": "Sten som minns avkylning",
+          "clue": "Valfri fältanteckning · Geologi",
+          "reveal": "Vid Svartifoss bildades regelbundna basaltpelare när ett lavaflöde svalnade långsamt, drog ihop sig och sprack vinkelrätt mot avkylningsytan."
+        }
+      }
+    },
+    {
+      "id": "skaftafellsjokull-erosion",
+      "kind": "field-note",
+      "order": 7,
+      "optional": true,
+      "coordinates": [
+        -16.88,
+        64.016
+      ],
+      "categories": [
+        "geology"
+      ],
+      "knowledgeReward": {
+        "path": "geology",
+        "points": 1,
+        "unlockLevel": 0
+      },
+      "claims": [
+        {
+          "id": "skaftafellsjokull-erosion-field-claim",
+          "text": "Skaftafell’s outlet glaciers and rivers reveal two linked sculptors: ice erodes the high ground while meltwater carries the loosened material onward.",
+          "sourceIds": [
+            "source-www-vatnajokulsthjodgardur-is-kyt7f2"
+          ],
+          "reviewStatus": "reviewed",
+          "uncertainty": "low"
+        }
+      ],
+      "locales": {
+        "en": {
+          "place": "A valley shaped by moving ice",
+          "clue": "Optional field note · Geology",
+          "reveal": "Skaftafell’s outlet glaciers and rivers reveal two linked sculptors: ice erodes the high ground while meltwater carries the loosened material onward."
+        },
+        "fr": {
+          "place": "Une vallée façonnée par la glace",
+          "clue": "Note facultative · Géologie",
+          "reveal": "Les glaciers émissaires et les rivières de Skaftafell révèlent deux forces liées : la glace érode les hauteurs et l’eau de fonte emporte les matériaux."
+        },
+        "sv": {
+          "place": "En dal formad av rörlig is",
+          "clue": "Valfri fältanteckning · Geologi",
+          "reveal": "Skaftafells utloppsglaciärer och floder visar två samverkande krafter: isen eroderar höjderna och smältvattnet för materialet vidare."
+        }
+      }
+    },
+    {
+      "id": "oraefajokull-eruptions",
+      "kind": "field-note",
+      "order": 8,
+      "optional": true,
+      "coordinates": [
+        -16.65,
+        64.014
+      ],
+      "categories": [
+        "history"
+      ],
+      "knowledgeReward": {
+        "path": "history",
+        "points": 1,
+        "unlockLevel": 0
+      },
+      "claims": [
+        {
+          "id": "oraefajokull-eruptions-field-claim",
+          "text": "The eruptions of Öræfajökull in 1362 and 1727 devastated settlements. Surviving farms cluster in sheltered ground between known paths of floods and volcanic flows.",
+          "sourceIds": [
+            "source-www-vatnajokulsthjodgardur-is-po2os"
+          ],
+          "reviewStatus": "reviewed",
+          "uncertainty": "low"
+        }
+      ],
+      "locales": {
+        "en": {
+          "place": "Farms between paths of danger",
+          "clue": "Optional field note · History",
+          "reveal": "The eruptions of Öræfajökull in 1362 and 1727 devastated settlements. Surviving farms cluster in sheltered ground between known paths of floods and volcanic flows."
+        },
+        "fr": {
+          "place": "Des fermes entre les couloirs du danger",
+          "clue": "Note facultative · Histoire",
+          "reveal": "Les éruptions de l’Öræfajökull en 1362 et 1727 ont dévasté les habitats. Les fermes restantes occupent des terrains protégés entre les couloirs de crues et de coulées volcaniques."
+        },
+        "sv": {
+          "place": "Gårdar mellan farans vägar",
+          "clue": "Valfri fältanteckning · Historia",
+          "reveal": "Öræfajökulls utbrott 1362 och 1727 ödelade bosättningar. Kvarvarande gårdar ligger skyddade mellan kända vägar för flöden och vulkaniskt material."
+        }
+      }
+    },
+    {
+      "id": "skeidara-bridge",
+      "kind": "field-note",
+      "order": 9,
+      "optional": true,
+      "coordinates": [
+        -17.01,
+        63.982
+      ],
+      "categories": [
+        "navigation"
+      ],
+      "knowledgeReward": {
+        "path": "navigation",
+        "points": 1,
+        "unlockLevel": 0
+      },
+      "claims": [
+        {
+          "id": "skeidara-bridge-field-claim",
+          "text": "Skeiðará was a major barrier to travel until it was bridged in 1974. The crossing shows how infrastructure can redraw a human map shaped by glacial water.",
+          "sourceIds": [
+            "source-www-vatnajokulsthjodgardur-is-kyt7f2"
+          ],
+          "reviewStatus": "reviewed",
+          "uncertainty": "low"
+        }
+      ],
+      "locales": {
+        "en": {
+          "place": "The river that divided a country",
+          "clue": "Optional field note · Navigation",
+          "reveal": "Skeiðará was a major barrier to travel until it was bridged in 1974. The crossing shows how infrastructure can redraw a human map shaped by glacial water."
+        },
+        "fr": {
+          "place": "La rivière qui divisait un pays",
+          "clue": "Note facultative · Navigation",
+          "reveal": "La Skeiðará fut un obstacle majeur au voyage jusqu’à la construction d’un pont en 1974. Cette traversée montre comment une infrastructure redessine une carte humaine façonnée par les eaux glaciaires."
+        },
+        "sv": {
+          "place": "Floden som delade ett land",
+          "clue": "Valfri fältanteckning · Navigation",
+          "reveal": "Skeiðará var ett stort hinder för resor tills bron byggdes 1974. Övergången visar hur infrastruktur kan rita om en mänsklig karta formad av glaciärvatten."
+        }
+      }
+    },
+    {
+      "id": "vatnajokull-hidden-volcanoes",
+      "kind": "field-note",
+      "order": 10,
+      "optional": true,
+      "coordinates": [
+        -17.32,
+        64.42
+      ],
+      "categories": [
+        "geology"
+      ],
+      "knowledgeReward": {
+        "path": "geology",
+        "points": 1,
+        "unlockLevel": 0
+      },
+      "claims": [
+        {
+          "id": "vatnajokull-hidden-volcanoes-field-claim",
+          "text": "Vatnajökull covers seven central volcanoes. Heat and eruptions beneath the glacier can melt ice, build hidden lakes, and release sudden jökulhlaup floods.",
+          "sourceIds": [
+            "source-www-vatnajokulsthjodgardur-is-kceqte"
+          ],
+          "reviewStatus": "reviewed",
+          "uncertainty": "low"
+        }
+      ],
+      "locales": {
+        "en": {
+          "place": "Fire concealed beneath ice",
+          "clue": "Optional field note · Geology",
+          "reveal": "Vatnajökull covers seven central volcanoes. Heat and eruptions beneath the glacier can melt ice, build hidden lakes, and release sudden jökulhlaup floods."
+        },
+        "fr": {
+          "place": "Le feu caché sous la glace",
+          "clue": "Note facultative · Géologie",
+          "reveal": "Le Vatnajökull recouvre sept volcans centraux. La chaleur et les éruptions sous-glaciaires peuvent fondre la glace, former des lacs cachés et libérer de brusques crues jökulhlaup."
+        },
+        "sv": {
+          "place": "Eld dold under isen",
+          "clue": "Valfri fältanteckning · Geologi",
+          "reveal": "Vatnajökull täcker sju centralvulkaner. Värme och utbrott under glaciären kan smälta is, skapa dolda sjöar och utlösa plötsliga jökulhlaup."
+        }
+      }
+    },
+    {
+      "id": "gjlap-hyaloclastite",
+      "kind": "field-note",
+      "order": 11,
+      "optional": true,
+      "coordinates": [
+        -17.51,
+        64.48
+      ],
+      "categories": [
+        "geology"
+      ],
+      "knowledgeReward": {
+        "path": "geology",
+        "points": 1,
+        "unlockLevel": 0
+      },
+      "claims": [
+        {
+          "id": "gjlap-hyaloclastite-field-claim",
+          "text": "During the 1996 Gjálp eruption, hot volcanic material met ice and meltwater, producing a seven-kilometre hyaloclastite ridge that remains buried beneath the glacier.",
+          "sourceIds": [
+            "source-www-vatnajokulsthjodgardur-is-kceqte"
+          ],
+          "reviewStatus": "reviewed",
+          "uncertainty": "low"
+        }
+      ],
+      "locales": {
+        "en": {
+          "place": "A ridge born under a glacier",
+          "clue": "Optional field note · Geology",
+          "reveal": "During the 1996 Gjálp eruption, hot volcanic material met ice and meltwater, producing a seven-kilometre hyaloclastite ridge that remains buried beneath the glacier."
+        },
+        "fr": {
+          "place": "Une crête née sous un glacier",
+          "clue": "Note facultative · Géologie",
+          "reveal": "Pendant l’éruption de Gjálp en 1996, les matériaux volcaniques ont rencontré la glace et l’eau de fonte, créant une crête d’hyaloclastite de sept kilomètres encore enfouie sous le glacier."
+        },
+        "sv": {
+          "place": "En rygg född under en glaciär",
+          "clue": "Valfri fältanteckning · Geologi",
+          "reveal": "Under Gjálputbrottet 1996 mötte hett vulkaniskt material is och smältvatten och skapade en sju kilometer lång hyaloklastitrygg som fortfarande ligger begravd under glaciären."
+        }
+      }
+    },
+    {
+      "id": "lava-moss-ecosystem",
+      "kind": "field-note",
+      "order": 12,
+      "optional": true,
+      "coordinates": [
+        -17.7,
+        64.02
+      ],
+      "categories": [
+        "wildlife"
+      ],
+      "knowledgeReward": {
+        "path": "ecology",
+        "points": 1,
+        "unlockLevel": 0
+      },
+      "claims": [
+        {
+          "id": "lava-moss-ecosystem-field-claim",
+          "text": "In the wet southwest of the park, woolly fringe-moss can dominate lava and hyaloclastite terrain. Climate and porous rock together determine where this living cover forms.",
+          "sourceIds": [
+            "source-www-vatnajokulsthjodgardur-is-fawyaq"
+          ],
+          "reviewStatus": "reviewed",
+          "uncertainty": "low"
+        }
+      ],
+      "locales": {
+        "en": {
+          "place": "A living skin over volcanic ground",
+          "clue": "Optional field note · Ecology",
+          "reveal": "In the wet southwest of the park, woolly fringe-moss can dominate lava and hyaloclastite terrain. Climate and porous rock together determine where this living cover forms."
+        },
+        "fr": {
+          "place": "Une peau vivante sur le sol volcanique",
+          "clue": "Note facultative · Écologie",
+          "reveal": "Dans le sud-ouest humide du parc, les mousses peuvent dominer les laves et les reliefs d’hyaloclastite. Le climat et la roche poreuse déterminent ensemble la formation de cette couverture vivante."
+        },
+        "sv": {
+          "place": "Ett levande täcke över vulkanmark",
+          "clue": "Valfri fältanteckning · Ekologi",
+          "reveal": "I parkens nederbördsrika sydväst kan mossor dominera lava och hyaloklastitmark. Klimat och porös berggrund avgör tillsammans var detta levande täcke bildas."
         }
       }
     }

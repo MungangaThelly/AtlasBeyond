@@ -66,9 +66,9 @@
     },
     "discovery": {
       "type": "object", "additionalProperties": false,
-      "required": ["id", "order", "optional", "coordinates", "categories", "knowledgeReward", "claims", "locales"],
+      "required": ["id", "kind", "order", "optional", "coordinates", "categories", "knowledgeReward", "claims", "locales"],
       "properties": {
-        "id": { "$ref": "#/$defs/stableId" }, "order": { "type": "integer", "minimum": 1 }, "optional": { "type": "boolean" },
+        "id": { "$ref": "#/$defs/stableId" }, "kind": { "enum": ["investigation", "field-note"] }, "order": { "type": "integer", "minimum": 1 }, "optional": { "type": "boolean" },
         "coordinates": { "$ref": "#/$defs/coordinates" }, "categories": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
         "knowledgeReward": {
           "type": "object", "additionalProperties": false, "required": ["path", "points", "unlockLevel"],
@@ -93,7 +93,7 @@
     },
     "discoveryCopy": {
       "type": "object", "additionalProperties": false,
-      "required": ["place", "clue", "fieldNote", "evidence", "question", "options", "correct", "reveal"],
+      "required": ["place", "clue", "reveal"],
       "properties": {
         "place": { "type": "string", "minLength": 1 }, "clue": { "type": "string", "minLength": 1 }, "fieldNote": { "type": "string", "minLength": 1 },
         "evidence": { "type": "array", "minItems": 3, "items": { "$ref": "#/$defs/evidence" } },

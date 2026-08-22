@@ -78,6 +78,7 @@
   "discoveries": [
     {
       "id": "perito-moreno-glacier",
+      "kind": "investigation",
       "order": 1,
       "optional": false,
       "coordinates": [
@@ -217,6 +218,7 @@
     },
     {
       "id": "brazo-rico-lago-argentino",
+      "kind": "investigation",
       "order": 2,
       "optional": false,
       "coordinates": [
@@ -356,6 +358,7 @@
     },
     {
       "id": "chalten-fitz-roy",
+      "kind": "investigation",
       "order": 3,
       "optional": false,
       "coordinates": [

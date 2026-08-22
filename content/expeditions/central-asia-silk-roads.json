@@ -93,6 +93,7 @@
   "discoveries": [
     {
       "id": "tian-shan-corridor-chuy-valley",
+      "kind": "investigation",
       "order": 1,
       "optional": false,
       "coordinates": [
@@ -232,6 +233,7 @@
     },
     {
       "id": "samarkand-zerafshan-oasis",
+      "kind": "investigation",
       "order": 2,
       "optional": false,
       "coordinates": [
@@ -371,6 +373,7 @@
     },
     {
       "id": "ancient-merv-murghab-oasis",
+      "kind": "investigation",
       "order": 3,
       "optional": false,
       "coordinates": [

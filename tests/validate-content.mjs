@@ -12,6 +12,7 @@ function assert(condition, message) { if (!condition) throw new Error(message); 
 function text(value, path) { assert(typeof value === 'string' && value.trim(), `${path} must contain text`); }
 
 const catalog = await load('catalog.js', 'expeditionCatalog');
+await load('iceland-expansion.js', 'expeditionCatalog');
 const investigations = await load('investigations.js', 'investigationCopy');
 const regions = await load('patagonia-data.js', 'regionExpeditions');
 await load('east-africa-data.js', 'regionExpeditions');
@@ -19,6 +20,16 @@ await load('central-asia-data.js', 'regionExpeditions');
 const locales = ['en', 'fr', 'sv'];
 
 assert(catalog.expeditions.length >= 2, 'Catalog needs at least two expeditions');
+assert(catalog.sideDiscoveries.length >= 9, 'Iceland needs at least 9 optional field notes for a 12-discovery vertical slice');
+assert(new Set(catalog.sideDiscoveries.map(item => item.id)).size === catalog.sideDiscoveries.length, 'Iceland field-note IDs must be unique');
+for (const note of catalog.sideDiscoveries) {
+  assert(/^https:\/\//.test(note.source), `${note.id} needs an HTTPS source`);
+  assert(note.coordinates.length === 2 && note.coordinates.every(Number.isFinite), `${note.id} has invalid coordinates`);
+  for (const locale of locales) {
+    const local = note.locales[locale];
+    ['type', 'title', 'copy'].forEach(key => text(local?.[key], `${note.id}.${locale}.${key}`));
+  }
+}
 for (const expedition of catalog.expeditions) {
   text(expedition.id, 'expedition.id');
   assert(new Set(expedition.interests).size === expedition.interests.length, `${expedition.id} has duplicate interests`);
@@ -44,4 +55,4 @@ for (const region of Object.values(regions)) for (const locale of locales) {
     assert(item.coordinates.length === 2 && item.coordinates.every(Number.isFinite), `${region.id} ${locale} discovery ${index + 1} has invalid coordinates`);
   });
 }
-console.log('Content validation passed: 4 expeditions · 3 locales · 36 localized investigations.');
+console.log('Content validation passed: 4 expeditions · 3 locales · 36 localized investigations · 9 optional Iceland field notes.');

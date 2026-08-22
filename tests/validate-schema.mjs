@@ -59,13 +59,17 @@ function semanticValidate(data, label) {
     if (!data.knowledgePaths.includes(discovery.knowledgeReward.path)) fail(`${path}.knowledgeReward.path`, 'must be declared by the expedition');
     const claimIds = new Set(discovery.claims.map(claim => claim.id));
     for (const claim of discovery.claims) for (const sourceId of claim.sourceIds) if (!sourceIds.has(sourceId)) fail(`${path}.claims.${claim.id}`, `references unknown source ${sourceId}`);
-    const optionCount = discovery.locales.en.options.length;
+    if (discovery.kind === 'field-note' && !discovery.optional) fail(`${path}.optional`, 'field notes must be optional');
+    const optionCount = discovery.locales.en.options?.length;
     for (const locale of ['en', 'fr', 'sv']) {
       const copy = discovery.locales[locale];
-      if (copy.options.length !== optionCount) fail(`${path}.locales.${locale}.options`, 'must match the English option count');
-      if (copy.correct >= copy.options.length) fail(`${path}.locales.${locale}.correct`, 'must point to an available option');
-      if (copy.correct !== discovery.locales.en.correct) fail(`${path}.locales.${locale}.correct`, 'must match the English correct-answer index');
-      for (const evidence of copy.evidence) for (const claimId of evidence.claimIds) if (!claimIds.has(claimId)) fail(`${path}.locales.${locale}.evidence`, `references unknown claim ${claimId}`);
+      if (discovery.kind === 'investigation') {
+        for (const key of ['fieldNote', 'evidence', 'question', 'options', 'correct']) if (copy[key] === undefined) fail(`${path}.locales.${locale}`, `investigations require ${key}`);
+        if (copy.options?.length !== optionCount) fail(`${path}.locales.${locale}.options`, 'must match the English option count');
+        if (copy.correct >= copy.options.length) fail(`${path}.locales.${locale}.correct`, 'must point to an available option');
+        if (copy.correct !== discovery.locales.en.correct) fail(`${path}.locales.${locale}.correct`, 'must match the English correct-answer index');
+      }
+      for (const evidence of copy.evidence || []) for (const claimId of evidence.claimIds) if (!claimIds.has(claimId)) fail(`${path}.locales.${locale}.evidence`, `references unknown claim ${claimId}`);
     }
   }
   if (data.status === 'available') {

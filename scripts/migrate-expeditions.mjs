@@ -14,7 +14,11 @@ const evaluate = async (file, expose, transform = source => source) => {
   return context.window.__content;
 };
 
-const catalog = await evaluate('catalog.js', 'expeditionCatalog');
+const catalogContext = vm.createContext({ window: {} });
+vm.runInContext(await readFile(join(root, 'catalog.js'), 'utf8'), catalogContext, { filename: 'catalog.js' });
+vm.runInContext(await readFile(join(root, 'iceland-expansion.js'), 'utf8'), catalogContext, { filename: 'iceland-expansion.js' });
+vm.runInContext('window.__content = expeditionCatalog', catalogContext);
+const catalog = catalogContext.window.__content;
 const investigations = await evaluate('investigations.js', 'investigationCopy');
 const iceland = await evaluate('app.js', '({places,copy})', source => source.split('const $=')[0]);
 const context = vm.createContext({ window: {} });
@@ -58,7 +62,7 @@ function migrateRegion(catalogEntry, sequence, region) {
   result.discoveries = region.locales.en.discoveries.map((english, index) => {
     const id = slug(english.place), claimId = `${id}-core-claim`;
     return {
-      id, order: index + 1, optional: false, coordinates: english.coordinates, categories: catalogEntry.interests,
+      id, kind: 'investigation', order: index + 1, optional: false, coordinates: english.coordinates, categories: catalogEntry.interests,
       knowledgeReward: { path: 'geology', points: 1, unlockLevel: index },
       claims: [{ id: claimId, text: english.reveal, sourceIds: [sourceIdFor(english.source)], reviewStatus: 'draft', uncertainty: 'low' }],
       locales: Object.fromEntries(locales.map(locale => {
@@ -73,11 +77,13 @@ function migrateRegion(catalogEntry, sequence, region) {
 function migrateIceland(catalogEntry) {
   const localCopy = Object.fromEntries(locales.map(locale => [locale, { title: iceland.copy[locale].title, eyebrow: iceland.copy[locale].eyebrow, intro: iceland.copy[locale].intro }]));
   const result = packageBase(catalogEntry, 1, 'Iceland', [-16.7, 64.03], 6.2, 'atlas-journal', localCopy);
-  result.sources = iceland.places.map(place => sourceRecord(place.source, place.name));
+  const sideNotes = catalog.sideDiscoveries;
+  const allSources = [...iceland.places.map(place => ({ url: place.source, title: place.name })), ...sideNotes.map(note => ({ url: note.source, title: note.locales.en.title }))];
+  result.sources = [...new Map(allSources.map(source => [source.url, source])).values()].map(source => sourceRecord(source.url, source.title));
   result.discoveries = iceland.places.map((place, index) => {
     const claimId = `${place.id}-core-claim`;
     return {
-      id: place.id, order: index + 1, optional: false, coordinates: place.coordinates, categories: ['geology'],
+      id: place.id, kind: 'investigation', order: index + 1, optional: false, coordinates: place.coordinates, categories: ['geology'],
       knowledgeReward: { path: 'geology', points: 1, unlockLevel: index },
       claims: [{ id: claimId, text: investigations.en[index].right, sourceIds: [sourceIdFor(place.source)], reviewStatus: 'draft', uncertainty: 'low' }],
       locales: Object.fromEntries(locales.map(locale => {
@@ -86,6 +92,11 @@ function migrateIceland(catalogEntry) {
       }))
     };
   });
+  result.discoveries.push(...sideNotes.map((note, index) => {
+    const claimId = `${note.id}-field-claim`;
+    return { id: note.id, kind: 'field-note', order: result.discoveries.length + index + 1, optional: true, coordinates: note.coordinates, categories: [note.interest], knowledgeReward: { path: note.interest === 'history' ? 'history' : note.interest === 'navigation' ? 'navigation' : note.interest === 'wildlife' ? 'ecology' : 'geology', points: 1, unlockLevel: 0 }, claims: [{ id: claimId, text: note.locales.en.copy, sourceIds: [sourceIdFor(note.source)], reviewStatus: 'reviewed', uncertainty: 'low' }], locales: Object.fromEntries(locales.map(locale => [locale, { place: note.locales[locale].title, clue: note.locales[locale].type, reveal: note.locales[locale].copy }])) };
+  }));
+  result.knowledgePaths = [...new Set(result.discoveries.map(item => item.knowledgeReward.path))];
   return result;
 }
 

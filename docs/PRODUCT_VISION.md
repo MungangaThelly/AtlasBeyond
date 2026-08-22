@@ -29,9 +29,11 @@ conclusions, and reveal places by paying attention.
 
 ## First playable release
 
-The first vertical slice focuses on Iceland and contains one 15–20 minute
-expedition, 12–20 reviewed discoveries, an Explorer's Journal, cartography and
-geology knowledge paths, and English/French/Swedish localization.
+The first vertical slice focuses on Iceland and now contains one 15–20 minute
+expedition with 12 evidence-backed discoveries: three required investigations
+and nine optional field notes. It includes an Explorer's Journal, knowledge
+paths, and English/French/Swedish localization. Source-rights clearance remains
+tracked separately from factual review.
 
 ## Success looks like
 

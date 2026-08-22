@@ -15,7 +15,7 @@
     "sv": { "title": "En expelexpedition", "eyebrow": "Fältexpedition 099", "intro": "Ett valideringsexempel." }
   },
   "discoveries": [{
-    "id": "example-landform", "order": 1, "optional": false, "coordinates": [10.5, 59.9], "categories": ["landform"],
+    "id": "example-landform", "kind": "investigation", "order": 1, "optional": false, "coordinates": [10.5, 59.9], "categories": ["landform"],
     "knowledgeReward": { "path": "geology", "points": 1, "unlockLevel": 0 },
     "claims": [{ "id": "example-claim", "text": "The example landform records a process.", "sourceIds": ["example-source"], "reviewStatus": "draft", "uncertainty": "low" }],
     "locales": {

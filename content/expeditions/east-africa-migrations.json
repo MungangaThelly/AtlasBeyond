@@ -94,6 +94,7 @@
   "discoveries": [
     {
       "id": "serengeti-plains",
+      "kind": "investigation",
       "order": 1,
       "optional": false,
       "coordinates": [
@@ -234,6 +235,7 @@
     },
     {
       "id": "ngorongoro-crater",
+      "kind": "investigation",
       "order": 2,
       "optional": false,
       "coordinates": [
@@ -374,6 +376,7 @@
     },
     {
       "id": "olduvai-gorge",
+      "kind": "investigation",
       "order": 3,
       "optional": false,
       "coordinates": [

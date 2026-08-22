@@ -7,7 +7,7 @@ const server = spawn(process.execPath, ['server.mjs'], { cwd: new URL('../', imp
 const required = {
   '/': ['id="onboarding"', 'app.js', 'resilience.js'],
   '/atlas.html': ['id="atlas-map"', 'atlas.js', 'resilience.js'],
-  '/region-player.html?expedition=patagonia-continents-end': ['id="region-map"', 'region-player.js', 'resilience.js'],
+  '/region-player.html?expedition=patagonia-continents-end': ['id="region-map"', 'region-player.js', 'east-africa-data.js', 'resilience.js'],
   '/sw.js': ['atlas-beyond-v1'],
   '/offline.html': ['Keep your place']
 };

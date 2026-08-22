@@ -51,3 +51,12 @@ scientific sources. Text is summarized and localized rather than copied.
   supports the Chaltén name, summit-cloud observation, and park context.
 - Argentina National Parks, [protected-area profile](https://www.argentina.gob.ar/parquesnacionales/patagonia-austral/parque-nacional-los-glaciares/ficha-del-area-protegida),
   supports the locations and physical descriptions of Perito Moreno and Chaltén.
+
+## East Africa — Serengeti ecosystem
+
+- UNESCO World Heritage Centre, [Serengeti National Park](https://whc.unesco.org/en/list/156/),
+  supports the relationship between seasonal pasture, water, and the great migration.
+- UNESCO World Heritage Centre, [Ngorongoro Conservation Area](https://whc.unesco.org/en/list/39/),
+  supports the caldera geology, Rift Valley context, wildlife, and Olduvai record.
+- Smithsonian Human Origins Program, [Olduvai Chopper](https://humanorigins.si.edu/evidence/behavior/stone-tools/early-stone-age-tools/olduvai-chopper),
+  supports the Olduvai stone-tool evidence and its early-human context.

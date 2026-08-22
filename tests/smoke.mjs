@@ -10,6 +10,9 @@ const required = {
   '/region-player.html?expedition=patagonia-continents-end': ['id="region-map"', 'region-player.js', 'east-africa-data.js', 'resilience.js'],
   '/sw.js': ['atlas-beyond-v1'],
   '/offline.html': ['Keep your place']
+  ,'/assets/expeditions/iceland.jpg': []
+  ,'/assets/expeditions/patagonia.jpg': []
+  ,'/assets/expeditions/east-africa.jpg': []
 };
 try {
   let ready = false;

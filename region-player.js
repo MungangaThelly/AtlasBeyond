@@ -1,6 +1,7 @@
 const expeditionId=new URLSearchParams(location.search).get('expedition')||'patagonia-continents-end';
 const expedition=regionExpeditions[expeditionId];
 if(!expedition)location.href='index.html';
+document.body.dataset.expedition=expeditionId;
 let regionLanguage=localStorage.getItem('atlas-language')||'en';
 let regionProgress=JSON.parse(localStorage.getItem(expedition.storageKey)||'[]');
 let regionMap,regionMarkers=[];

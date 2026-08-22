@@ -1,4 +1,6 @@
 (function () {
+  if (!document.querySelector('link[href^="accessibility.css"]')) { const style = document.createElement('link'); style.rel = 'stylesheet'; style.href = 'accessibility.css?v=1.0.0'; document.head.appendChild(style); }
+  if (!document.querySelector('script[src^="accessibility.js"]')) { const script = document.createElement('script'); script.src = 'accessibility.js?v=1.0.0'; document.body.appendChild(script); }
   if (!document.querySelector('link[href^="page-navigation.css"]')) { const style = document.createElement('link'); style.rel = 'stylesheet'; style.href = 'page-navigation.css?v=1.0.0'; document.head.appendChild(style); }
   if (!document.querySelector('script[src^="page-navigation.js"]')) { const script = document.createElement('script'); script.src = 'page-navigation.js?v=1.0.0'; document.body.appendChild(script); }
   const announce = document.createElement('div');

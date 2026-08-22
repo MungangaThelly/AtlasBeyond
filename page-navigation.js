@@ -1,1 +1,73 @@
-(function(){if(document.querySelector('.journey-nav'))return;const path=location.pathname.split('/').pop()||'index.html',params=new URLSearchParams(location.search),expedition=params.get('expedition'),profile=(()=>{try{return JSON.parse(localStorage.getItem('atlas-profile')||'{}')}catch{return{}}})(),lang=['en','fr','sv'].includes(profile.language)?profile.language:(localStorage.getItem('atlas-language')||'en'),copy={en:{back:'Back',present:'Present',next:'Next',routes:{'index.html':'Expeditions','atlas.html':'World Atlas','community.html':'Community','daily.html':'Daily Clue','seals.html':'Field Seals','synthesis.html':'Beyond','passport.html':'Explorer Passport',region:'Field Expedition'}},fr:{back:'Retour',present:'Présent',next:'Suivant',routes:{'index.html':'Expéditions','atlas.html':'Atlas mondial','community.html':'Communauté','daily.html':'Indice du jour','seals.html':'Sceaux de terrain','synthesis.html':'Au-delà','passport.html':'Passeport',region:'Expédition'}},sv:{back:'Tillbaka',present:'Nu',next:'Nästa',routes:{'index.html':'Expeditioner','atlas.html':'Världsatlas','community.html':'Gemenskap','daily.html':'Dagens spår','seals.html':'Fältsigill','synthesis.html':'Bortom','passport.html':'Expeditionspass',region:'Fältexpedition'}}},t=copy[lang]||copy.en,sequence=['index.html','atlas.html','community.html','daily.html','seals.html','synthesis.html'];let current=path==='region-player.html'?'region':path,currentLabel=t.routes[current]||document.title.split('·')[0].trim(),fallback='index.html',next='index.html';if(path==='region-player.html'){const regionNames={'patagonia-continents-end':'Patagonia','east-africa-migrations':'East Africa','central-asia-silk-roads':'Central Asia'};currentLabel=`${t.routes.region} · ${regionNames[expedition]||''}`;next='atlas.html'}else{const index=sequence.indexOf(path);if(index>=0){fallback=sequence[Math.max(0,index-1)];next=sequence[(index+1)%sequence.length]}else if(path==='passport.html'){next='index.html'}}const nav=document.createElement('nav');nav.className='journey-nav';nav.setAttribute('aria-label','Journey navigation');nav.innerHTML=`<button type="button" class="journey-back" aria-label="${t.back}"><span>←</span><div><small>${t.back}</small><b>${t.routes[fallback]||t.routes['index.html']}</b></div></button><div class="journey-current" aria-current="page"><small>${t.present}</small><b>${currentLabel}</b></div><a href="${next}"><div><small>${t.next}</small><b>${t.routes[next]||t.routes['index.html']}</b></div><span>→</span></a>`;nav.querySelector('.journey-back').addEventListener('click',()=>{if(history.length>1)history.back();else location.href=fallback});document.body.appendChild(nav)}());
+(function () {
+  if (document.querySelector('.journey-footer')) return;
+
+  const path = location.pathname.split('/').pop() || 'index.html';
+  const expedition = new URLSearchParams(location.search).get('expedition');
+  const profile = (() => {
+    try { return JSON.parse(localStorage.getItem('atlas-profile') || '{}'); }
+    catch { return {}; }
+  })();
+  const language = ['en', 'fr', 'sv'].includes(profile.language)
+    ? profile.language
+    : (localStorage.getItem('atlas-language') || 'en');
+
+  const copy = {
+    en: {
+      menu: 'Explore', back: 'Back', previous: 'Previous', next: 'Next', journey: 'Continue exploring',
+      routes: { 'index.html': 'Expeditions', 'atlas.html': 'World Atlas', 'community.html': 'Community', 'daily.html': 'Daily Clue', 'seals.html': 'Field Seals', 'synthesis.html': 'Beyond', region: 'Field Expedition' }
+    },
+    fr: {
+      menu: 'Explorer', back: 'Retour', previous: 'Précédent', next: 'Suivant', journey: 'Continuer l’exploration',
+      routes: { 'index.html': 'Expéditions', 'atlas.html': 'Atlas mondial', 'community.html': 'Communauté', 'daily.html': 'Indice du jour', 'seals.html': 'Sceaux de terrain', 'synthesis.html': 'Au-delà', region: 'Expédition' }
+    },
+    sv: {
+      menu: 'Utforska', back: 'Tillbaka', previous: 'Föregående', next: 'Nästa', journey: 'Fortsätt utforska',
+      routes: { 'index.html': 'Expeditioner', 'atlas.html': 'Världsatlas', 'community.html': 'Gemenskap', 'daily.html': 'Dagens spår', 'seals.html': 'Fältsigill', 'synthesis.html': 'Bortom', region: 'Fältexpedition' }
+    }
+  };
+  const t = copy[language] || copy.en;
+  const routes = ['index.html', 'atlas.html', 'community.html', 'daily.html', 'seals.html', 'synthesis.html'];
+  const currentRoute = path === 'region-player.html' ? 'index.html' : path;
+  const currentIndex = Math.max(0, routes.indexOf(currentRoute));
+  const previous = routes[Math.max(0, currentIndex - 1)];
+  const next = routes[Math.min(routes.length - 1, currentIndex + 1)];
+
+  document.querySelectorAll('a[href]').forEach(link => {
+    const href = link.getAttribute('href').split(/[?#]/)[0] || 'index.html';
+    if (href === currentRoute && (link.classList.contains('atlas-nav') || link.closest('.region-global-nav'))) {
+      link.setAttribute('aria-current', 'page');
+    }
+  });
+
+  const header = document.querySelector('header');
+  if (header && !header.querySelector('.journey-menu')) {
+    if (header.querySelector('.atlas-nav, .region-global-nav')) header.classList.add('has-global-navigation');
+    const menu = document.createElement('details');
+    menu.className = 'journey-menu';
+    menu.innerHTML = `<summary>${t.menu}<span aria-hidden="true">⌄</span></summary><nav aria-label="${t.menu}">${routes.map(route => `<a href="${route}"${route === currentRoute ? ' aria-current="page"' : ''}>${t.routes[route]}</a>`).join('')}</nav>`;
+    header.appendChild(menu);
+    menu.addEventListener('click', event => event.stopPropagation());
+    document.addEventListener('click', () => menu.removeAttribute('open'));
+  }
+
+  const regionNames = {
+    'patagonia-continents-end': 'Patagonia',
+    'east-africa-migrations': 'East Africa',
+    'central-asia-silk-roads': 'Central Asia'
+  };
+  const currentLabel = path === 'region-player.html'
+    ? `${t.routes.region} · ${regionNames[expedition] || 'Iceland'}`
+    : (t.routes[currentRoute] || document.title.split('·')[0].trim());
+
+  const footer = document.createElement('nav');
+  footer.className = 'journey-footer';
+  footer.setAttribute('aria-label', t.journey);
+  const previousDisabled = currentIndex === 0;
+  const nextDisabled = currentIndex === routes.length - 1;
+  footer.innerHTML = `<p>${t.journey}<strong>${currentLabel}</strong></p>
+    ${previousDisabled ? `<span class="journey-card is-disabled" aria-disabled="true"><i>←</i><span><small>${t.previous}</small><b>${t.routes[previous]}</b></span></span>` : `<a class="journey-card" href="${previous}"><i>←</i><span><small>${t.previous}</small><b>${t.routes[previous]}</b></span></a>`}
+    ${nextDisabled ? `<span class="journey-card is-disabled" aria-disabled="true"><span><small>${t.next}</small><b>${t.routes[next]}</b></span><i>→</i></span>` : `<a class="journey-card" href="${next}"><span><small>${t.next}</small><b>${t.routes[next]}</b></span><i>→</i></a>`}`;
+
+  const main = document.querySelector('main');
+  (main || document.body.lastElementChild).insertAdjacentElement('afterend', footer);
+}());

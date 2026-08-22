@@ -600,7 +600,7 @@
       "knowledgeReward": {
         "path": "geology",
         "points": 1,
-        "unlockLevel": 0
+        "unlockLevel": 1
       },
       "claims": [
         {
@@ -692,7 +692,7 @@
       "knowledgeReward": {
         "path": "geology",
         "points": 1,
-        "unlockLevel": 0
+        "unlockLevel": 1
       },
       "claims": [
         {
@@ -738,7 +738,7 @@
       "knowledgeReward": {
         "path": "geology",
         "points": 1,
-        "unlockLevel": 0
+        "unlockLevel": 2
       },
       "claims": [
         {
@@ -876,7 +876,7 @@
       "knowledgeReward": {
         "path": "geology",
         "points": 1,
-        "unlockLevel": 0
+        "unlockLevel": 2
       },
       "claims": [
         {
@@ -922,7 +922,7 @@
       "knowledgeReward": {
         "path": "geology",
         "points": 1,
-        "unlockLevel": 0
+        "unlockLevel": 3
       },
       "claims": [
         {
@@ -968,7 +968,7 @@
       "knowledgeReward": {
         "path": "ecology",
         "points": 1,
-        "unlockLevel": 0
+        "unlockLevel": 1
       },
       "claims": [
         {

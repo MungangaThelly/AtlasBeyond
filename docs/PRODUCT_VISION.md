@@ -27,6 +27,12 @@ conclusions, and reveal places by paying attention.
 7. **Accessible wonder.** Keyboard, screen-reader, captions, audio description,
    scalable text, contrast, and reduced motion are requirements.
 
+The Iceland vertical slice now demonstrates knowledge as progression: starter
+field notes establish Ecology, History, and Navigation paths, while accumulated
+Geology knowledge unlocks progressively richer observations. Required
+investigations remain accessible, so skill gates deepen curiosity without
+blocking the main journey.
+
 ## First playable release
 
 The first vertical slice focuses on Iceland and now contains one 15–20 minute

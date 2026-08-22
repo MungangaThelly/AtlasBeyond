@@ -21,7 +21,7 @@ server has no package dependencies and listens only on this computer.
 - A clue-led Iceland expedition on a real interactive map
 - Evidence-card investigations and deduction challenges
 - Twelve Iceland discoveries: three required investigations and nine optional field notes
-- Geology and Cartography progression with expedition rewards
+- Geology, Ecology, History, Navigation, and Cartography progression with skill-gated explorer lenses
 - Explorer dashboard, rank, statistics, and the first achievement
 - Contextual expedition guide and first-time map orientation
 - Optional procedural ambient sound and persistent day/night atmosphere

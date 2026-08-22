@@ -1,0 +1,15 @@
+import { readFile } from 'node:fs/promises';
+import vm from 'node:vm';
+const root=new URL('../',import.meta.url),store=new Map(),localStorage={getItem:key=>store.has(key)?store.get(key):null,setItem:(key,value)=>store.set(key,String(value))},context=vm.createContext({window:{},localStorage,document:{querySelector:()=>null}});
+for(const file of ['catalog.js','iceland-expansion.js','skills.js'])vm.runInContext(await readFile(new URL(file,root),'utf8'),context,{filename:file});
+vm.runInContext('window.__catalog=expeditionCatalog',context);const catalog=context.window.__catalog,skills=context.window.AtlasSkills,find=id=>catalog.sideDiscoveries.find(note=>note.id===id),assert=(condition,message)=>{if(!condition)throw new Error(message)};
+assert(!skills.unlocked(find('fellsfjara-ice'),catalog),'Geology 1 lens must begin locked');
+assert(skills.unlocked(find('breidamerkur-birds'),catalog),'First Ecology lens must begin available');
+assert(skills.unlocked(find('oraefajokull-eruptions'),catalog),'First History lens must begin available');
+assert(skills.unlocked(find('skeidara-bridge'),catalog),'First Navigation lens must begin available');
+localStorage.setItem('atlas-journal',JSON.stringify(['moraine','sandur','lagoon']));
+assert(skills.unlocked(find('gjlap-hyaloclastite'),catalog),'Geology 3 must unlock the Gjálp expert lens');
+assert(skills.snapshot(catalog).cartography===1,'Completing Iceland must award one Cartography point');
+localStorage.setItem('atlas-side-notes',JSON.stringify(['breidamerkur-birds']));
+assert(skills.unlocked(find('lava-moss-ecosystem'),catalog),'First Ecology note must unlock the lava-moss lens');
+console.log('Skill progression passed: accessible starters · Geology 1–3 gates · Ecology chain · Cartography reward.');

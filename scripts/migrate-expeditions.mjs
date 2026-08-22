@@ -94,7 +94,7 @@ function migrateIceland(catalogEntry) {
   });
   result.discoveries.push(...sideNotes.map((note, index) => {
     const claimId = `${note.id}-field-claim`;
-    return { id: note.id, kind: 'field-note', order: result.discoveries.length + index + 1, optional: true, coordinates: note.coordinates, categories: [note.interest], knowledgeReward: { path: note.interest === 'history' ? 'history' : note.interest === 'navigation' ? 'navigation' : note.interest === 'wildlife' ? 'ecology' : 'geology', points: 1, unlockLevel: 0 }, claims: [{ id: claimId, text: note.locales.en.copy, sourceIds: [sourceIdFor(note.source)], reviewStatus: 'reviewed', uncertainty: 'low' }], locales: Object.fromEntries(locales.map(locale => [locale, { place: note.locales[locale].title, clue: note.locales[locale].type, reveal: note.locales[locale].copy }])) };
+    return { id: note.id, kind: 'field-note', order: result.discoveries.length + index + 1, optional: true, coordinates: note.coordinates, categories: [note.interest], knowledgeReward: { path: note.skillPath||'geology', points: 1, unlockLevel: note.unlockLevel||0 }, claims: [{ id: claimId, text: note.locales.en.copy, sourceIds: [sourceIdFor(note.source)], reviewStatus: 'reviewed', uncertainty: 'low' }], locales: Object.fromEntries(locales.map(locale => [locale, { place: note.locales[locale].title, clue: note.locales[locale].type, reveal: note.locales[locale].copy }])) };
   }));
   result.knowledgePaths = [...new Set(result.discoveries.map(item => item.knowledgeReward.path))];
   return result;

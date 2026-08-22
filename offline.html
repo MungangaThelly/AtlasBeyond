@@ -1,3 +1,22 @@
 <!doctype html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Offline · Atlas Beyond</title><link rel="stylesheet" href="styles.css"></head>
-<body><main style="min-height:100vh;display:grid;place-content:center;text-align:center;padding:2rem"><p class="eyebrow">Beyond the signal</p><h1>Keep your place.</h1><p>Your journal is safe. Reconnect to load a place that has not yet been saved on this device.</p><p><a class="primary" href="index.html">Return to the expedition hub</a></p></main></body></html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#071f20">
+  <title>Offline · Atlas Beyond</title>
+  <link rel="stylesheet" href="styles.css?v=0.8.0">
+  <link rel="stylesheet" href="accessibility.css?v=1.0.0">
+  <link rel="stylesheet" href="offline.css?v=1.0.0">
+</head>
+<body class="offline-body">
+  <header class="offline-header"><a class="brand" href="index.html"><span class="globe"></span>Atlas <i>Beyond</i></a><select id="offline-language" aria-label="Language"><option value="en">EN</option><option value="fr">FR</option><option value="sv">SV</option></select></header>
+  <main id="main-content">
+    <div class="offline-signal" aria-hidden="true"><i></i><i></i><i></i></div>
+    <p class="eyebrow" id="offline-eyebrow"></p><h1 id="offline-title"></h1><p class="offline-copy" id="offline-copy"></p>
+    <p class="offline-status" id="offline-status" role="status" aria-live="polite"></p>
+    <div class="offline-actions"><button class="primary" id="retry-connection" type="button"></button><a id="return-cached" href="index.html"></a></div>
+  </main>
+  <script src="offline.js?v=1.0.0"></script>
+</body>
+</html>

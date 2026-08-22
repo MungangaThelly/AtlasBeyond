@@ -36,6 +36,7 @@ server has no package dependencies and listens only on this computer.
 - Validated local explorer-data export, restore, and confirmed browser-data reset
 - Accessible in-app release notices for safe offline-shell updates
 - Multilingual clue-first fallbacks when live maps or tiles are unavailable
+- A multilingual offline recovery page with live retry and cached-hub access
 - English, French, and Swedish interfaces
 - Responsive, keyboard-accessible interaction
 - Product vision and technical architecture documents

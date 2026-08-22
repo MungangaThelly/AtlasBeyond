@@ -30,6 +30,10 @@ and expose a localized, keyboard-accessible route back to their clue and list
 interfaces. Live tiles may fail while evidence, progress, and journals remain
 usable from the cached application shell.
 
+Navigation to an uncached route falls back to a localized recovery page. It
+tracks browser connectivity, tests the network without relying on stale cache,
+and retains a direct path to the cached expedition hub.
+
 ## Boundaries
 
 ```text

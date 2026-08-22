@@ -17,7 +17,8 @@
     "check:explorer-data": "node --check explorer-data.js && node tests/audit-explorer-data.mjs",
     "check:pwa-update": "node --check update-manager.js && node tests/audit-pwa-update.mjs",
     "check:map-resilience": "node --check map-fallback.js && node tests/audit-map-fallback.mjs",
+    "check:offline-recovery": "node --check offline.js && node tests/audit-offline-recovery.mjs",
     "test:smoke": "node tests/smoke.mjs",
-    "check": "npm run check:syntax && npm run check:schema && npm run check:migration && npm run check:skills && npm run check:content && npm run check:accessibility && npm run check:localization && npm run check:community-privacy && npm run check:explorer-data && npm run check:pwa-update && npm run check:map-resilience && npm run test:smoke"
+    "check": "npm run check:syntax && npm run check:schema && npm run check:migration && npm run check:skills && npm run check:content && npm run check:accessibility && npm run check:localization && npm run check:community-privacy && npm run check:explorer-data && npm run check:pwa-update && npm run check:map-resilience && npm run check:offline-recovery && npm run test:smoke"
   }
 }

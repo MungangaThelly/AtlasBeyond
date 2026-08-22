@@ -32,6 +32,7 @@ server has no package dependencies and listens only on this computer.
 - A fourth playable expedition across Central Asia’s Silk Roads
 - A global globe atlas with filters, completion state, and future-region paths
 - A multilingual daily evidence briefing with streaks and rare field seals
+- Explicit opt-in controls for privacy-safe anonymous community totals
 - English, French, and Swedish interfaces
 - Responsive, keyboard-accessible interaction
 - Product vision and technical architecture documents

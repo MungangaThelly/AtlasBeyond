@@ -58,3 +58,9 @@ material only from approved content, cites it, and admits missing evidence.
 3. Editorial, provenance, and localization pipeline
 4. Regional expedition packs
 5. Moderated community and living-Earth layers
+
+The phase-five community foundation now defaults to private local progress.
+Explorers must explicitly opt in before a random device identifier and bounded
+completion counts are synchronized. Names, locations, free text, and journal
+content are never transmitted, so the current aggregate-only community surface
+does not expose user-generated material requiring editorial moderation.

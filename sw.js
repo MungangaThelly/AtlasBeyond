@@ -4,7 +4,7 @@ const SHELL = [
   './styles.css', './map.css', './onboarding.css', './evidence.css', './progression.css',
   './living-world.css', './hub.css', './navigation.css', './atlas.css', './region-player.css',
   './app.js', './investigations.js', './progression.js', './catalog.js', './living-world.js',
-  './atlas.js', './patagonia-data.js', './east-africa-data.js', './region-player.js', './resilience.js', './resilience.css', './visual-art.css',
+  './atlas.js', './patagonia-data.js', './east-africa-data.js', './region-player.js', './passport.html', './passport.js', './passport-page.js', './passport.css', './resilience.js', './resilience.css', './visual-art.css',
   './assets/expeditions/iceland.jpg', './assets/expeditions/patagonia.jpg', './assets/expeditions/east-africa.jpg', './offline.html'
 ];
 

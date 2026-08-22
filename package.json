@@ -1,0 +1,12 @@
+{
+  "name": "atlas-beyond",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "node server.mjs",
+    "check:syntax": "node --check investigations.js && node --check progression.js && node --check catalog.js && node --check atlas.js && node --check patagonia-data.js && node --check region-player.js && node --check living-world.js && node --check resilience.js && node --check app.js && node --check server.mjs && node --check sw.js",
+    "check:content": "node tests/validate-content.mjs",
+    "test:smoke": "node tests/smoke.mjs",
+    "check": "npm run check:syntax && npm run check:content && npm run test:smoke"
+  }
+}

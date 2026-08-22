@@ -1,0 +1,504 @@
+{
+  "schemaVersion": 1,
+  "id": "east-africa-migrations",
+  "legacyStorageKey": "atlas-east-africa-journal",
+  "status": "review",
+  "sequence": 3,
+  "region": {
+    "name": "East Africa",
+    "center": [
+      35.1,
+      -2.35
+    ],
+    "zoom": 6.4
+  },
+  "interests": [
+    "wildlife",
+    "history",
+    "geology"
+  ],
+  "knowledgePaths": [
+    "geology",
+    "cartography"
+  ],
+  "editorial": {
+    "contentVersion": "1.0.0",
+    "reviewStatus": "in-review",
+    "reviewedBy": null,
+    "reviewedAt": null
+  },
+  "sources": [
+    {
+      "id": "source-whc-unesco-org-vvsopo",
+      "title": "Serengeti Plains",
+      "publisher": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/156/",
+      "accessedAt": "2026-08-23",
+      "license": {
+        "status": "review-required",
+        "notes": "Authoritative factual reference; link and summary usage require editorial licensing review before package release."
+      }
+    },
+    {
+      "id": "source-whc-unesco-org-qgtms6",
+      "title": "Ngorongoro Crater",
+      "publisher": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/39/",
+      "accessedAt": "2026-08-23",
+      "license": {
+        "status": "review-required",
+        "notes": "Authoritative factual reference; link and summary usage require editorial licensing review before package release."
+      }
+    },
+    {
+      "id": "source-humanorigins-si-edu-va32b0",
+      "title": "Olduvai Gorge",
+      "publisher": "Smithsonian Institution",
+      "url": "https://humanorigins.si.edu/evidence/behavior/stone-tools/early-stone-age-tools/olduvai-chopper",
+      "accessedAt": "2026-08-23",
+      "license": {
+        "status": "review-required",
+        "notes": "Authoritative factual reference; link and summary usage require editorial licensing review before package release."
+      }
+    }
+  ],
+  "locales": {
+    "en": {
+      "title": "Paths of life.",
+      "eyebrow": "Field expedition 003 · East Africa",
+      "intro": "Across the Serengeti ecosystem, moving water, volcanic ground, and ancient layers reveal how life follows a changing land."
+    },
+    "fr": {
+      "title": "Chemins de vie.",
+      "eyebrow": "Expédition 003 · Afrique de l’Est",
+      "intro": "Dans l’écosystème du Serengeti, l’eau, le sol volcanique et les couches anciennes révèlent comment la vie suit une terre changeante."
+    },
+    "sv": {
+      "title": "Livets vägar.",
+      "eyebrow": "Fältexpedition 003 · Östafrika",
+      "intro": "I Serengetis ekosystem visar vatten, vulkanisk mark och gamla lager hur livet följer ett föränderligt landskap."
+    }
+  },
+  "discoveries": [
+    {
+      "id": "serengeti-plains",
+      "order": 1,
+      "optional": false,
+      "coordinates": [
+        34.84,
+        -2.33
+      ],
+      "categories": [
+        "wildlife",
+        "history",
+        "geology"
+      ],
+      "knowledgeReward": {
+        "path": "geology",
+        "points": 1,
+        "unlockLevel": 0
+      },
+      "claims": [
+        {
+          "id": "serengeti-plains-core-claim",
+          "text": "The great migration follows shifting pasture and water, connecting habitats across Tanzania and Kenya.",
+          "sourceIds": [
+            "source-whc-unesco-org-vvsopo"
+          ],
+          "reviewStatus": "draft",
+          "uncertainty": "low"
+        }
+      ],
+      "locales": {
+        "en": {
+          "place": "Serengeti Plains",
+          "clue": "A journey written in rain",
+          "fieldNote": "Follow the relationship between seasonal resources and the movement of enormous herds.",
+          "evidence": [
+            {
+              "label": "Scale",
+              "text": "Wildebeest, zebras, and gazelles travel in vast herds.",
+              "claimIds": [
+                "serengeti-plains-core-claim"
+              ]
+            },
+            {
+              "label": "Need",
+              "text": "The animals continually require pasture and water.",
+              "claimIds": [
+                "serengeti-plains-core-claim"
+              ]
+            },
+            {
+              "label": "Pattern",
+              "text": "Their annual route follows changing seasonal conditions across the ecosystem.",
+              "claimIds": [
+                "serengeti-plains-core-claim"
+              ]
+            }
+          ],
+          "question": "What best explains this immense circular migration?",
+          "options": [
+            "A search for seasonal pasture and water",
+            "A route fixed by mountain shadows",
+            "An escape from ocean tides"
+          ],
+          "correct": 0,
+          "reveal": "The great migration follows shifting pasture and water, connecting habitats across Tanzania and Kenya."
+        },
+        "fr": {
+          "place": "Plaines du Serengeti",
+          "clue": "Un voyage écrit par la pluie",
+          "fieldNote": "Reliez les ressources saisonnières au mouvement des immenses troupeaux.",
+          "evidence": [
+            {
+              "label": "Échelle",
+              "text": "Gnous, zèbres et gazelles voyagent en vastes troupeaux.",
+              "claimIds": [
+                "serengeti-plains-core-claim"
+              ]
+            },
+            {
+              "label": "Besoin",
+              "text": "Les animaux ont constamment besoin de pâturages et d’eau.",
+              "claimIds": [
+                "serengeti-plains-core-claim"
+              ]
+            },
+            {
+              "label": "Motif",
+              "text": "Leur route annuelle suit les saisons dans tout l’écosystème.",
+              "claimIds": [
+                "serengeti-plains-core-claim"
+              ]
+            }
+          ],
+          "question": "Qu’est-ce qui explique cette immense migration circulaire ?",
+          "options": [
+            "La recherche saisonnière de pâturages et d’eau",
+            "Une route fixée par l’ombre des montagnes",
+            "La fuite devant les marées"
+          ],
+          "correct": 0,
+          "reveal": "La grande migration suit les pâturages et l’eau, reliant les habitats de Tanzanie et du Kenya."
+        },
+        "sv": {
+          "place": "Serengetislätten",
+          "clue": "En resa skriven i regn",
+          "fieldNote": "Koppla säsongernas resurser till de enorma hjordarnas rörelse.",
+          "evidence": [
+            {
+              "label": "Skala",
+              "text": "Gnu, zebror och gaseller färdas i väldiga hjordar.",
+              "claimIds": [
+                "serengeti-plains-core-claim"
+              ]
+            },
+            {
+              "label": "Behov",
+              "text": "Djuren behöver ständigt bete och vatten.",
+              "claimIds": [
+                "serengeti-plains-core-claim"
+              ]
+            },
+            {
+              "label": "Mönster",
+              "text": "Den årliga rutten följer skiftande årstider genom ekosystemet.",
+              "claimIds": [
+                "serengeti-plains-core-claim"
+              ]
+            }
+          ],
+          "question": "Vad förklarar bäst denna väldiga cirkulära migration?",
+          "options": [
+            "Sökandet efter säsongsbete och vatten",
+            "En rutt styrd av bergens skuggor",
+            "En flykt från havets tidvatten"
+          ],
+          "correct": 0,
+          "reveal": "Den stora migrationen följer skiftande bete och vatten mellan livsmiljöer i Tanzania och Kenya."
+        }
+      }
+    },
+    {
+      "id": "ngorongoro-crater",
+      "order": 2,
+      "optional": false,
+      "coordinates": [
+        35.59,
+        -3.17
+      ],
+      "categories": [
+        "wildlife",
+        "history",
+        "geology"
+      ],
+      "knowledgeReward": {
+        "path": "geology",
+        "points": 1,
+        "unlockLevel": 1
+      },
+      "claims": [
+        {
+          "id": "ngorongoro-crater-core-claim",
+          "text": "Ngorongoro is a caldera: the immense remnant formed when a major volcano collapsed.",
+          "sourceIds": [
+            "source-whc-unesco-org-qgtms6"
+          ],
+          "reviewStatus": "draft",
+          "uncertainty": "low"
+        }
+      ],
+      "locales": {
+        "en": {
+          "place": "Ngorongoro Crater",
+          "clue": "Read the ring in the highlands",
+          "fieldNote": "A vast bowl, steep walls, and volcanic rocks preserve the shape of an ancient event.",
+          "evidence": [
+            {
+              "label": "Form",
+              "text": "A broad, nearly unbroken circular depression lies within steep walls.",
+              "claimIds": [
+                "ngorongoro-crater-core-claim"
+              ]
+            },
+            {
+              "label": "Origin",
+              "text": "The highlands belong to the volcanic eastern Rift Valley.",
+              "claimIds": [
+                "ngorongoro-crater-core-claim"
+              ]
+            },
+            {
+              "label": "Life",
+              "text": "Water and varied habitats support dense wildlife inside the basin.",
+              "claimIds": [
+                "ngorongoro-crater-core-claim"
+              ]
+            }
+          ],
+          "question": "How did this enormous basin form?",
+          "options": [
+            "A river carved a circular canyon",
+            "A large volcano collapsed after eruption",
+            "People built an earthen enclosure"
+          ],
+          "correct": 1,
+          "reveal": "Ngorongoro is a caldera: the immense remnant formed when a major volcano collapsed."
+        },
+        "fr": {
+          "place": "Cratère du Ngorongoro",
+          "clue": "Lire l’anneau des hautes terres",
+          "fieldNote": "Une vaste cuvette, des parois abruptes et des roches volcaniques gardent la forme d’un événement ancien.",
+          "evidence": [
+            {
+              "label": "Forme",
+              "text": "Une vaste dépression circulaire presque intacte est entourée de parois abruptes.",
+              "claimIds": [
+                "ngorongoro-crater-core-claim"
+              ]
+            },
+            {
+              "label": "Origine",
+              "text": "Les hautes terres appartiennent à la vallée volcanique du Rift oriental.",
+              "claimIds": [
+                "ngorongoro-crater-core-claim"
+              ]
+            },
+            {
+              "label": "Vie",
+              "text": "L’eau et les habitats variés accueillent une faune dense.",
+              "claimIds": [
+                "ngorongoro-crater-core-claim"
+              ]
+            }
+          ],
+          "question": "Comment cet immense bassin s’est-il formé ?",
+          "options": [
+            "Une rivière a creusé un canyon circulaire",
+            "Un grand volcan s’est effondré après une éruption",
+            "Des habitants ont construit une enceinte"
+          ],
+          "correct": 1,
+          "reveal": "Le Ngorongoro est une caldeira, vestige immense de l’effondrement d’un grand volcan."
+        },
+        "sv": {
+          "place": "Ngorongorokratern",
+          "clue": "Läs ringen i höglandet",
+          "fieldNote": "En väldig skål, branta väggar och vulkaniska bergarter bevarar formen av en forntida händelse.",
+          "evidence": [
+            {
+              "label": "Form",
+              "text": "En bred, nästan obruten cirkulär sänka omges av branta väggar.",
+              "claimIds": [
+                "ngorongoro-crater-core-claim"
+              ]
+            },
+            {
+              "label": "Ursprung",
+              "text": "Höglandet hör till den vulkaniska östra Riftdalen.",
+              "claimIds": [
+                "ngorongoro-crater-core-claim"
+              ]
+            },
+            {
+              "label": "Liv",
+              "text": "Vatten och skiftande miljöer bär ett rikt djurliv i bäckenet.",
+              "claimIds": [
+                "ngorongoro-crater-core-claim"
+              ]
+            }
+          ],
+          "question": "Hur bildades detta enorma bäcken?",
+          "options": [
+            "En flod skar en cirkulär kanjon",
+            "En stor vulkan kollapsade efter ett utbrott",
+            "Människor byggde en jordvall"
+          ],
+          "correct": 1,
+          "reveal": "Ngorongoro är en kaldera, den enorma rest som bildades när en stor vulkan kollapsade."
+        }
+      }
+    },
+    {
+      "id": "olduvai-gorge",
+      "order": 3,
+      "optional": false,
+      "coordinates": [
+        35.35,
+        -2.99
+      ],
+      "categories": [
+        "wildlife",
+        "history",
+        "geology"
+      ],
+      "knowledgeReward": {
+        "path": "geology",
+        "points": 1,
+        "unlockLevel": 2
+      },
+      "claims": [
+        {
+          "id": "olduvai-gorge-core-claim",
+          "text": "Olduvai’s layered deposits place fossils and tools within a long record of human evolution and environmental change.",
+          "sourceIds": [
+            "source-humanorigins-si-edu-va32b0"
+          ],
+          "reviewStatus": "draft",
+          "uncertainty": "low"
+        }
+      ],
+      "locales": {
+        "en": {
+          "place": "Olduvai Gorge",
+          "clue": "A landscape becomes an archive",
+          "fieldNote": "Look at how erosion opens a sequence of sediments, ash, fossils, and human-made stone.",
+          "evidence": [
+            {
+              "label": "Layers",
+              "text": "The gorge exposes a long sequence of geological deposits.",
+              "claimIds": [
+                "olduvai-gorge-core-claim"
+              ]
+            },
+            {
+              "label": "Time marks",
+              "text": "Volcanic ash helps researchers place finds in time.",
+              "claimIds": [
+                "olduvai-gorge-core-claim"
+              ]
+            },
+            {
+              "label": "Traces",
+              "text": "Fossils and stone tools preserve evidence of early humans and their environments.",
+              "claimIds": [
+                "olduvai-gorge-core-claim"
+              ]
+            }
+          ],
+          "question": "Why is Olduvai so important for understanding human origins?",
+          "options": [
+            "Its layers connect ancient remains with environments and time",
+            "Its walls contain written royal records",
+            "Its river preserved modern buildings"
+          ],
+          "correct": 0,
+          "reveal": "Olduvai’s layered deposits place fossils and tools within a long record of human evolution and environmental change."
+        },
+        "fr": {
+          "place": "Gorges d’Olduvai",
+          "clue": "Un paysage devient une archive",
+          "fieldNote": "L’érosion révèle une suite de sédiments, de cendres, de fossiles et de pierres façonnées.",
+          "evidence": [
+            {
+              "label": "Couches",
+              "text": "La gorge expose une longue séquence de dépôts géologiques.",
+              "claimIds": [
+                "olduvai-gorge-core-claim"
+              ]
+            },
+            {
+              "label": "Repères",
+              "text": "Les cendres volcaniques aident à dater les découvertes.",
+              "claimIds": [
+                "olduvai-gorge-core-claim"
+              ]
+            },
+            {
+              "label": "Traces",
+              "text": "Fossiles et outils préservent les signes des premiers humains et de leur environnement.",
+              "claimIds": [
+                "olduvai-gorge-core-claim"
+              ]
+            }
+          ],
+          "question": "Pourquoi Olduvai est-il essentiel à l’étude des origines humaines ?",
+          "options": [
+            "Ses couches relient les vestiges anciens au temps et aux milieux",
+            "Ses parois portent des chroniques royales",
+            "Sa rivière a conservé des bâtiments modernes"
+          ],
+          "correct": 0,
+          "reveal": "Les dépôts d’Olduvai situent fossiles et outils dans une longue histoire de l’évolution humaine et du milieu."
+        },
+        "sv": {
+          "place": "Olduvairavinen",
+          "clue": "Ett landskap blir ett arkiv",
+          "fieldNote": "Erosionen öppnar en följd av sediment, aska, fossil och bearbetad sten.",
+          "evidence": [
+            {
+              "label": "Lager",
+              "text": "Ravinen blottar en lång följd av geologiska avlagringar.",
+              "claimIds": [
+                "olduvai-gorge-core-claim"
+              ]
+            },
+            {
+              "label": "Tidsmärken",
+              "text": "Vulkanisk aska hjälper forskare att datera fynd.",
+              "claimIds": [
+                "olduvai-gorge-core-claim"
+              ]
+            },
+            {
+              "label": "Spår",
+              "text": "Fossil och stenverktyg bevarar tecken på tidiga människor och deras miljöer.",
+              "claimIds": [
+                "olduvai-gorge-core-claim"
+              ]
+            }
+          ],
+          "question": "Varför är Olduvai viktigt för förståelsen av människans ursprung?",
+          "options": [
+            "Lagren kopplar gamla fynd till miljö och tid",
+            "Väggarna bär kungliga texter",
+            "Floden bevarade moderna byggnader"
+          ],
+          "correct": 0,
+          "reveal": "Olduvais lager placerar fossil och verktyg i en lång berättelse om människans utveckling och miljöförändring."
+        }
+      }
+    }
+  ]
+}

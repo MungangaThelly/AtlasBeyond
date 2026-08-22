@@ -1,0 +1,489 @@
+{
+  "schemaVersion": 1,
+  "id": "patagonia-continents-end",
+  "legacyStorageKey": "atlas-patagonia-journal",
+  "status": "review",
+  "sequence": 2,
+  "region": {
+    "name": "Patagonia",
+    "center": [
+      -73,
+      -49.9
+    ],
+    "zoom": 6.4
+  },
+  "interests": [
+    "history",
+    "geology"
+  ],
+  "knowledgePaths": [
+    "geology",
+    "cartography"
+  ],
+  "editorial": {
+    "contentVersion": "1.0.0",
+    "reviewStatus": "in-review",
+    "reviewedBy": null,
+    "reviewedAt": null
+  },
+  "sources": [
+    {
+      "id": "source-science-nasa-gov-l3m6cm",
+      "title": "Perito Moreno Glacier",
+      "publisher": "NASA",
+      "url": "https://science.nasa.gov/earth/earth-observatory/perito-moreno-glacier-argentina-78754/",
+      "accessedAt": "2026-08-23",
+      "license": {
+        "status": "review-required",
+        "notes": "Authoritative factual reference; link and summary usage require editorial licensing review before package release."
+      }
+    },
+    {
+      "id": "source-www-argentina-gob-ar-u0nyl4",
+      "title": "Chaltén · Fitz Roy",
+      "publisher": "Argentina National Parks",
+      "url": "https://www.argentina.gob.ar/parquesnacionales/patagonia-austral/parque-nacional-los-glaciares/panoramica",
+      "accessedAt": "2026-08-23",
+      "license": {
+        "status": "review-required",
+        "notes": "Authoritative factual reference; link and summary usage require editorial licensing review before package release."
+      }
+    }
+  ],
+  "locales": {
+    "en": {
+      "title": "Ice, water, and cloud.",
+      "eyebrow": "Field expedition 002 · Patagonia",
+      "intro": "Across Los Glaciares National Park, ice can dam a lake, sediment can reveal hidden flow, and a mountain can appear to smoke."
+    },
+    "fr": {
+      "title": "Glace, eau et nuages.",
+      "eyebrow": "Expédition 002 · Patagonie",
+      "intro": "Dans le parc national Los Glaciares, la glace peut barrer un lac, les sédiments révéler les courants et une montagne sembler fumer."
+    },
+    "sv": {
+      "title": "Is, vatten och moln.",
+      "eyebrow": "Fältexpedition 002 · Patagonien",
+      "intro": "I Los Glaciares kan is dämma en sjö, sediment avslöja flöden och ett berg se ut att ryka."
+    }
+  },
+  "discoveries": [
+    {
+      "id": "perito-moreno-glacier",
+      "order": 1,
+      "optional": false,
+      "coordinates": [
+        -73.137,
+        -50.4967
+      ],
+      "categories": [
+        "history",
+        "geology"
+      ],
+      "knowledgeReward": {
+        "path": "geology",
+        "points": 1,
+        "unlockLevel": 0
+      },
+      "claims": [
+        {
+          "id": "perito-moreno-glacier-core-claim",
+          "text": "Perito Moreno can form a natural ice dam. Rising water pressure eventually causes a dramatic rupture.",
+          "sourceIds": [
+            "source-science-nasa-gov-l3m6cm"
+          ],
+          "reviewStatus": "draft",
+          "uncertainty": "low"
+        }
+      ],
+      "locales": {
+        "en": {
+          "place": "Perito Moreno Glacier",
+          "clue": "A moving wall becomes a dam",
+          "fieldNote": "Watch what happens where the glacier reaches the opposite shore.",
+          "evidence": [
+            {
+              "label": "Contact",
+              "text": "The advancing ice tongue can meet the Península de Magallanes.",
+              "claimIds": [
+                "perito-moreno-glacier-core-claim"
+              ]
+            },
+            {
+              "label": "Barrier",
+              "text": "The grounded ice interrupts circulation between Brazo Rico and Lago Argentino.",
+              "claimIds": [
+                "perito-moreno-glacier-core-claim"
+              ]
+            },
+            {
+              "label": "Pressure",
+              "text": "Water rises behind the barrier until it can rupture the ice.",
+              "claimIds": [
+                "perito-moreno-glacier-core-claim"
+              ]
+            }
+          ],
+          "question": "What role is the glacier playing?",
+          "options": [
+            "A permanent stone dam",
+            "A temporary natural ice dam",
+            "A floating island"
+          ],
+          "correct": 1,
+          "reveal": "Perito Moreno can form a natural ice dam. Rising water pressure eventually causes a dramatic rupture."
+        },
+        "fr": {
+          "place": "Glacier Perito Moreno",
+          "clue": "Un mur mobile devient un barrage",
+          "fieldNote": "Observez le glacier lorsqu’il atteint la rive opposée.",
+          "evidence": [
+            {
+              "label": "Contact",
+              "text": "La langue de glace peut toucher la péninsule de Magallanes.",
+              "claimIds": [
+                "perito-moreno-glacier-core-claim"
+              ]
+            },
+            {
+              "label": "Barrière",
+              "text": "La glace ancrée interrompt la circulation entre Brazo Rico et Lago Argentino.",
+              "claimIds": [
+                "perito-moreno-glacier-core-claim"
+              ]
+            },
+            {
+              "label": "Pression",
+              "text": "L’eau monte derrière la barrière jusqu’à rompre la glace.",
+              "claimIds": [
+                "perito-moreno-glacier-core-claim"
+              ]
+            }
+          ],
+          "question": "Quel rôle joue le glacier ?",
+          "options": [
+            "Un barrage permanent en pierre",
+            "Un barrage naturel temporaire de glace",
+            "Une île flottante"
+          ],
+          "correct": 1,
+          "reveal": "Perito Moreno peut former un barrage naturel de glace, rompu ensuite par la pression de l’eau."
+        },
+        "sv": {
+          "place": "Perito Moreno-glaciären",
+          "clue": "En rörlig vägg blir en damm",
+          "fieldNote": "Se vad som händer när glaciären når motsatta stranden.",
+          "evidence": [
+            {
+              "label": "Kontakt",
+              "text": "Istungan kan nå Magallaneshalvön.",
+              "claimIds": [
+                "perito-moreno-glacier-core-claim"
+              ]
+            },
+            {
+              "label": "Barriär",
+              "text": "Den bottenfasta isen stoppar cirkulation mellan Brazo Rico och Lago Argentino.",
+              "claimIds": [
+                "perito-moreno-glacier-core-claim"
+              ]
+            },
+            {
+              "label": "Tryck",
+              "text": "Vattnet stiger tills isen brister.",
+              "claimIds": [
+                "perito-moreno-glacier-core-claim"
+              ]
+            }
+          ],
+          "question": "Vilken roll spelar glaciären?",
+          "options": [
+            "En permanent stendamm",
+            "En tillfällig naturlig isdamm",
+            "En flytande ö"
+          ],
+          "correct": 1,
+          "reveal": "Perito Moreno kan bilda en naturlig isdamm som till slut brister av vattentrycket."
+        }
+      }
+    },
+    {
+      "id": "brazo-rico-lago-argentino",
+      "order": 2,
+      "optional": false,
+      "coordinates": [
+        -73.05,
+        -50.47
+      ],
+      "categories": [
+        "history",
+        "geology"
+      ],
+      "knowledgeReward": {
+        "path": "geology",
+        "points": 1,
+        "unlockLevel": 1
+      },
+      "claims": [
+        {
+          "id": "brazo-rico-lago-argentino-core-claim",
+          "text": "Fine glacial sediment remains concentrated when the ice dam restricts circulation, making the water appear milkier.",
+          "sourceIds": [
+            "source-science-nasa-gov-l3m6cm"
+          ],
+          "reviewStatus": "draft",
+          "uncertainty": "low"
+        }
+      ],
+      "locales": {
+        "en": {
+          "place": "Brazo Rico · Lago Argentino",
+          "clue": "Two waters, two colours",
+          "fieldNote": "A barrier can change more than water level; it can change what the water carries.",
+          "evidence": [
+            {
+              "label": "Source",
+              "text": "Mountain water carries fine glacial sediment into the lake.",
+              "claimIds": [
+                "brazo-rico-lago-argentino-core-claim"
+              ]
+            },
+            {
+              "label": "Separation",
+              "text": "The ice dam prevents normal circulation between two bodies of water.",
+              "claimIds": [
+                "brazo-rico-lago-argentino-core-claim"
+              ]
+            },
+            {
+              "label": "Colour",
+              "text": "Muddier, milkier water becomes concentrated in Brazo Rico.",
+              "claimIds": [
+                "brazo-rico-lago-argentino-core-claim"
+              ]
+            }
+          ],
+          "question": "Why can the water on one side look milkier?",
+          "options": [
+            "The ice barrier concentrates sediment-rich water",
+            "Salt enters from the Pacific Ocean",
+            "White stones dissolve into the lake"
+          ],
+          "correct": 0,
+          "reveal": "Fine glacial sediment remains concentrated when the ice dam restricts circulation, making the water appear milkier."
+        },
+        "fr": {
+          "place": "Brazo Rico · Lago Argentino",
+          "clue": "Deux eaux, deux couleurs",
+          "fieldNote": "Une barrière modifie aussi ce que transporte l’eau.",
+          "evidence": [
+            {
+              "label": "Source",
+              "text": "L’eau des montagnes transporte de fins sédiments glaciaires.",
+              "claimIds": [
+                "brazo-rico-lago-argentino-core-claim"
+              ]
+            },
+            {
+              "label": "Séparation",
+              "text": "Le barrage de glace limite la circulation entre les eaux.",
+              "claimIds": [
+                "brazo-rico-lago-argentino-core-claim"
+              ]
+            },
+            {
+              "label": "Couleur",
+              "text": "L’eau plus laiteuse se concentre dans Brazo Rico.",
+              "claimIds": [
+                "brazo-rico-lago-argentino-core-claim"
+              ]
+            }
+          ],
+          "question": "Pourquoi un côté paraît-il plus laiteux ?",
+          "options": [
+            "La barrière concentre l’eau riche en sédiments",
+            "Le sel arrive du Pacifique",
+            "Des pierres blanches se dissolvent"
+          ],
+          "correct": 0,
+          "reveal": "Les sédiments glaciaires se concentrent lorsque le barrage limite la circulation."
+        },
+        "sv": {
+          "place": "Brazo Rico · Lago Argentino",
+          "clue": "Två vatten, två färger",
+          "fieldNote": "En barriär förändrar också vad vattnet bär.",
+          "evidence": [
+            {
+              "label": "Källa",
+              "text": "Bäckar för med sig fint glaciärsediment.",
+              "claimIds": [
+                "brazo-rico-lago-argentino-core-claim"
+              ]
+            },
+            {
+              "label": "Separation",
+              "text": "Isdammen begränsar cirkulation mellan vattnen.",
+              "claimIds": [
+                "brazo-rico-lago-argentino-core-claim"
+              ]
+            },
+            {
+              "label": "Färg",
+              "text": "Grumligare, mjölkigare vatten samlas i Brazo Rico.",
+              "claimIds": [
+                "brazo-rico-lago-argentino-core-claim"
+              ]
+            }
+          ],
+          "question": "Varför kan ena sidan se mjölkigare ut?",
+          "options": [
+            "Barriären koncentrerar sedimentrikt vatten",
+            "Salt kommer från Stilla havet",
+            "Vita stenar löses upp"
+          ],
+          "correct": 0,
+          "reveal": "Fint glaciärsediment koncentreras när isdammen begränsar cirkulationen."
+        }
+      }
+    },
+    {
+      "id": "chalten-fitz-roy",
+      "order": 3,
+      "optional": false,
+      "coordinates": [
+        -73.043,
+        -49.271
+      ],
+      "categories": [
+        "history",
+        "geology"
+      ],
+      "knowledgeReward": {
+        "path": "geology",
+        "points": 1,
+        "unlockLevel": 2
+      },
+      "claims": [
+        {
+          "id": "chalten-fitz-roy-core-claim",
+          "text": "Clouds crowning the massif created the appearance of smoke. The name Chaltén preserves that way of reading the mountain.",
+          "sourceIds": [
+            "source-www-argentina-gob-ar-u0nyl4"
+          ],
+          "reviewStatus": "draft",
+          "uncertainty": "low"
+        }
+      ],
+      "locales": {
+        "en": {
+          "place": "Chaltén · Fitz Roy",
+          "clue": "The mountain that seemed to smoke",
+          "fieldNote": "A name can preserve an observation even when its first interpretation changes.",
+          "evidence": [
+            {
+              "label": "Profile",
+              "text": "A steep 3,405-metre massif rises sharply above the surrounding terrain.",
+              "claimIds": [
+                "chalten-fitz-roy-core-claim"
+              ]
+            },
+            {
+              "label": "Weather",
+              "text": "Clouds frequently gather around and stream from its summit.",
+              "claimIds": [
+                "chalten-fitz-roy-core-claim"
+              ]
+            },
+            {
+              "label": "Name",
+              "text": "The Tehuelche name Chaltén is associated with a “smoking mountain.”",
+              "claimIds": [
+                "chalten-fitz-roy-core-claim"
+              ]
+            }
+          ],
+          "question": "What most likely created the impression of smoke?",
+          "options": [
+            "A continuously active crater",
+            "Summit clouds shaped by mountain weather",
+            "Forest fires behind the peak"
+          ],
+          "correct": 1,
+          "reveal": "Clouds crowning the massif created the appearance of smoke. The name Chaltén preserves that way of reading the mountain."
+        },
+        "fr": {
+          "place": "Chaltén · Fitz Roy",
+          "clue": "La montagne qui semblait fumer",
+          "fieldNote": "Un nom peut conserver une observation ancienne.",
+          "evidence": [
+            {
+              "label": "Profil",
+              "text": "Un massif de 3 405 mètres domine brutalement le terrain.",
+              "claimIds": [
+                "chalten-fitz-roy-core-claim"
+              ]
+            },
+            {
+              "label": "Météo",
+              "text": "Les nuages entourent souvent son sommet.",
+              "claimIds": [
+                "chalten-fitz-roy-core-claim"
+              ]
+            },
+            {
+              "label": "Nom",
+              "text": "Le nom tehuelche Chaltén évoque une « montagne fumante ».",
+              "claimIds": [
+                "chalten-fitz-roy-core-claim"
+              ]
+            }
+          ],
+          "question": "Qu’est-ce qui donnait l’impression de fumée ?",
+          "options": [
+            "Un cratère toujours actif",
+            "Les nuages façonnés par le relief",
+            "Des feux de forêt"
+          ],
+          "correct": 1,
+          "reveal": "Les nuages autour du sommet créaient l’apparence de fumée, préservée par le nom Chaltén."
+        },
+        "sv": {
+          "place": "Chaltén · Fitz Roy",
+          "clue": "Berget som tycktes ryka",
+          "fieldNote": "Ett namn kan bevara en gammal observation.",
+          "evidence": [
+            {
+              "label": "Profil",
+              "text": "Ett 3 405 meter högt massiv reser sig brant.",
+              "claimIds": [
+                "chalten-fitz-roy-core-claim"
+              ]
+            },
+            {
+              "label": "Väder",
+              "text": "Moln samlas ofta runt toppen.",
+              "claimIds": [
+                "chalten-fitz-roy-core-claim"
+              ]
+            },
+            {
+              "label": "Namn",
+              "text": "Det tehuelchiska namnet Chaltén förknippas med ett ”rykande berg”.",
+              "claimIds": [
+                "chalten-fitz-roy-core-claim"
+              ]
+            }
+          ],
+          "question": "Vad skapade troligen intrycket av rök?",
+          "options": [
+            "En ständigt aktiv krater",
+            "Toppmoln formade av bergsvädret",
+            "Skogsbränder bakom toppen"
+          ],
+          "correct": 1,
+          "reveal": "Moln kring toppen skapade intrycket av rök. Namnet Chaltén bevarar den läsningen."
+        }
+      }
+    }
+  ]
+}

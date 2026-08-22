@@ -1,0 +1,500 @@
+{
+  "schemaVersion": 1,
+  "id": "central-asia-silk-roads",
+  "legacyStorageKey": "atlas-central-asia-journal",
+  "status": "review",
+  "sequence": 4,
+  "region": {
+    "name": "Central Asia",
+    "center": [
+      66.3,
+      40.4
+    ],
+    "zoom": 4.6
+  },
+  "interests": [
+    "history",
+    "geology"
+  ],
+  "knowledgePaths": [
+    "geology",
+    "cartography"
+  ],
+  "editorial": {
+    "contentVersion": "1.0.0",
+    "reviewStatus": "in-review",
+    "reviewedBy": null,
+    "reviewedAt": null
+  },
+  "sources": [
+    {
+      "id": "source-whc-unesco-org-61w5wx",
+      "title": "Tian Shan Corridor · Chuy Valley",
+      "publisher": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/1442/",
+      "accessedAt": "2026-08-23",
+      "license": {
+        "status": "review-required",
+        "notes": "Authoritative factual reference; link and summary usage require editorial licensing review before package release."
+      }
+    },
+    {
+      "id": "source-whc-unesco-org-vvvrv9",
+      "title": "Samarkand · Zerafshan Oasis",
+      "publisher": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/603/",
+      "accessedAt": "2026-08-23",
+      "license": {
+        "status": "review-required",
+        "notes": "Authoritative factual reference; link and summary usage require editorial licensing review before package release."
+      }
+    },
+    {
+      "id": "source-whc-unesco-org-vvx7ug",
+      "title": "Ancient Merv · Murghab Oasis",
+      "publisher": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/886/",
+      "accessedAt": "2026-08-23",
+      "license": {
+        "status": "review-required",
+        "notes": "Authoritative factual reference; link and summary usage require editorial licensing review before package release."
+      }
+    }
+  ],
+  "locales": {
+    "en": {
+      "title": "Roads between worlds.",
+      "eyebrow": "Field expedition 004 · Central Asia",
+      "intro": "Across mountain corridors, river oases, and layered cities, read how geography turned movement into exchange."
+    },
+    "fr": {
+      "title": "Routes entre les mondes.",
+      "eyebrow": "Expédition 004 · Asie centrale",
+      "intro": "À travers cols, oasis et villes stratifiées, découvrez comment la géographie transforma le mouvement en échange."
+    },
+    "sv": {
+      "title": "Vägar mellan världar.",
+      "eyebrow": "Fältexpedition 004 · Centralasien",
+      "intro": "Genom bergskorridorer, flodoaser och städernas lager visar geografin hur rörelse blev till utbyte."
+    }
+  },
+  "discoveries": [
+    {
+      "id": "tian-shan-corridor-chuy-valley",
+      "order": 1,
+      "optional": false,
+      "coordinates": [
+        75.25,
+        42.75
+      ],
+      "categories": [
+        "history",
+        "geology"
+      ],
+      "knowledgeReward": {
+        "path": "geology",
+        "points": 1,
+        "unlockLevel": 0
+      },
+      "claims": [
+        {
+          "id": "tian-shan-corridor-chuy-valley-core-claim",
+          "text": "The Silk Roads functioned as a supported network: geography shaped the paths, while water and settlements kept exchange moving.",
+          "sourceIds": [
+            "source-whc-unesco-org-61w5wx"
+          ],
+          "reviewStatus": "draft",
+          "uncertainty": "low"
+        }
+      ],
+      "locales": {
+        "en": {
+          "place": "Tian Shan Corridor · Chuy Valley",
+          "clue": "A road is more than a line",
+          "fieldNote": "Look for the systems that made long-distance movement possible across extreme terrain.",
+          "evidence": [
+            {
+              "label": "Terrain",
+              "text": "Routes crossed deserts, alpine passes, river valleys, and fertile steppe.",
+              "claimIds": [
+                "tian-shan-corridor-chuy-valley-core-claim"
+              ]
+            },
+            {
+              "label": "Support",
+              "text": "Forts, way stations, caravanserais, and settlements sheltered travellers.",
+              "claimIds": [
+                "tian-shan-corridor-chuy-valley-core-claim"
+              ]
+            },
+            {
+              "label": "Water",
+              "text": "Canals, wells, and reservoirs sustained towns and agriculture.",
+              "claimIds": [
+                "tian-shan-corridor-chuy-valley-core-claim"
+              ]
+            }
+          ],
+          "question": "What allowed this corridor to carry exchange across thousands of kilometres?",
+          "options": [
+            "A connected network of routes, water systems, and protected stopping places",
+            "A single paved road with no settlements",
+            "Travel only during frozen winters"
+          ],
+          "correct": 0,
+          "reveal": "The Silk Roads functioned as a supported network: geography shaped the paths, while water and settlements kept exchange moving."
+        },
+        "fr": {
+          "place": "Corridor du Tian Shan · Vallée de Tchouï",
+          "clue": "Une route est plus qu’une ligne",
+          "fieldNote": "Repérez les systèmes qui rendaient possible le voyage à travers des terrains extrêmes.",
+          "evidence": [
+            {
+              "label": "Relief",
+              "text": "Les routes traversaient déserts, cols alpins, vallées et steppes fertiles.",
+              "claimIds": [
+                "tian-shan-corridor-chuy-valley-core-claim"
+              ]
+            },
+            {
+              "label": "Soutien",
+              "text": "Forts, relais, caravansérails et villes abritaient les voyageurs.",
+              "claimIds": [
+                "tian-shan-corridor-chuy-valley-core-claim"
+              ]
+            },
+            {
+              "label": "Eau",
+              "text": "Canaux, puits et réservoirs alimentaient villes et cultures.",
+              "claimIds": [
+                "tian-shan-corridor-chuy-valley-core-claim"
+              ]
+            }
+          ],
+          "question": "Qu’est-ce qui permettait les échanges sur des milliers de kilomètres ?",
+          "options": [
+            "Un réseau de routes, d’eau et d’étapes protégées",
+            "Une seule route pavée sans ville",
+            "Des voyages uniquement en hiver"
+          ],
+          "correct": 0,
+          "reveal": "Les Routes de la soie formaient un réseau soutenu : le relief guidait les chemins, l’eau et les villes maintenaient les échanges."
+        },
+        "sv": {
+          "place": "Tian Shan-korridoren · Tjudalen",
+          "clue": "En väg är mer än en linje",
+          "fieldNote": "Sök efter systemen som gjorde långa resor möjliga genom extrem terräng.",
+          "evidence": [
+            {
+              "label": "Terräng",
+              "text": "Rutterna korsade öknar, bergspass, floddalar och bördig stäpp.",
+              "claimIds": [
+                "tian-shan-corridor-chuy-valley-core-claim"
+              ]
+            },
+            {
+              "label": "Stöd",
+              "text": "Fort, rastplatser, karavanserajer och städer skyddade resenärer.",
+              "claimIds": [
+                "tian-shan-corridor-chuy-valley-core-claim"
+              ]
+            },
+            {
+              "label": "Vatten",
+              "text": "Kanaler, brunnar och magasin försörjde städer och odlingar.",
+              "claimIds": [
+                "tian-shan-corridor-chuy-valley-core-claim"
+              ]
+            }
+          ],
+          "question": "Vad gjorde utbyte möjligt över tusentals kilometer?",
+          "options": [
+            "Ett nät av rutter, vattensystem och skyddade stopp",
+            "En enda stenlagd väg utan städer",
+            "Resor enbart under vintern"
+          ],
+          "correct": 0,
+          "reveal": "Sidenvägarna var ett stöttat nätverk: landskapet formade vägarna medan vatten och städer höll utbytet levande."
+        }
+      }
+    },
+    {
+      "id": "samarkand-zerafshan-oasis",
+      "order": 2,
+      "optional": false,
+      "coordinates": [
+        66.9597,
+        39.6542
+      ],
+      "categories": [
+        "history",
+        "geology"
+      ],
+      "knowledgeReward": {
+        "path": "geology",
+        "points": 1,
+        "unlockLevel": 1
+      },
+      "claims": [
+        {
+          "id": "samarkand-zerafshan-oasis-core-claim",
+          "text": "Samarkand’s urban layers and far-reaching architectural influence preserve centuries of encounter and exchange.",
+          "sourceIds": [
+            "source-whc-unesco-org-vvvrv9"
+          ],
+          "reviewStatus": "draft",
+          "uncertainty": "low"
+        }
+      ],
+      "locales": {
+        "en": {
+          "place": "Samarkand · Zerafshan Oasis",
+          "clue": "A city remembers many worlds",
+          "fieldNote": "Read different urban layers and artistic influences as evidence of repeated cultural exchange.",
+          "evidence": [
+            {
+              "label": "Position",
+              "text": "The city grew in a large oasis on routes linking regions of Eurasia.",
+              "claimIds": [
+                "samarkand-zerafshan-oasis-core-claim"
+              ]
+            },
+            {
+              "label": "Layers",
+              "text": "Ancient Afrasiab, the Timurid city, and later expansion survive side by side.",
+              "claimIds": [
+                "samarkand-zerafshan-oasis-core-claim"
+              ]
+            },
+            {
+              "label": "Influence",
+              "text": "Its architecture shaped traditions from Persia and India to the Ottoman world.",
+              "claimIds": [
+                "samarkand-zerafshan-oasis-core-claim"
+              ]
+            }
+          ],
+          "question": "Why is Samarkand described as a crossroads of cultures?",
+          "options": [
+            "It remained isolated from surrounding regions",
+            "Movement brought people, ideas, and arts that accumulated in the city",
+            "Every historic district was built at the same moment"
+          ],
+          "correct": 1,
+          "reveal": "Samarkand’s urban layers and far-reaching architectural influence preserve centuries of encounter and exchange."
+        },
+        "fr": {
+          "place": "Samarcande · Oasis du Zeravchan",
+          "clue": "Une ville se souvient de plusieurs mondes",
+          "fieldNote": "Lisez les couches urbaines et les influences artistiques comme traces d’échanges répétés.",
+          "evidence": [
+            {
+              "label": "Position",
+              "text": "La ville grandit dans une oasis au croisement des routes eurasiatiques.",
+              "claimIds": [
+                "samarkand-zerafshan-oasis-core-claim"
+              ]
+            },
+            {
+              "label": "Couches",
+              "text": "Afrasiab, la ville timouride et les extensions récentes subsistent côte à côte.",
+              "claimIds": [
+                "samarkand-zerafshan-oasis-core-claim"
+              ]
+            },
+            {
+              "label": "Influence",
+              "text": "Son architecture marqua des traditions de la Perse à l’Inde et au monde ottoman.",
+              "claimIds": [
+                "samarkand-zerafshan-oasis-core-claim"
+              ]
+            }
+          ],
+          "question": "Pourquoi Samarcande est-elle un carrefour de cultures ?",
+          "options": [
+            "Elle resta isolée",
+            "Les voyages y accumulèrent peuples, idées et arts",
+            "Tous ses quartiers furent bâtis ensemble"
+          ],
+          "correct": 1,
+          "reveal": "Les couches urbaines et l’influence de Samarcande conservent des siècles de rencontres."
+        },
+        "sv": {
+          "place": "Samarkand · Zerafshanoasen",
+          "clue": "En stad minns många världar",
+          "fieldNote": "Läs stadens lager och konstnärliga influenser som spår av återkommande utbyte.",
+          "evidence": [
+            {
+              "label": "Läge",
+              "text": "Staden växte i en stor oas på rutter genom Eurasien.",
+              "claimIds": [
+                "samarkand-zerafshan-oasis-core-claim"
+              ]
+            },
+            {
+              "label": "Lager",
+              "text": "Forntida Afrasiab, timuridstaden och senare delar finns sida vid sida.",
+              "claimIds": [
+                "samarkand-zerafshan-oasis-core-claim"
+              ]
+            },
+            {
+              "label": "Inflytande",
+              "text": "Arkitekturen påverkade traditioner från Persien och Indien till Osmanska riket.",
+              "claimIds": [
+                "samarkand-zerafshan-oasis-core-claim"
+              ]
+            }
+          ],
+          "question": "Varför kallas Samarkand en kulturell korsväg?",
+          "options": [
+            "Staden förblev isolerad",
+            "Resor samlade människor, idéer och konst i staden",
+            "Alla stadsdelar byggdes samtidigt"
+          ],
+          "correct": 1,
+          "reveal": "Samarkands stadslager och vida inflytande bevarar århundraden av möten och utbyte."
+        }
+      }
+    },
+    {
+      "id": "ancient-merv-murghab-oasis",
+      "order": 3,
+      "optional": false,
+      "coordinates": [
+        62.177,
+        37.664
+      ],
+      "categories": [
+        "history",
+        "geology"
+      ],
+      "knowledgeReward": {
+        "path": "geology",
+        "points": 1,
+        "unlockLevel": 2
+      },
+      "claims": [
+        {
+          "id": "ancient-merv-murghab-oasis-core-claim",
+          "text": "The oasis made sustained settlement possible and positioned Merv as a durable centre within long-distance networks.",
+          "sourceIds": [
+            "source-whc-unesco-org-vvx7ug"
+          ],
+          "reviewStatus": "draft",
+          "uncertainty": "low"
+        }
+      ],
+      "locales": {
+        "en": {
+          "place": "Ancient Merv · Murghab Oasis",
+          "clue": "Cities gather where water endures",
+          "fieldNote": "In an arid landscape, study why multiple cities occupied one oasis across four millennia.",
+          "evidence": [
+            {
+              "label": "Setting",
+              "text": "Merv developed within the fertile Murghab River oasis.",
+              "claimIds": [
+                "ancient-merv-murghab-oasis-core-claim"
+              ]
+            },
+            {
+              "label": "Duration",
+              "text": "Its archaeological remains span roughly 4,000 years.",
+              "claimIds": [
+                "ancient-merv-murghab-oasis-core-claim"
+              ]
+            },
+            {
+              "label": "Network",
+              "text": "It became one of Central Asia’s major oasis cities along the Silk Roads.",
+              "claimIds": [
+                "ancient-merv-murghab-oasis-core-claim"
+              ]
+            }
+          ],
+          "question": "What best explains Merv’s long importance?",
+          "options": [
+            "Ocean access made it a seaport",
+            "Reliable oasis resources supported settlement and long-distance routes",
+            "The surrounding desert produced unlimited rainfall"
+          ],
+          "correct": 1,
+          "reveal": "The oasis made sustained settlement possible and positioned Merv as a durable centre within long-distance networks."
+        },
+        "fr": {
+          "place": "Ancienne Merv · Oasis du Murghab",
+          "clue": "Les villes naissent où l’eau demeure",
+          "fieldNote": "Dans un paysage aride, cherchez pourquoi plusieurs villes occupèrent cette oasis durant quatre millénaires.",
+          "evidence": [
+            {
+              "label": "Milieu",
+              "text": "Merv se développa dans l’oasis fertile du Murghab.",
+              "claimIds": [
+                "ancient-merv-murghab-oasis-core-claim"
+              ]
+            },
+            {
+              "label": "Durée",
+              "text": "Ses vestiges couvrent environ 4 000 ans.",
+              "claimIds": [
+                "ancient-merv-murghab-oasis-core-claim"
+              ]
+            },
+            {
+              "label": "Réseau",
+              "text": "Elle devint une grande cité-oasis des Routes de la soie.",
+              "claimIds": [
+                "ancient-merv-murghab-oasis-core-claim"
+              ]
+            }
+          ],
+          "question": "Qu’est-ce qui explique l’importance durable de Merv ?",
+          "options": [
+            "Son accès à l’océan",
+            "Les ressources de l’oasis soutenaient la ville et les routes",
+            "Le désert apportait des pluies illimitées"
+          ],
+          "correct": 1,
+          "reveal": "L’oasis permit un habitat durable et fit de Merv un centre des réseaux lointains."
+        },
+        "sv": {
+          "place": "Forntida Merv · Murghaboasen",
+          "clue": "Städer samlas där vatten består",
+          "fieldNote": "I ett torrt landskap, undersök varför flera städer låg i samma oas under fyra årtusenden.",
+          "evidence": [
+            {
+              "label": "Miljö",
+              "text": "Merv utvecklades i Murghabflodens bördiga oas.",
+              "claimIds": [
+                "ancient-merv-murghab-oasis-core-claim"
+              ]
+            },
+            {
+              "label": "Tid",
+              "text": "Lämningarna sträcker sig över omkring 4 000 år.",
+              "claimIds": [
+                "ancient-merv-murghab-oasis-core-claim"
+              ]
+            },
+            {
+              "label": "Nätverk",
+              "text": "Platsen blev en viktig oasstad längs Sidenvägarna.",
+              "claimIds": [
+                "ancient-merv-murghab-oasis-core-claim"
+              ]
+            }
+          ],
+          "question": "Vad förklarar bäst Mervs långvariga betydelse?",
+          "options": [
+            "Havskontakt gjorde staden till hamn",
+            "Oasens resurser stödde bosättning och fjärrvägar",
+            "Öknen gav obegränsat regn"
+          ],
+          "correct": 1,
+          "reveal": "Oasen gjorde varaktig bosättning möjlig och placerade Merv som centrum i långväga nätverk."
+        }
+      }
+    }
+  ]
+}

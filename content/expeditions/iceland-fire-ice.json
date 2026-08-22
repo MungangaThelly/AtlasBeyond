@@ -1,0 +1,497 @@
+{
+  "schemaVersion": 1,
+  "id": "iceland-fire-ice",
+  "legacyStorageKey": "atlas-journal",
+  "status": "review",
+  "sequence": 1,
+  "region": {
+    "name": "Iceland",
+    "center": [
+      -16.7,
+      64.03
+    ],
+    "zoom": 6.2
+  },
+  "interests": [
+    "geology",
+    "photography"
+  ],
+  "knowledgePaths": [
+    "geology",
+    "cartography"
+  ],
+  "editorial": {
+    "contentVersion": "1.0.0",
+    "reviewStatus": "in-review",
+    "reviewedBy": null,
+    "reviewedAt": null
+  },
+  "sources": [
+    {
+      "id": "source-www-vatnajokulsthjodgardur-is-kceqte",
+      "title": "Breiðármörk",
+      "publisher": "Vatnajökull National Park",
+      "url": "https://www.vatnajokulsthjodgardur.is/en/melting-glaciers/glaciology",
+      "accessedAt": "2026-08-23",
+      "license": {
+        "status": "review-required",
+        "notes": "Authoritative factual reference; link and summary usage require editorial licensing review before package release."
+      }
+    },
+    {
+      "id": "source-whc-unesco-org-61uyux",
+      "title": "Skeiðarársandur",
+      "publisher": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/1604/",
+      "accessedAt": "2026-08-23",
+      "license": {
+        "status": "review-required",
+        "notes": "Authoritative factual reference; link and summary usage require editorial licensing review before package release."
+      }
+    },
+    {
+      "id": "source-www-vatnajokulsthjodgardur-is-fwhp0l",
+      "title": "Jökulsárlón",
+      "publisher": "Vatnajökull National Park",
+      "url": "https://www.vatnajokulsthjodgardur.is/en/areas/jokulsarlon",
+      "accessedAt": "2026-08-23",
+      "license": {
+        "status": "review-required",
+        "notes": "Authoritative factual reference; link and summary usage require editorial licensing review before package release."
+      }
+    }
+  ],
+  "locales": {
+    "en": {
+      "title": "Iceland · A story of fire and ice",
+      "eyebrow": "Field expedition 001 · Iceland",
+      "intro": "A glacier has written a story across Iceland's south coast. Follow three verified traces and reveal how ice, water, and fire shape the road to the sea."
+    },
+    "fr": {
+      "title": "Islande · Une histoire de feu et de glace",
+      "eyebrow": "Expédition 001 · Islande",
+      "intro": "Un glacier a écrit une histoire sur la côte sud de l’Islande. Suivez trois traces vérifiées et découvrez comment la glace, l’eau et le feu façonnent le chemin vers la mer."
+    },
+    "sv": {
+      "title": "Island · En berättelse om eld och is",
+      "eyebrow": "Fältexpedition 001 · Island",
+      "intro": "En glaciär har skrivit en berättelse längs Islands sydkust. Följ tre verifierade spår och upptäck hur is, vatten och eld formar vägen mot havet."
+    }
+  },
+  "discoveries": [
+    {
+      "id": "moraine",
+      "order": 1,
+      "optional": false,
+      "coordinates": [
+        -16.35,
+        64.105
+      ],
+      "categories": [
+        "geology"
+      ],
+      "knowledgeReward": {
+        "path": "geology",
+        "points": 1,
+        "unlockLevel": 0
+      },
+      "claims": [
+        {
+          "id": "moraine-core-claim",
+          "text": "The evidence supports a moraine: debris deposited at a former glacier margin.",
+          "sourceIds": [
+            "source-www-vatnajokulsthjodgardur-is-kceqte"
+          ],
+          "reviewStatus": "draft",
+          "uncertainty": "low"
+        }
+      ],
+      "locales": {
+        "en": {
+          "place": "A landscape of moraines",
+          "clue": "The ridge that records an edge",
+          "fieldNote": "Debris carried by a glacier is deposited at its sides and margin as moraines.",
+          "evidence": [
+            {
+              "label": "Shape",
+              "text": "Curved ridge. The ridge runs across the foreland rather than downhill.",
+              "claimIds": [
+                "moraine-core-claim"
+              ]
+            },
+            {
+              "label": "Material",
+              "text": "Mixed stones. Fine sediment and large, scratched rocks lie together without sorting.",
+              "claimIds": [
+                "moraine-core-claim"
+              ]
+            },
+            {
+              "label": "Position",
+              "text": "Beyond today's ice. The feature stands away from the glacier's present margin.",
+              "claimIds": [
+                "moraine-core-claim"
+              ]
+            }
+          ],
+          "question": "Which explanation best fits all three observations?",
+          "options": [
+            "A river sorted the stones into a raised bank.",
+            "A glacier carried the debris and deposited it at a former margin.",
+            "People constructed the ridge as an old road."
+          ],
+          "correct": 1,
+          "reveal": "The evidence supports a moraine: debris deposited at a former glacier margin."
+        },
+        "fr": {
+          "place": "Un paysage de moraines",
+          "clue": "La crête qui conserve une limite",
+          "fieldNote": "Les débris transportés par un glacier se déposent sur ses côtés et à sa marge sous forme de moraines.",
+          "evidence": [
+            {
+              "label": "Forme",
+              "text": "Crête incurvée. La crête traverse l’avant-pays au lieu de descendre la pente.",
+              "claimIds": [
+                "moraine-core-claim"
+              ]
+            },
+            {
+              "label": "Matériaux",
+              "text": "Pierres mélangées. Sédiments fins et gros rochers rayés reposent ensemble sans tri.",
+              "claimIds": [
+                "moraine-core-claim"
+              ]
+            },
+            {
+              "label": "Position",
+              "text": "Au-delà de la glace actuelle. La formation est éloignée de la marge actuelle du glacier.",
+              "claimIds": [
+                "moraine-core-claim"
+              ]
+            }
+          ],
+          "question": "Quelle explication correspond le mieux aux trois observations ?",
+          "options": [
+            "Une rivière a trié les pierres en une rive surélevée.",
+            "Un glacier a transporté les débris et les a déposés sur une ancienne marge.",
+            "Des habitants ont construit la crête comme route."
+          ],
+          "correct": 1,
+          "reveal": "Les indices révèlent une moraine : des débris déposés sur une ancienne marge glaciaire."
+        },
+        "sv": {
+          "place": "Ett landskap av moräner",
+          "clue": "Åsen som bevarar en gräns",
+          "fieldNote": "Material som glaciären bär med sig avsätts längs sidorna och iskanten som moräner.",
+          "evidence": [
+            {
+              "label": "Form",
+              "text": "Böjd rygg. Ryggen korsar glaciärförlandet i stället för att följa sluttningen.",
+              "claimIds": [
+                "moraine-core-claim"
+              ]
+            },
+            {
+              "label": "Material",
+              "text": "Blandade stenar. Fint sediment och stora repade block ligger osorterade tillsammans.",
+              "claimIds": [
+                "moraine-core-claim"
+              ]
+            },
+            {
+              "label": "Läge",
+              "text": "Bortom dagens is. Formation ligger på avstånd från glaciärens nuvarande kant.",
+              "claimIds": [
+                "moraine-core-claim"
+              ]
+            }
+          ],
+          "question": "Vilken förklaring passar bäst med alla tre observationerna?",
+          "options": [
+            "En flod sorterade stenarna till en upphöjd bank.",
+            "En glaciär bar materialet och avsatte det vid en tidigare iskant.",
+            "Människor byggde ryggen som en gammal väg."
+          ],
+          "correct": 1,
+          "reveal": "Spåren visar en morän: material avsatt vid en tidigare glaciärkant."
+        }
+      }
+    },
+    {
+      "id": "sandur",
+      "order": 2,
+      "optional": false,
+      "coordinates": [
+        -17.1823,
+        63.960833
+      ],
+      "categories": [
+        "geology"
+      ],
+      "knowledgeReward": {
+        "path": "geology",
+        "points": 1,
+        "unlockLevel": 1
+      },
+      "claims": [
+        {
+          "id": "sandur-core-claim",
+          "text": "The evidence identifies a sandur—an outwash plain built by glacial water and floods.",
+          "sourceIds": [
+            "source-whc-unesco-org-61uyux"
+          ],
+          "reviewStatus": "draft",
+          "uncertainty": "low"
+        }
+      ],
+      "locales": {
+        "en": {
+          "place": "Skeiðarársandur outwash plain",
+          "clue": "A plain written by floods",
+          "fieldNote": "Repeated glacial floods and meltwater build the broad plains Icelanders call sandur.",
+          "evidence": [
+            {
+              "label": "Pattern",
+              "text": "Braided channels. Many shallow channels repeatedly divide and reconnect.",
+              "claimIds": [
+                "sandur-core-claim"
+              ]
+            },
+            {
+              "label": "Surface",
+              "text": "Dark sediment. Broad deposits contain volcanic sand, gravel, and glacial material.",
+              "claimIds": [
+                "sandur-core-claim"
+              ]
+            },
+            {
+              "label": "History",
+              "text": "Sudden high water. Powerful jökulhlaup floods have crossed this route from beneath Vatnajökull.",
+              "claimIds": [
+                "sandur-core-claim"
+              ]
+            }
+          ],
+          "question": "What process best explains this broad, shifting plain?",
+          "options": [
+            "Repeated meltwater and glacial floods spread sediment toward the sea.",
+            "Ocean tides built the entire plain from beach sand.",
+            "Wind alone carved channels into an old lava field."
+          ],
+          "correct": 0,
+          "reveal": "The evidence identifies a sandur—an outwash plain built by glacial water and floods."
+        },
+        "fr": {
+          "place": "La plaine d’épandage de Skeiðarársandur",
+          "clue": "Une plaine écrite par les crues",
+          "fieldNote": "Les crues glaciaires et l’eau de fonte construisent les vastes plaines appelées sandur.",
+          "evidence": [
+            {
+              "label": "Motif",
+              "text": "Chenaux tressés. De nombreux chenaux peu profonds se divisent et se rejoignent.",
+              "claimIds": [
+                "sandur-core-claim"
+              ]
+            },
+            {
+              "label": "Surface",
+              "text": "Sédiments sombres. Les dépôts contiennent sable volcanique, gravier et matériaux glaciaires.",
+              "claimIds": [
+                "sandur-core-claim"
+              ]
+            },
+            {
+              "label": "Histoire",
+              "text": "Crues soudaines. De puissants jökulhlaup ont traversé cette route depuis le Vatnajökull.",
+              "claimIds": [
+                "sandur-core-claim"
+              ]
+            }
+          ],
+          "question": "Quel processus explique le mieux cette vaste plaine changeante ?",
+          "options": [
+            "L’eau de fonte et les crues glaciaires ont répandu les sédiments vers la mer.",
+            "Les marées ont construit toute la plaine avec du sable de plage.",
+            "Le vent seul a creusé les chenaux dans une ancienne coulée de lave."
+          ],
+          "correct": 0,
+          "reveal": "Les indices identifient un sandur, une plaine d’épandage créée par les eaux glaciaires."
+        },
+        "sv": {
+          "place": "Skeiðarársandurs sandurslätt",
+          "clue": "En slätt skriven av översvämningar",
+          "fieldNote": "Återkommande glaciärfloder och smältvatten bygger de vidsträckta slätter som kallas sandur.",
+          "evidence": [
+            {
+              "label": "Mönster",
+              "text": "Flätade flodfåror. Många grunda fåror delar sig och möts upprepade gånger.",
+              "claimIds": [
+                "sandur-core-claim"
+              ]
+            },
+            {
+              "label": "Yta",
+              "text": "Mörkt sediment. Breda avlagringar innehåller vulkanisk sand, grus och glacialt material.",
+              "claimIds": [
+                "sandur-core-claim"
+              ]
+            },
+            {
+              "label": "Historia",
+              "text": "Plötsligt högvatten. Kraftiga jökulhlaup har korsat området från Vatnajökull.",
+              "claimIds": [
+                "sandur-core-claim"
+              ]
+            }
+          ],
+          "question": "Vilken process förklarar bäst den breda, föränderliga slätten?",
+          "options": [
+            "Smältvatten och glaciärfloder spred sediment mot havet.",
+            "Tidvatten byggde hela slätten av strandsand.",
+            "Enbart vind skar fårorna i ett gammalt lavafält."
+          ],
+          "correct": 0,
+          "reveal": "Spåren identifierar en sandur, en slätt byggd av glacialt vatten och översvämningar."
+        }
+      }
+    },
+    {
+      "id": "lagoon",
+      "order": 3,
+      "optional": false,
+      "coordinates": [
+        -16.2306,
+        64.0784
+      ],
+      "categories": [
+        "geology"
+      ],
+      "knowledgeReward": {
+        "path": "geology",
+        "points": 1,
+        "unlockLevel": 2
+      },
+      "claims": [
+        {
+          "id": "lagoon-core-claim",
+          "text": "The observations connect glacial erosion, retreat, calving, and the journey to the sea.",
+          "sourceIds": [
+            "source-www-vatnajokulsthjodgardur-is-fwhp0l"
+          ],
+          "reviewStatus": "draft",
+          "uncertainty": "low"
+        }
+      ],
+      "locales": {
+        "en": {
+          "place": "Jökulsárlón glacial lagoon",
+          "clue": "Where ice becomes ocean",
+          "fieldNote": "Glacial lakes form in deep basins exposed as outlet glaciers retreat.",
+          "evidence": [
+            {
+              "label": "Basin",
+              "text": "A deep trough. The glacier excavated a basin extending far below the surrounding landscape.",
+              "claimIds": [
+                "lagoon-core-claim"
+              ]
+            },
+            {
+              "label": "Motion",
+              "text": "Calving front. Ice breaks from Breiðamerkurjökull and floats across the lake.",
+              "claimIds": [
+                "lagoon-core-claim"
+              ]
+            },
+            {
+              "label": "Outlet",
+              "text": "A short river. Lagoon water and ice fragments pass beneath Route 1 toward the ocean.",
+              "claimIds": [
+                "lagoon-core-claim"
+              ]
+            }
+          ],
+          "question": "Why does this lagoon exist and continue to change?",
+          "options": [
+            "A volcanic crater filled directly with seawater.",
+            "A dam created a permanent reservoir for the nearby road.",
+            "A retreating glacier exposed a deep basin where calved ice now travels seaward."
+          ],
+          "correct": 2,
+          "reveal": "The observations connect glacial erosion, retreat, calving, and the journey to the sea."
+        },
+        "fr": {
+          "place": "La lagune glaciaire de Jökulsárlón",
+          "clue": "Là où la glace devient océan",
+          "fieldNote": "Les lacs glaciaires occupent les profondes cuvettes révélées par le recul des glaciers.",
+          "evidence": [
+            {
+              "label": "Bassin",
+              "text": "Profonde cuvette. Le glacier a creusé une cuvette bien sous le paysage environnant.",
+              "claimIds": [
+                "lagoon-core-claim"
+              ]
+            },
+            {
+              "label": "Mouvement",
+              "text": "Front de vêlage. La glace se détache du Breiðamerkurjökull et flotte sur le lac.",
+              "claimIds": [
+                "lagoon-core-claim"
+              ]
+            },
+            {
+              "label": "Sortie",
+              "text": "Courte rivière. L’eau et les fragments passent sous la Route 1 vers l’océan.",
+              "claimIds": [
+                "lagoon-core-claim"
+              ]
+            }
+          ],
+          "question": "Pourquoi cette lagune existe-t-elle et continue-t-elle à changer ?",
+          "options": [
+            "Un cratère volcanique s’est rempli directement d’eau de mer.",
+            "Un barrage a créé un réservoir permanent pour la route.",
+            "Le retrait du glacier a révélé une profonde cuvette où la glace vêlée voyage vers la mer."
+          ],
+          "correct": 2,
+          "reveal": "Les observations relient érosion glaciaire, recul, vêlage et voyage vers la mer."
+        },
+        "sv": {
+          "place": "Glaciärlagunen Jökulsárlón",
+          "clue": "Där is blir hav",
+          "fieldNote": "Glaciärsjöar bildas i djupa bäcken som blottläggs när utloppsglaciärer drar sig tillbaka.",
+          "evidence": [
+            {
+              "label": "Bäcken",
+              "text": "En djup sänka. Glaciären gröpte ur ett bäcken långt under det omgivande landskapet.",
+              "claimIds": [
+                "lagoon-core-claim"
+              ]
+            },
+            {
+              "label": "Rörelse",
+              "text": "Kalvande front. Is bryts från Breiðamerkurjökull och flyter över sjön.",
+              "claimIds": [
+                "lagoon-core-claim"
+              ]
+            },
+            {
+              "label": "Utlopp",
+              "text": "En kort flod. Vatten och is passerar under väg 1 mot havet.",
+              "claimIds": [
+                "lagoon-core-claim"
+              ]
+            }
+          ],
+          "question": "Varför finns lagunen och varför fortsätter den att förändras?",
+          "options": [
+            "En vulkankrater fylldes direkt med havsvatten.",
+            "En damm skapade en permanent reservoar för vägen.",
+            "En vikande glaciär blottlade ett djupt bäcken där kalvad is nu färdas mot havet."
+          ],
+          "correct": 2,
+          "reveal": "Observationerna binder samman glacial erosion, reträtt, kalvning och resan mot havet."
+        }
+      }
+    }
+  ]
+}

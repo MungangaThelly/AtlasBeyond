@@ -23,8 +23,11 @@ The formal Draft 2020-12 contract now lives at
 evidence-to-claim relationships, source licensing, uncertainty, knowledge
 rewards, and editorial review status. `npm run check:schema` validates both the
 structural contract and semantic relationships that JSON Schema cannot express
-alone. The next step is to migrate the existing expedition objects into this
-contract without changing their released IDs or browser progress keys.
+alone. The four released expeditions now also exist as review-stage packages in
+`content/expeditions/`. `npm run check:migration` proves parity with the live
+prototype, including expedition identity, browser progress keys, coordinates,
+localized options, and correct deductions. The runtime remains on its existing
+JavaScript data until the packages complete licensing and editorial review.
 
 `region-player.html` and `region-player.js` now demonstrate a reusable runtime:
 an expedition data object supplies its map center, localized discoveries,

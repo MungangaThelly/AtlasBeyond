@@ -15,6 +15,7 @@ const catalog = await load('catalog.js', 'expeditionCatalog');
 const investigations = await load('investigations.js', 'investigationCopy');
 const regions = await load('patagonia-data.js', 'regionExpeditions');
 await load('east-africa-data.js', 'regionExpeditions');
+await load('central-asia-data.js', 'regionExpeditions');
 const locales = ['en', 'fr', 'sv'];
 
 assert(catalog.expeditions.length >= 2, 'Catalog needs at least two expeditions');
@@ -43,4 +44,4 @@ for (const region of Object.values(regions)) for (const locale of locales) {
     assert(item.coordinates.length === 2 && item.coordinates.every(Number.isFinite), `${region.id} ${locale} discovery ${index + 1} has invalid coordinates`);
   });
 }
-console.log('Content validation passed: 3 expeditions · 3 locales · 27 localized investigations.');
+console.log('Content validation passed: 4 expeditions · 3 locales · 36 localized investigations.');

@@ -29,6 +29,7 @@ server has no package dependencies and listens only on this computer.
 - Optional verified field notes that do not block the main route
 - A second playable expedition in Patagonia using the reusable region player
 - A third playable expedition across East Africa’s Serengeti and Ngorongoro landscape
+- A fourth playable expedition across Central Asia’s Silk Roads
 - A global globe atlas with filters, completion state, and future-region paths
 - English, French, and Swedish interfaces
 - Responsive, keyboard-accessible interaction

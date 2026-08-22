@@ -60,3 +60,9 @@ scientific sources. Text is summarized and localized rather than copied.
   supports the caldera geology, Rift Valley context, wildlife, and Olduvai record.
 - Smithsonian Human Origins Program, [Olduvai Chopper](https://humanorigins.si.edu/evidence/behavior/stone-tools/early-stone-age-tools/olduvai-chopper),
   supports the Olduvai stone-tool evidence and its early-human context.
+
+## Central Asia — Silk Roads
+
+- UNESCO World Heritage Centre, [Chang’an–Tian-shan Corridor](https://whc.unesco.org/en/list/1442/), supports the route network, extreme geography, water systems, and traveller infrastructure.
+- UNESCO World Heritage Centre, [Samarkand — Crossroad of Cultures](https://whc.unesco.org/en/list/603/), supports the city’s layered history and far-reaching artistic influence.
+- UNESCO World Heritage Centre, [Ancient Merv](https://whc.unesco.org/en/list/886/), supports the four-millennia oasis-city record and Silk Roads context.

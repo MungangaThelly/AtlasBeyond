@@ -59,6 +59,11 @@ Run `npm run check` before sharing a change. It checks JavaScript syntax,
 validates the localized expedition content, starts an isolated test server, and
 smoke-tests the hub, world atlas, region player, offline shell, and 404 behavior.
 
+Run `npm run test:e2e` for the Playwright desktop-and-mobile browser gate. It
+verifies primary routes, onboarding, a complete discovery, locale persistence,
+regional controls, responsive overflow, keyboard entry, and dialog naming. The
+deployment workflow runs both quality suites before publishing.
+
 Once a page has been visited over HTTP, its local experience shell is cached for
 resilient loading. Live map tiles still require a network connection.
 When a new shell is ready, Atlas Beyond asks the explorer before activating and

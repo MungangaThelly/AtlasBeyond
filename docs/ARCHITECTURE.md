@@ -38,6 +38,11 @@ MapLibre GL JS is version-pinned and vendored with its upstream license. Build
 checks verify the JavaScript, CSS, and license hashes and reject map pages that
 reintroduce a CDN runtime dependency. Live raster tiles remain external.
 
+Playwright supplies the browser-level release gate across desktop Chromium and
+a mobile viewport. Its deterministic journeys block external map traffic while
+checking application rendering, onboarding, discovery persistence, locales,
+controls, responsive overflow, keyboard entry, and accessible dialog names.
+
 ## Boundaries
 
 ```text

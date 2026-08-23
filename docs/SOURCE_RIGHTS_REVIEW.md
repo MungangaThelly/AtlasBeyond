@@ -1,15 +1,23 @@
 # Source rights review
 
-Reviewed 2026-08-23. This is an editorial risk record, not legal advice.
+Reviewed 2026-08-23 against the publishers’ current official terms. This is an editorial risk record, not legal advice or a substitute for advice from a qualified lawyer.
 
-Atlas Beyond stores independently written factual summaries and links to authoritative sources. It does not copy source photographs, video, logos, maps, or long passages. A source being authoritative does not automatically grant reuse rights.
+Atlas Beyond stores independently written factual statements and plain-text links to authoritative sources. It does not copy source photographs, video, logos, maps, data feeds, or passages. A source being authoritative does not automatically grant reuse rights.
 
 ## Decisions
 
-- **NASA:** approved for attributed factual/informational summaries. NASA states that its content is generally not subject to US copyright and permits factual informational use without implied endorsement. Third-party-marked material remains excluded.
-- **UNESCO World Heritage Centre:** review required. UNESCO exposes work-specific licenses; the license applicable to each referenced property page must be confirmed before production release.
-- **Smithsonian:** restricted to facts-only referencing. Non-CC0 website content carries usage conditions and commercial restrictions. No Smithsonian prose or media is reproduced.
-- **Argentina National Parks:** review required. Argentina has an open-data framework, but that does not establish an open license for every park webpage.
-- **Vatnajökull National Park:** review required. No explicit general content reuse terms were located during the audit.
+- **NASA — approved for this use:** independently written factual and informational statements are permitted under NASA’s media guidelines when presented without implied endorsement. Atlas Beyond uses no NASA logo or copied media.
+- **UNESCO World Heritage Centre — restricted, reference-only:** WHC permits plain-text links but prohibits copying or retransmitting protected site elements without authorization. Atlas Beyond uses independently written facts and links only; it reproduces no WHC prose, images, data feeds, metadata marks, or emblems.
+- **Smithsonian — restricted, reference-only:** non-CC0 website content is subject to usage conditions and commercial restrictions. Atlas Beyond uses independently written facts and plain-text links only; it reproduces no Smithsonian prose, assets, or marks.
+- **Argentina National Parks — human clearance pending:** the government portal is an authoritative factual reference, but its general terms do not provide a sufficiently explicit page-specific reuse grant for final legal clearance.
+- **Vatnajökull National Park — human clearance pending:** no sufficiently explicit website-content reuse license was located. Atlas Beyond reproduces no park prose, imagery, branding, or media.
 
-Packages remain in `review` until every source is approved or replaced. The runtime adapter does not change that editorial status; it only proves the canonical delivery path while the current prototype remains public.
+Every claim is newly written and traceable to a source; facts are research inputs, not copied expression. Packages remain in `review` because Argentina National Parks and Vatnajökull references still require human clearance, while UNESCO and Smithsonian remain deliberately reference-only. The runtime must not describe these packages as rights-approved.
+
+## Official terms consulted
+
+- NASA: https://www.nasa.gov/nasa-brand-center/images-and-media/
+- UNESCO World Heritage Centre: https://whc.unesco.org/en/disclaimer and https://whc.unesco.org/en/licenses
+- Smithsonian Institution: https://www.si.edu/termsofuse and https://www.si.edu/openaccess/faq
+- Argentina national portal: https://www.argentina.gob.ar/terminos-y-condiciones
+- Vatnajökull National Park: https://www.vatnajokulsthjodgardur.is/en/communities--businesses/permits

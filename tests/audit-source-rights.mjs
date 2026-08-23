@@ -1,0 +1,6 @@
+import { readFile } from 'node:fs/promises';
+const root=new URL('../content/expeditions/',import.meta.url),files=['iceland-fire-ice.json','patagonia-continents-end.json','east-africa-migrations.json','central-asia-silk-roads.json'];
+const assert=(value,message)=>{if(!value)throw new Error(message)};let total=0,approved=0,restricted=0,pending=0;
+for(const file of files){const pack=JSON.parse(await readFile(new URL(file,root),'utf8'));assert(pack.status==='review',`${pack.id} must remain review until every source is cleared`);assert(pack.editorial.reviewStatus==='reviewed',`${pack.id} missing rights audit`);for(const source of pack.sources){total++;assert(source.license.reviewedAt&&source.license.reviewedBy,`${source.id} missing audit identity`);assert(source.license.usage==='facts-only',`${source.id} exceeds facts-only use`);assert(source.license.termsUrl,`${source.id} missing official terms URL`);if(source.license.status==='approved')approved++;else if(source.license.status==='restricted')restricted++;else pending++}}
+assert(approved>0&&restricted>0&&pending>0,'Audit must preserve approved, restricted, and pending distinctions');
+console.log(`Source-rights gate passed: ${total} sources · ${approved} approved · ${restricted} reference-only restricted · ${pending} pending human clearance.`);

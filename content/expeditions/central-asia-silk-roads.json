@@ -30,9 +30,9 @@
   ],
   "editorial": {
     "contentVersion": "1.1.0",
-    "reviewStatus": "in-review",
-    "reviewedBy": null,
-    "reviewedAt": null
+    "reviewStatus": "reviewed",
+    "reviewedBy": "Atlas Beyond source-rights audit",
+    "reviewedAt": "2026-08-23"
   },
   "sources": [
     {
@@ -42,12 +42,12 @@
       "url": "https://whc.unesco.org/en/list/1442/",
       "accessedAt": "2026-08-23",
       "license": {
-        "status": "review-required",
+        "status": "restricted",
         "usage": "facts-only",
-        "termsUrl": "https://whc.unesco.org/en/licenses",
+        "termsUrl": "https://whc.unesco.org/en/disclaimer",
+        "notes": "Reference-only: Atlas Beyond links by plain text and independently restates facts. No UNESCO prose, data feed, image, emblem, or other protected element is copied. Written permission is required before reproducing WHC content.",
         "reviewedAt": "2026-08-23",
-        "reviewedBy": "Atlas Beyond rights audit",
-        "notes": "UNESCO licenses are work-specific. Retain link and independently written factual summary; verify the source page license before release."
+        "reviewedBy": "Atlas Beyond source-rights audit"
       }
     },
     {
@@ -57,12 +57,12 @@
       "url": "https://whc.unesco.org/en/list/603/",
       "accessedAt": "2026-08-23",
       "license": {
-        "status": "review-required",
+        "status": "restricted",
         "usage": "facts-only",
-        "termsUrl": "https://whc.unesco.org/en/licenses",
+        "termsUrl": "https://whc.unesco.org/en/disclaimer",
+        "notes": "Reference-only: Atlas Beyond links by plain text and independently restates facts. No UNESCO prose, data feed, image, emblem, or other protected element is copied. Written permission is required before reproducing WHC content.",
         "reviewedAt": "2026-08-23",
-        "reviewedBy": "Atlas Beyond rights audit",
-        "notes": "UNESCO licenses are work-specific. Retain link and independently written factual summary; verify the source page license before release."
+        "reviewedBy": "Atlas Beyond source-rights audit"
       }
     },
     {
@@ -72,12 +72,12 @@
       "url": "https://whc.unesco.org/en/list/886/",
       "accessedAt": "2026-08-23",
       "license": {
-        "status": "review-required",
+        "status": "restricted",
         "usage": "facts-only",
-        "termsUrl": "https://whc.unesco.org/en/licenses",
+        "termsUrl": "https://whc.unesco.org/en/disclaimer",
+        "notes": "Reference-only: Atlas Beyond links by plain text and independently restates facts. No UNESCO prose, data feed, image, emblem, or other protected element is copied. Written permission is required before reproducing WHC content.",
         "reviewedAt": "2026-08-23",
-        "reviewedBy": "Atlas Beyond rights audit",
-        "notes": "UNESCO licenses are work-specific. Retain link and independently written factual summary; verify the source page license before release."
+        "reviewedBy": "Atlas Beyond source-rights audit"
       }
     },
     {
@@ -87,12 +87,12 @@
       "url": "https://whc.unesco.org/en/list/603/",
       "accessedAt": "2026-08-23",
       "license": {
-        "status": "review-required",
+        "status": "restricted",
         "usage": "facts-only",
-        "termsUrl": null,
-        "reviewedAt": null,
-        "reviewedBy": null,
-        "notes": "Authoritative public reference; facts paraphrased in original Atlas Beyond language. Rights review remains required before editorial approval."
+        "termsUrl": "https://whc.unesco.org/en/disclaimer",
+        "notes": "Reference-only: Atlas Beyond links by plain text and independently restates facts. No UNESCO prose, data feed, image, emblem, or other protected element is copied. Written permission is required before reproducing WHC content.",
+        "reviewedAt": "2026-08-23",
+        "reviewedBy": "Atlas Beyond source-rights audit"
       }
     },
     {
@@ -102,12 +102,12 @@
       "url": "https://whc.unesco.org/en/list/602/",
       "accessedAt": "2026-08-23",
       "license": {
-        "status": "review-required",
+        "status": "restricted",
         "usage": "facts-only",
-        "termsUrl": null,
-        "reviewedAt": null,
-        "reviewedBy": null,
-        "notes": "Authoritative public reference; facts paraphrased in original Atlas Beyond language. Rights review remains required before editorial approval."
+        "termsUrl": "https://whc.unesco.org/en/disclaimer",
+        "notes": "Reference-only: Atlas Beyond links by plain text and independently restates facts. No UNESCO prose, data feed, image, emblem, or other protected element is copied. Written permission is required before reproducing WHC content.",
+        "reviewedAt": "2026-08-23",
+        "reviewedBy": "Atlas Beyond source-rights audit"
       }
     },
     {
@@ -117,12 +117,12 @@
       "url": "https://whc.unesco.org/en/list/1442/",
       "accessedAt": "2026-08-23",
       "license": {
-        "status": "review-required",
+        "status": "restricted",
         "usage": "facts-only",
-        "termsUrl": null,
-        "reviewedAt": null,
-        "reviewedBy": null,
-        "notes": "Authoritative public reference; facts paraphrased in original Atlas Beyond language. Rights review remains required before editorial approval."
+        "termsUrl": "https://whc.unesco.org/en/disclaimer",
+        "notes": "Reference-only: Atlas Beyond links by plain text and independently restates facts. No UNESCO prose, data feed, image, emblem, or other protected element is copied. Written permission is required before reproducing WHC content.",
+        "reviewedAt": "2026-08-23",
+        "reviewedBy": "Atlas Beyond source-rights audit"
       }
     },
     {
@@ -132,12 +132,12 @@
       "url": "https://whc.unesco.org/en/list/886/",
       "accessedAt": "2026-08-23",
       "license": {
-        "status": "review-required",
+        "status": "restricted",
         "usage": "facts-only",
-        "termsUrl": null,
-        "reviewedAt": null,
-        "reviewedBy": null,
-        "notes": "Authoritative public reference; facts paraphrased in original Atlas Beyond language. Rights review remains required before editorial approval."
+        "termsUrl": "https://whc.unesco.org/en/disclaimer",
+        "notes": "Reference-only: Atlas Beyond links by plain text and independently restates facts. No UNESCO prose, data feed, image, emblem, or other protected element is copied. Written permission is required before reproducing WHC content.",
+        "reviewedAt": "2026-08-23",
+        "reviewedBy": "Atlas Beyond source-rights audit"
       }
     },
     {
@@ -147,12 +147,12 @@
       "url": "https://earthobservatory.nasa.gov/world-of-change/AralSea",
       "accessedAt": "2026-08-23",
       "license": {
-        "status": "review-required",
+        "status": "approved",
         "usage": "facts-only",
-        "termsUrl": null,
-        "reviewedAt": null,
-        "reviewedBy": null,
-        "notes": "Authoritative public reference; facts paraphrased in original Atlas Beyond language. Rights review remains required before editorial approval."
+        "termsUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "notes": "Approved for independently written factual and informational use under NASA media guidelines. No NASA logos, media, or endorsement claims are used.",
+        "reviewedAt": "2026-08-23",
+        "reviewedBy": "Atlas Beyond source-rights audit"
       }
     }
   ],

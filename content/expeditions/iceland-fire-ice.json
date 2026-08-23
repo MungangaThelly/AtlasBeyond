@@ -24,9 +24,9 @@
   ],
   "editorial": {
     "contentVersion": "1.0.0",
-    "reviewStatus": "in-review",
-    "reviewedBy": null,
-    "reviewedAt": null
+    "reviewStatus": "reviewed",
+    "reviewedBy": "Atlas Beyond source-rights audit",
+    "reviewedAt": "2026-08-23"
   },
   "sources": [
     {
@@ -38,10 +38,10 @@
       "license": {
         "status": "review-required",
         "usage": "facts-only",
-        "termsUrl": null,
+        "termsUrl": "https://www.vatnajokulsthjodgardur.is/en/communities--businesses/permits",
+        "notes": "Authoritative park reference used only for independently written facts. No sufficiently explicit website-content reuse license was found; no park prose, photos, branding, or media are reproduced.",
         "reviewedAt": "2026-08-23",
-        "reviewedBy": "Atlas Beyond rights audit",
-        "notes": "No explicit reuse terms located. Retain link and independently written factual summary; obtain permission or legal review before release."
+        "reviewedBy": "Atlas Beyond source-rights audit"
       }
     },
     {
@@ -51,12 +51,12 @@
       "url": "https://whc.unesco.org/en/list/1604/",
       "accessedAt": "2026-08-23",
       "license": {
-        "status": "review-required",
+        "status": "restricted",
         "usage": "facts-only",
-        "termsUrl": "https://whc.unesco.org/en/licenses",
+        "termsUrl": "https://whc.unesco.org/en/disclaimer",
+        "notes": "Reference-only: Atlas Beyond links by plain text and independently restates facts. No UNESCO prose, data feed, image, emblem, or other protected element is copied. Written permission is required before reproducing WHC content.",
         "reviewedAt": "2026-08-23",
-        "reviewedBy": "Atlas Beyond rights audit",
-        "notes": "UNESCO licenses are work-specific. Retain link and independently written factual summary; verify the source page license before release."
+        "reviewedBy": "Atlas Beyond source-rights audit"
       }
     },
     {
@@ -68,10 +68,10 @@
       "license": {
         "status": "review-required",
         "usage": "facts-only",
-        "termsUrl": null,
+        "termsUrl": "https://www.vatnajokulsthjodgardur.is/en/communities--businesses/permits",
+        "notes": "Authoritative park reference used only for independently written facts. No sufficiently explicit website-content reuse license was found; no park prose, photos, branding, or media are reproduced.",
         "reviewedAt": "2026-08-23",
-        "reviewedBy": "Atlas Beyond rights audit",
-        "notes": "No explicit reuse terms located. Retain link and independently written factual summary; obtain permission or legal review before release."
+        "reviewedBy": "Atlas Beyond source-rights audit"
       }
     },
     {
@@ -83,10 +83,10 @@
       "license": {
         "status": "review-required",
         "usage": "facts-only",
-        "termsUrl": null,
+        "termsUrl": "https://www.vatnajokulsthjodgardur.is/en/communities--businesses/permits",
+        "notes": "Authoritative park reference used only for independently written facts. No sufficiently explicit website-content reuse license was found; no park prose, photos, branding, or media are reproduced.",
         "reviewedAt": "2026-08-23",
-        "reviewedBy": "Atlas Beyond rights audit",
-        "notes": "No explicit reuse terms located. Retain link and independently written factual summary; obtain permission or legal review before release."
+        "reviewedBy": "Atlas Beyond source-rights audit"
       }
     },
     {
@@ -98,10 +98,10 @@
       "license": {
         "status": "review-required",
         "usage": "facts-only",
-        "termsUrl": null,
+        "termsUrl": "https://www.vatnajokulsthjodgardur.is/en/communities--businesses/permits",
+        "notes": "Authoritative park reference used only for independently written facts. No sufficiently explicit website-content reuse license was found; no park prose, photos, branding, or media are reproduced.",
         "reviewedAt": "2026-08-23",
-        "reviewedBy": "Atlas Beyond rights audit",
-        "notes": "No explicit reuse terms located. Retain link and independently written factual summary; obtain permission or legal review before release."
+        "reviewedBy": "Atlas Beyond source-rights audit"
       }
     },
     {
@@ -113,10 +113,10 @@
       "license": {
         "status": "review-required",
         "usage": "facts-only",
-        "termsUrl": null,
+        "termsUrl": "https://www.vatnajokulsthjodgardur.is/en/communities--businesses/permits",
+        "notes": "Authoritative park reference used only for independently written facts. No sufficiently explicit website-content reuse license was found; no park prose, photos, branding, or media are reproduced.",
         "reviewedAt": "2026-08-23",
-        "reviewedBy": "Atlas Beyond rights audit",
-        "notes": "No explicit reuse terms located. Retain link and independently written factual summary; obtain permission or legal review before release."
+        "reviewedBy": "Atlas Beyond source-rights audit"
       }
     },
     {
@@ -128,10 +128,10 @@
       "license": {
         "status": "review-required",
         "usage": "facts-only",
-        "termsUrl": null,
+        "termsUrl": "https://www.vatnajokulsthjodgardur.is/en/communities--businesses/permits",
+        "notes": "Authoritative park reference used only for independently written facts. No sufficiently explicit website-content reuse license was found; no park prose, photos, branding, or media are reproduced.",
         "reviewedAt": "2026-08-23",
-        "reviewedBy": "Atlas Beyond rights audit",
-        "notes": "No explicit reuse terms located. Retain link and independently written factual summary; obtain permission or legal review before release."
+        "reviewedBy": "Atlas Beyond source-rights audit"
       }
     },
     {
@@ -143,10 +143,10 @@
       "license": {
         "status": "review-required",
         "usage": "facts-only",
-        "termsUrl": null,
+        "termsUrl": "https://www.vatnajokulsthjodgardur.is/en/communities--businesses/permits",
+        "notes": "Authoritative park reference used only for independently written facts. No sufficiently explicit website-content reuse license was found; no park prose, photos, branding, or media are reproduced.",
         "reviewedAt": "2026-08-23",
-        "reviewedBy": "Atlas Beyond rights audit",
-        "notes": "No explicit reuse terms located. Retain link and independently written factual summary; obtain permission or legal review before release."
+        "reviewedBy": "Atlas Beyond source-rights audit"
       }
     }
   ],

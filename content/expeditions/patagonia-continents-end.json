@@ -28,9 +28,9 @@
   ],
   "editorial": {
     "contentVersion": "1.1.0",
-    "reviewStatus": "in-review",
-    "reviewedBy": null,
-    "reviewedAt": null
+    "reviewStatus": "reviewed",
+    "reviewedBy": "Atlas Beyond source-rights audit",
+    "reviewedAt": "2026-08-23"
   },
   "sources": [
     {
@@ -41,11 +41,11 @@
       "accessedAt": "2026-08-23",
       "license": {
         "status": "approved",
-        "usage": "attributed-summary",
+        "usage": "facts-only",
         "termsUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "notes": "Approved for independently written factual and informational use under NASA media guidelines. No NASA logos, media, or endorsement claims are used.",
         "reviewedAt": "2026-08-23",
-        "reviewedBy": "Atlas Beyond rights audit",
-        "notes": "NASA permits factual, informational use without implied endorsement; Atlas Beyond uses original summaries and attribution only."
+        "reviewedBy": "Atlas Beyond source-rights audit"
       }
     },
     {
@@ -57,10 +57,10 @@
       "license": {
         "status": "review-required",
         "usage": "facts-only",
-        "termsUrl": "https://www.argentina.gob.ar/transparencia-activa/portales-de-datos-abiertos",
+        "termsUrl": "https://www.argentina.gob.ar/terminos-y-condiciones",
+        "notes": "Authoritative government reference used only for independently written facts. The portal terms do not provide a sufficiently explicit, page-specific reuse grant for final legal clearance.",
         "reviewedAt": "2026-08-23",
-        "reviewedBy": "Atlas Beyond rights audit",
-        "notes": "Argentina promotes reuse of designated open datasets, but these park webpages do not expose a verified dataset license."
+        "reviewedBy": "Atlas Beyond source-rights audit"
       }
     },
     {
@@ -70,12 +70,12 @@
       "url": "https://whc.unesco.org/en/list/145/",
       "accessedAt": "2026-08-23",
       "license": {
-        "status": "review-required",
+        "status": "restricted",
         "usage": "facts-only",
-        "termsUrl": null,
-        "reviewedAt": null,
-        "reviewedBy": null,
-        "notes": "Authoritative public reference; facts paraphrased in original Atlas Beyond language. Rights review remains required before editorial approval."
+        "termsUrl": "https://whc.unesco.org/en/disclaimer",
+        "notes": "Reference-only: Atlas Beyond links by plain text and independently restates facts. No UNESCO prose, data feed, image, emblem, or other protected element is copied. Written permission is required before reproducing WHC content.",
+        "reviewedAt": "2026-08-23",
+        "reviewedBy": "Atlas Beyond source-rights audit"
       }
     },
     {
@@ -85,12 +85,12 @@
       "url": "https://whc.unesco.org/en/list/936/",
       "accessedAt": "2026-08-23",
       "license": {
-        "status": "review-required",
+        "status": "restricted",
         "usage": "facts-only",
-        "termsUrl": null,
-        "reviewedAt": null,
-        "reviewedBy": null,
-        "notes": "Authoritative public reference; facts paraphrased in original Atlas Beyond language. Rights review remains required before editorial approval."
+        "termsUrl": "https://whc.unesco.org/en/disclaimer",
+        "notes": "Reference-only: Atlas Beyond links by plain text and independently restates facts. No UNESCO prose, data feed, image, emblem, or other protected element is copied. Written permission is required before reproducing WHC content.",
+        "reviewedAt": "2026-08-23",
+        "reviewedBy": "Atlas Beyond source-rights audit"
       }
     },
     {
@@ -100,12 +100,12 @@
       "url": "https://www.unesco.org/en/mab/torres-del-paine",
       "accessedAt": "2026-08-23",
       "license": {
-        "status": "review-required",
+        "status": "restricted",
         "usage": "facts-only",
-        "termsUrl": null,
-        "reviewedAt": null,
-        "reviewedBy": null,
-        "notes": "Authoritative public reference; facts paraphrased in original Atlas Beyond language. Rights review remains required before editorial approval."
+        "termsUrl": "https://whc.unesco.org/en/disclaimer",
+        "notes": "Reference-only: Atlas Beyond links by plain text and independently restates facts. No UNESCO prose, data feed, image, emblem, or other protected element is copied. Written permission is required before reproducing WHC content.",
+        "reviewedAt": "2026-08-23",
+        "reviewedBy": "Atlas Beyond source-rights audit"
       }
     },
     {
@@ -117,10 +117,10 @@
       "license": {
         "status": "review-required",
         "usage": "facts-only",
-        "termsUrl": null,
-        "reviewedAt": null,
-        "reviewedBy": null,
-        "notes": "Authoritative public reference; facts paraphrased in original Atlas Beyond language. Rights review remains required before editorial approval."
+        "termsUrl": "https://www.argentina.gob.ar/terminos-y-condiciones",
+        "notes": "Authoritative government reference used only for independently written facts. The portal terms do not provide a sufficiently explicit, page-specific reuse grant for final legal clearance.",
+        "reviewedAt": "2026-08-23",
+        "reviewedBy": "Atlas Beyond source-rights audit"
       }
     }
   ],

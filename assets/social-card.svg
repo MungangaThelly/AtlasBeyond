@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Atlas Beyond</title><desc id="desc">A world of evidence and wonder.</desc>
+  <defs><radialGradient id="g" cx="70%" cy="30%"><stop stop-color="#24433b"/><stop offset="1" stop-color="#06191e"/></radialGradient></defs>
+  <rect width="1200" height="630" fill="url(#g)"/><circle cx="930" cy="310" r="190" fill="none" stroke="#cddd61" stroke-width="2"/><circle cx="930" cy="310" r="130" fill="none" stroke="#cddd61" stroke-opacity=".35" stroke-dasharray="8 12"/><path d="M930 92l18 200 200 18-200 18-18 200-18-200-200-18 200-18z" fill="#cddd61" fill-opacity=".85"/>
+  <text x="90" y="120" fill="#cddd61" font-family="Arial,sans-serif" font-size="24" letter-spacing="6">A WORLD OF EVIDENCE AND WONDER</text><text x="90" y="285" fill="#f3eee2" font-family="Georgia,serif" font-size="112">Atlas</text><text x="90" y="410" fill="#cddd61" font-family="Georgia,serif" font-size="112">Beyond</text><text x="95" y="505" fill="#a7bbb7" font-family="Arial,sans-serif" font-size="28">Read the land. Follow your curiosity.</text>
+</svg>

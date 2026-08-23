@@ -49,10 +49,11 @@ icelandCore.forEach((discovery, index) => {
 
 for (let packageIndex = 1; packageIndex < packages.length; packageIndex++) {
   const content = packages[packageIndex], runtime = regions[content.id];
+  const required = content.discoveries.filter(item => item.kind === 'investigation');
   assert(runtime, `${content.id} is absent from the runtime`);
   assert(content.legacyStorageKey === runtime.storageKey, `${content.id} progress storage key changed`);
-  assert(content.discoveries.length === runtime.locales.en.discoveries.length, `${content.id} discovery count differs from runtime`);
-  content.discoveries.forEach((discovery, index) => {
+  assert(required.length === runtime.locales.en.discoveries.length, `${content.id} required discovery count differs from runtime`);
+  required.forEach((discovery, index) => {
     assert(JSON.stringify(discovery.coordinates) === JSON.stringify(runtime.locales.en.discoveries[index].coordinates), `${content.id} discovery ${index + 1} coordinates changed`);
     for (const locale of locales) {
       const migrated = discovery.locales[locale], original = runtime.locales[locale].discoveries[index];

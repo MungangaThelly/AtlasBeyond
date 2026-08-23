@@ -15,14 +15,20 @@
   "interests": [
     "wildlife",
     "history",
-    "geology"
+    "geology",
+    "ecology",
+    "navigation"
   ],
   "knowledgePaths": [
     "geology",
-    "cartography"
+    "cartography",
+    "ecology",
+    "wildlife",
+    "history",
+    "navigation"
   ],
   "editorial": {
-    "contentVersion": "1.0.0",
+    "contentVersion": "1.1.0",
     "reviewStatus": "in-review",
     "reviewedBy": null,
     "reviewedAt": null
@@ -71,6 +77,66 @@
         "reviewedAt": "2026-08-23",
         "reviewedBy": "Atlas Beyond rights audit",
         "notes": "No Smithsonian text or media may be reproduced. Commercial use requires separate clearance unless the specific asset is CC0."
+      }
+    },
+    {
+      "id": "unesco-serengeti",
+      "title": "Serengeti National Park",
+      "publisher": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/156/",
+      "accessedAt": "2026-08-23",
+      "license": {
+        "status": "review-required",
+        "usage": "facts-only",
+        "termsUrl": null,
+        "reviewedAt": null,
+        "reviewedBy": null,
+        "notes": "Authoritative public reference; facts paraphrased in original Atlas Beyond language. Rights review remains required before editorial approval."
+      }
+    },
+    {
+      "id": "unesco-ngorongoro",
+      "title": "Ngorongoro Conservation Area",
+      "publisher": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/39/",
+      "accessedAt": "2026-08-23",
+      "license": {
+        "status": "review-required",
+        "usage": "facts-only",
+        "termsUrl": null,
+        "reviewedAt": null,
+        "reviewedBy": null,
+        "notes": "Authoritative public reference; facts paraphrased in original Atlas Beyond language. Rights review remains required before editorial approval."
+      }
+    },
+    {
+      "id": "smithsonian-lengai",
+      "title": "Ol Doinyo Lengai",
+      "publisher": "Smithsonian Global Volcanism Program",
+      "url": "https://volcano.si.edu/volcano.cfm?vn=222120",
+      "accessedAt": "2026-08-23",
+      "license": {
+        "status": "review-required",
+        "usage": "facts-only",
+        "termsUrl": null,
+        "reviewedAt": null,
+        "reviewedBy": null,
+        "notes": "Authoritative public reference; facts paraphrased in original Atlas Beyond language. Rights review remains required before editorial approval."
+      }
+    },
+    {
+      "id": "nasa-lake-natron",
+      "title": "Lake Natron, Tanzania",
+      "publisher": "NASA Earth Observatory",
+      "url": "https://earthobservatory.nasa.gov/images/5466/lake-natron-tanzania",
+      "accessedAt": "2026-08-23",
+      "license": {
+        "status": "review-required",
+        "usage": "facts-only",
+        "termsUrl": null,
+        "reviewedAt": null,
+        "reviewedBy": null,
+        "notes": "Authoritative public reference; facts paraphrased in original Atlas Beyond language. Rights review remains required before editorial approval."
       }
     }
   ],
@@ -512,6 +578,420 @@
           ],
           "correct": 0,
           "reveal": "Olduvais lager placerar fossil och verktyg i en lång berättelse om människans utveckling och miljöförändring."
+        }
+      }
+    },
+    {
+      "id": "olduvai-strata",
+      "kind": "field-note",
+      "order": 4,
+      "optional": true,
+      "coordinates": [
+        35.354,
+        -2.995
+      ],
+      "categories": [
+        "history"
+      ],
+      "knowledgeReward": {
+        "path": "history",
+        "points": 1,
+        "unlockLevel": 0
+      },
+      "claims": [
+        {
+          "id": "olduvai-strata-claim",
+          "text": "Olduvai’s long sequence of sediments preserves evidence central to understanding early human evolution and changing environments.",
+          "sourceIds": [
+            "unesco-ngorongoro"
+          ],
+          "reviewStatus": "draft",
+          "uncertainty": "low"
+        }
+      ],
+      "locales": {
+        "en": {
+          "place": "Olduvai Gorge",
+          "clue": "Layers hold a human story",
+          "reveal": "Olduvai’s long sequence of sediments preserves evidence central to understanding early human evolution and changing environments."
+        },
+        "fr": {
+          "place": "Olduvai Gorge",
+          "clue": "Les couches gardent une histoire humaine",
+          "reveal": "La longue séquence de sédiments d’Olduvai conserve des indices essentiels sur l’évolution humaine et les milieux changeants."
+        },
+        "sv": {
+          "place": "Olduvai Gorge",
+          "clue": "Lager bevarar människans historia",
+          "reveal": "Olduvais långa sedimentföljd bevarar viktiga spår av människans utveckling och föränderliga miljöer."
+        }
+      }
+    },
+    {
+      "id": "laetoli-footprints",
+      "kind": "field-note",
+      "order": 5,
+      "optional": true,
+      "coordinates": [
+        35.19,
+        -3.22
+      ],
+      "categories": [
+        "history"
+      ],
+      "knowledgeReward": {
+        "path": "history",
+        "points": 1,
+        "unlockLevel": 1
+      },
+      "claims": [
+        {
+          "id": "laetoli-footprints-claim",
+          "text": "At Laetoli, ancient hominin footprints were preserved in volcanic ash, recording upright walking in a dated landscape.",
+          "sourceIds": [
+            "unesco-ngorongoro"
+          ],
+          "reviewStatus": "draft",
+          "uncertainty": "low"
+        }
+      ],
+      "locales": {
+        "en": {
+          "place": "Laetoli",
+          "clue": "Footsteps hardened into deep time",
+          "reveal": "At Laetoli, ancient hominin footprints were preserved in volcanic ash, recording upright walking in a dated landscape."
+        },
+        "fr": {
+          "place": "Laetoli",
+          "clue": "Des pas figés dans le temps profond",
+          "reveal": "À Laetoli, des empreintes d’hominines ont été conservées dans des cendres volcaniques, témoignant de la marche debout."
+        },
+        "sv": {
+          "place": "Laetoli",
+          "clue": "Fotsteg stelnade i djup tid",
+          "reveal": "Vid Laetoli bevarades forntida homininspår i vulkanisk aska och visar upprätt gång."
+        }
+      }
+    },
+    {
+      "id": "ol-doinyo-lengai",
+      "kind": "field-note",
+      "order": 6,
+      "optional": true,
+      "coordinates": [
+        35.914,
+        -2.764
+      ],
+      "categories": [
+        "geology"
+      ],
+      "knowledgeReward": {
+        "path": "geology",
+        "points": 1,
+        "unlockLevel": 1
+      },
+      "claims": [
+        {
+          "id": "ol-doinyo-lengai-claim",
+          "text": "Ol Doinyo Lengai is the world’s active volcano known for erupting carbonatite lava, chemically unlike common silicate lava.",
+          "sourceIds": [
+            "smithsonian-lengai"
+          ],
+          "reviewStatus": "draft",
+          "uncertainty": "low"
+        }
+      ],
+      "locales": {
+        "en": {
+          "place": "Ol Doinyo Lengai",
+          "clue": "A volcano with unusual lava",
+          "reveal": "Ol Doinyo Lengai is the world’s active volcano known for erupting carbonatite lava, chemically unlike common silicate lava."
+        },
+        "fr": {
+          "place": "Ol Doinyo Lengai",
+          "clue": "Un volcan à la lave singulière",
+          "reveal": "Ol Doinyo Lengai est le volcan actif connu pour sa lave carbonatitique, très différente des laves silicatées ordinaires."
+        },
+        "sv": {
+          "place": "Ol Doinyo Lengai",
+          "clue": "En vulkan med ovanlig lava",
+          "reveal": "Ol Doinyo Lengai är den aktiva vulkan som är känd för karbonatitlava, kemiskt olik vanlig silikatlava."
+        }
+      }
+    },
+    {
+      "id": "lake-natron-flamingos",
+      "kind": "field-note",
+      "order": 7,
+      "optional": true,
+      "coordinates": [
+        36.02,
+        -2.42
+      ],
+      "categories": [
+        "wildlife"
+      ],
+      "knowledgeReward": {
+        "path": "wildlife",
+        "points": 1,
+        "unlockLevel": 0
+      },
+      "claims": [
+        {
+          "id": "lake-natron-flamingos-claim",
+          "text": "Lake Natron’s alkaline, saline water limits many predators while islands and shallows support breeding lesser flamingos.",
+          "sourceIds": [
+            "nasa-lake-natron"
+          ],
+          "reviewStatus": "draft",
+          "uncertainty": "low"
+        }
+      ],
+      "locales": {
+        "en": {
+          "place": "Lake Natron",
+          "clue": "A harsh lake shelters new life",
+          "reveal": "Lake Natron’s alkaline, saline water limits many predators while islands and shallows support breeding lesser flamingos."
+        },
+        "fr": {
+          "place": "Lake Natron",
+          "clue": "Un lac rude abrite une nouvelle vie",
+          "reveal": "Les eaux salines et alcalines du Natron limitent les prédateurs tandis que ses îlots accueillent les flamants nains."
+        },
+        "sv": {
+          "place": "Lake Natron",
+          "clue": "En hård sjö skyddar nytt liv",
+          "reveal": "Natrons salta alkaliska vatten begränsar rovdjur medan öar och grundområden stöder mindre flamingor."
+        }
+      }
+    },
+    {
+      "id": "mara-river-crossing",
+      "kind": "field-note",
+      "order": 8,
+      "optional": true,
+      "coordinates": [
+        34.99,
+        -1.49
+      ],
+      "categories": [
+        "navigation"
+      ],
+      "knowledgeReward": {
+        "path": "navigation",
+        "points": 1,
+        "unlockLevel": 1
+      },
+      "claims": [
+        {
+          "id": "mara-river-crossing-claim",
+          "text": "The Mara is both water source and dangerous crossing; seasonal herds must read flow, banks, and crowd movement.",
+          "sourceIds": [
+            "unesco-serengeti"
+          ],
+          "reviewStatus": "draft",
+          "uncertainty": "low"
+        }
+      ],
+      "locales": {
+        "en": {
+          "place": "Mara River",
+          "clue": "A river redraws a migration route",
+          "reveal": "The Mara is both water source and dangerous crossing; seasonal herds must read flow, banks, and crowd movement."
+        },
+        "fr": {
+          "place": "Mara River",
+          "clue": "Une rivière redessine la migration",
+          "reveal": "La Mara est à la fois ressource et passage dangereux ; les troupeaux lisent courant, berges et mouvements collectifs."
+        },
+        "sv": {
+          "place": "Mara River",
+          "clue": "En flod ritar om vandringsvägen",
+          "reveal": "Mara är både vattenkälla och farlig passage; hjordarna måste läsa flöde, stränder och flockens rörelse."
+        }
+      }
+    },
+    {
+      "id": "serengeti-kopjes",
+      "kind": "field-note",
+      "order": 9,
+      "optional": true,
+      "coordinates": [
+        34.82,
+        -2.55
+      ],
+      "categories": [
+        "ecology"
+      ],
+      "knowledgeReward": {
+        "path": "ecology",
+        "points": 1,
+        "unlockLevel": 0
+      },
+      "claims": [
+        {
+          "id": "serengeti-kopjes-claim",
+          "text": "Granite kopjes rise above the plains, creating shade, lookout points, crevices, and distinct habitat within open grassland.",
+          "sourceIds": [
+            "unesco-serengeti"
+          ],
+          "reviewStatus": "draft",
+          "uncertainty": "low"
+        }
+      ],
+      "locales": {
+        "en": {
+          "place": "Serengeti kopjes",
+          "clue": "Stone islands change the grass sea",
+          "reveal": "Granite kopjes rise above the plains, creating shade, lookout points, crevices, and distinct habitat within open grassland."
+        },
+        "fr": {
+          "place": "Serengeti kopjes",
+          "clue": "Des îles de pierre changent la mer d’herbe",
+          "reveal": "Les kopjes granitiques offrent ombre, observatoires, fissures et habitats distincts au milieu des plaines."
+        },
+        "sv": {
+          "place": "Serengeti kopjes",
+          "clue": "Stenöar förändrar gräshavet",
+          "reveal": "Granitkopjes ger skugga, utsikt, sprickor och särskilda livsmiljöer på de öppna slätterna."
+        }
+      }
+    },
+    {
+      "id": "ngorongoro-caldera",
+      "kind": "field-note",
+      "order": 10,
+      "optional": true,
+      "coordinates": [
+        35.58,
+        -3.17
+      ],
+      "categories": [
+        "geology"
+      ],
+      "knowledgeReward": {
+        "path": "geology",
+        "points": 1,
+        "unlockLevel": 2
+      },
+      "claims": [
+        {
+          "id": "ngorongoro-caldera-claim",
+          "text": "Ngorongoro is a vast volcanic caldera whose walls and floor concentrate varied habitats and large animal populations.",
+          "sourceIds": [
+            "unesco-ngorongoro"
+          ],
+          "reviewStatus": "draft",
+          "uncertainty": "low"
+        }
+      ],
+      "locales": {
+        "en": {
+          "place": "Ngorongoro Crater",
+          "clue": "Collapse creates a contained world",
+          "reveal": "Ngorongoro is a vast volcanic caldera whose walls and floor concentrate varied habitats and large animal populations."
+        },
+        "fr": {
+          "place": "Ngorongoro Crater",
+          "clue": "L’effondrement crée un monde contenu",
+          "reveal": "Le Ngorongoro est une vaste caldeira dont les parois et le fond concentrent des habitats variés et une grande faune."
+        },
+        "sv": {
+          "place": "Ngorongoro Crater",
+          "clue": "Kollaps skapar en avgränsad värld",
+          "reveal": "Ngorongoro är en stor kaldera vars väggar och botten samlar skilda livsmiljöer och stora djurpopulationer."
+        }
+      }
+    },
+    {
+      "id": "empakaai-crater",
+      "kind": "field-note",
+      "order": 11,
+      "optional": true,
+      "coordinates": [
+        35.83,
+        -2.92
+      ],
+      "categories": [
+        "geology"
+      ],
+      "knowledgeReward": {
+        "path": "geology",
+        "points": 1,
+        "unlockLevel": 2
+      },
+      "claims": [
+        {
+          "id": "empakaai-crater-claim",
+          "text": "Empakaai’s steep caldera encloses a lake, making the geometry of volcanic collapse visible from its rim.",
+          "sourceIds": [
+            "unesco-ngorongoro"
+          ],
+          "reviewStatus": "draft",
+          "uncertainty": "low"
+        }
+      ],
+      "locales": {
+        "en": {
+          "place": "Empakaai Crater",
+          "clue": "A lake occupies a volcanic bowl",
+          "reveal": "Empakaai’s steep caldera encloses a lake, making the geometry of volcanic collapse visible from its rim."
+        },
+        "fr": {
+          "place": "Empakaai Crater",
+          "clue": "Un lac occupe un bol volcanique",
+          "reveal": "La caldeira escarpée d’Empakaai renferme un lac et rend visible la géométrie de l’effondrement volcanique."
+        },
+        "sv": {
+          "place": "Empakaai Crater",
+          "clue": "En sjö fyller en vulkanisk skål",
+          "reveal": "Empakaais branta kaldera omsluter en sjö och visar den vulkaniska kollapsens geometri."
+        }
+      }
+    },
+    {
+      "id": "short-grass-plains",
+      "kind": "field-note",
+      "order": 12,
+      "optional": true,
+      "coordinates": [
+        35.1,
+        -2.9
+      ],
+      "categories": [
+        "ecology"
+      ],
+      "knowledgeReward": {
+        "path": "ecology",
+        "points": 1,
+        "unlockLevel": 1
+      },
+      "claims": [
+        {
+          "id": "short-grass-plains-claim",
+          "text": "Mineral-rich volcanic soils support short grasses; seasonal rain turns this ground into crucial grazing and calving habitat.",
+          "sourceIds": [
+            "unesco-serengeti"
+          ],
+          "reviewStatus": "draft",
+          "uncertainty": "low"
+        }
+      ],
+      "locales": {
+        "en": {
+          "place": "Southern Serengeti plains",
+          "clue": "Ash becomes grass, grass becomes movement",
+          "reveal": "Mineral-rich volcanic soils support short grasses; seasonal rain turns this ground into crucial grazing and calving habitat."
+        },
+        "fr": {
+          "place": "Southern Serengeti plains",
+          "clue": "La cendre devient herbe, puis mouvement",
+          "reveal": "Les sols volcaniques nourrissent des herbes courtes ; les pluies saisonnières créent un habitat essentiel au pâturage et aux naissances."
+        },
+        "sv": {
+          "place": "Southern Serengeti plains",
+          "clue": "Aska blir gräs, gräs blir rörelse",
+          "reveal": "Mineralrika vulkanjordar bär kort gräs; säsongsregn skapar viktiga betes- och kalvningsmarker."
         }
       }
     }

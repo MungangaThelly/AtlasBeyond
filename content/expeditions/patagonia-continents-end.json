@@ -14,14 +14,20 @@
   },
   "interests": [
     "history",
-    "geology"
+    "geology",
+    "cartography",
+    "ecology",
+    "wildlife"
   ],
   "knowledgePaths": [
     "geology",
-    "cartography"
+    "cartography",
+    "history",
+    "ecology",
+    "wildlife"
   ],
   "editorial": {
-    "contentVersion": "1.0.0",
+    "contentVersion": "1.1.0",
     "reviewStatus": "in-review",
     "reviewedBy": null,
     "reviewedAt": null
@@ -55,6 +61,66 @@
         "reviewedAt": "2026-08-23",
         "reviewedBy": "Atlas Beyond rights audit",
         "notes": "Argentina promotes reuse of designated open datasets, but these park webpages do not expose a verified dataset license."
+      }
+    },
+    {
+      "id": "unesco-los-glaciares",
+      "title": "Los Glaciares National Park",
+      "publisher": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/145/",
+      "accessedAt": "2026-08-23",
+      "license": {
+        "status": "review-required",
+        "usage": "facts-only",
+        "termsUrl": null,
+        "reviewedAt": null,
+        "reviewedBy": null,
+        "notes": "Authoritative public reference; facts paraphrased in original Atlas Beyond language. Rights review remains required before editorial approval."
+      }
+    },
+    {
+      "id": "unesco-cueva-manos",
+      "title": "Cueva de las Manos",
+      "publisher": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/936/",
+      "accessedAt": "2026-08-23",
+      "license": {
+        "status": "review-required",
+        "usage": "facts-only",
+        "termsUrl": null,
+        "reviewedAt": null,
+        "reviewedBy": null,
+        "notes": "Authoritative public reference; facts paraphrased in original Atlas Beyond language. Rights review remains required before editorial approval."
+      }
+    },
+    {
+      "id": "unesco-torres-paine",
+      "title": "Torres del Paine Biosphere Reserve",
+      "publisher": "UNESCO",
+      "url": "https://www.unesco.org/en/mab/torres-del-paine",
+      "accessedAt": "2026-08-23",
+      "license": {
+        "status": "review-required",
+        "usage": "facts-only",
+        "termsUrl": null,
+        "reviewedAt": null,
+        "reviewedBy": null,
+        "notes": "Authoritative public reference; facts paraphrased in original Atlas Beyond language. Rights review remains required before editorial approval."
+      }
+    },
+    {
+      "id": "argentina-patagonia-parks",
+      "title": "Patagonia Austral protected areas",
+      "publisher": "Argentina National Parks",
+      "url": "https://www.argentina.gob.ar/parquesnacionales/patagonia-austral",
+      "accessedAt": "2026-08-23",
+      "license": {
+        "status": "review-required",
+        "usage": "facts-only",
+        "termsUrl": null,
+        "reviewedAt": null,
+        "reviewedBy": null,
+        "notes": "Authoritative public reference; facts paraphrased in original Atlas Beyond language. Rights review remains required before editorial approval."
       }
     }
   ],
@@ -493,6 +559,420 @@
           ],
           "correct": 1,
           "reveal": "Moln kring toppen skapade intrycket av rök. Namnet Chaltén bevarar den läsningen."
+        }
+      }
+    },
+    {
+      "id": "upsala-glacier",
+      "kind": "field-note",
+      "order": 4,
+      "optional": true,
+      "coordinates": [
+        -73.29,
+        -49.82
+      ],
+      "categories": [
+        "geology"
+      ],
+      "knowledgeReward": {
+        "path": "geology",
+        "points": 1,
+        "unlockLevel": 1
+      },
+      "claims": [
+        {
+          "id": "upsala-glacier-claim",
+          "text": "Upsala descends from the Southern Patagonian Ice Field; its changing front records how a vast ice system responds to climate and lake water.",
+          "sourceIds": [
+            "unesco-los-glaciares"
+          ],
+          "reviewStatus": "draft",
+          "uncertainty": "low"
+        }
+      ],
+      "locales": {
+        "en": {
+          "place": "Upsala Glacier",
+          "clue": "A river of ice broad enough to branch",
+          "reveal": "Upsala descends from the Southern Patagonian Ice Field; its changing front records how a vast ice system responds to climate and lake water."
+        },
+        "fr": {
+          "place": "Upsala Glacier",
+          "clue": "Un fleuve de glace ramifié",
+          "reveal": "Upsala descend du champ de glace Sud de Patagonie ; son front changeant révèle la réponse de la glace au climat et au lac."
+        },
+        "sv": {
+          "place": "Upsala Glacier",
+          "clue": "En förgrenad flod av is",
+          "reveal": "Upsala strömmar från Södra patagoniska isfältet; den föränderliga fronten visar hur isen svarar på klimat och sjövatten."
+        }
+      }
+    },
+    {
+      "id": "viedma-glacier",
+      "kind": "field-note",
+      "order": 5,
+      "optional": true,
+      "coordinates": [
+        -73.17,
+        -49.52
+      ],
+      "categories": [
+        "geology"
+      ],
+      "knowledgeReward": {
+        "path": "geology",
+        "points": 1,
+        "unlockLevel": 2
+      },
+      "claims": [
+        {
+          "id": "viedma-glacier-claim",
+          "text": "Viedma Glacier calves into Lago Viedma, linking mountain snowfall, flowing ice, and a lake shaped by glacial erosion.",
+          "sourceIds": [
+            "unesco-los-glaciares"
+          ],
+          "reviewStatus": "draft",
+          "uncertainty": "low"
+        }
+      ],
+      "locales": {
+        "en": {
+          "place": "Viedma Glacier",
+          "clue": "Blue ice meets a long lake",
+          "reveal": "Viedma Glacier calves into Lago Viedma, linking mountain snowfall, flowing ice, and a lake shaped by glacial erosion."
+        },
+        "fr": {
+          "place": "Viedma Glacier",
+          "clue": "La glace bleue rejoint un long lac",
+          "reveal": "Le glacier Viedma vêle dans le lac Viedma, reliant neige de montagne, glace en mouvement et érosion glaciaire."
+        },
+        "sv": {
+          "place": "Viedma Glacier",
+          "clue": "Blå is möter en lång sjö",
+          "reveal": "Viedmaglaciären kalvar i Lago Viedma och förenar bergssnö, strömmande is och glacial erosion."
+        }
+      }
+    },
+    {
+      "id": "cerro-torre-spire",
+      "kind": "field-note",
+      "order": 6,
+      "optional": true,
+      "coordinates": [
+        -73.1,
+        -49.29
+      ],
+      "categories": [
+        "geology"
+      ],
+      "knowledgeReward": {
+        "path": "geology",
+        "points": 1,
+        "unlockLevel": 3
+      },
+      "claims": [
+        {
+          "id": "cerro-torre-spire-claim",
+          "text": "Cerro Torre’s steep granite profile and persistent Patagonian weather make rock, ice, and wind visible in one silhouette.",
+          "sourceIds": [
+            "unesco-los-glaciares"
+          ],
+          "reviewStatus": "draft",
+          "uncertainty": "low"
+        }
+      ],
+      "locales": {
+        "en": {
+          "place": "Cerro Torre",
+          "clue": "A stone needle in the storm belt",
+          "reveal": "Cerro Torre’s steep granite profile and persistent Patagonian weather make rock, ice, and wind visible in one silhouette."
+        },
+        "fr": {
+          "place": "Cerro Torre",
+          "clue": "Une aiguille dans la ceinture des tempêtes",
+          "reveal": "Le profil granitique du Cerro Torre et le climat patagonien réunissent roche, glace et vent dans une même silhouette."
+        },
+        "sv": {
+          "place": "Cerro Torre",
+          "clue": "En stennål i stormbältet",
+          "reveal": "Cerro Torres branta granitprofil och Patagoniens väder visar berg, is och vind i en enda silhuett."
+        }
+      }
+    },
+    {
+      "id": "laguna-de-los-tres",
+      "kind": "field-note",
+      "order": 7,
+      "optional": true,
+      "coordinates": [
+        -73.038,
+        -49.268
+      ],
+      "categories": [
+        "cartography"
+      ],
+      "knowledgeReward": {
+        "path": "cartography",
+        "points": 1,
+        "unlockLevel": 0
+      },
+      "claims": [
+        {
+          "id": "laguna-de-los-tres-claim",
+          "text": "From Laguna de los Tres, valleys, moraines, lake, and the Fitz Roy massif align into a readable glacial landscape.",
+          "sourceIds": [
+            "unesco-los-glaciares"
+          ],
+          "reviewStatus": "draft",
+          "uncertainty": "low"
+        }
+      ],
+      "locales": {
+        "en": {
+          "place": "Laguna de los Tres",
+          "clue": "A viewpoint explains the map",
+          "reveal": "From Laguna de los Tres, valleys, moraines, lake, and the Fitz Roy massif align into a readable glacial landscape."
+        },
+        "fr": {
+          "place": "Laguna de los Tres",
+          "clue": "Un belvédère explique la carte",
+          "reveal": "Depuis la Laguna de los Tres, vallées, moraines, lac et massif du Fitz Roy composent un paysage glaciaire lisible."
+        },
+        "sv": {
+          "place": "Laguna de los Tres",
+          "clue": "En utsiktspunkt förklarar kartan",
+          "reveal": "Från Laguna de los Tres bildar dalar, moräner, sjö och Fitz Roy ett läsbart glacialt landskap."
+        }
+      }
+    },
+    {
+      "id": "cueva-de-las-manos",
+      "kind": "field-note",
+      "order": 8,
+      "optional": true,
+      "coordinates": [
+        -70.666,
+        -47.15
+      ],
+      "categories": [
+        "history"
+      ],
+      "knowledgeReward": {
+        "path": "history",
+        "points": 1,
+        "unlockLevel": 0
+      },
+      "claims": [
+        {
+          "id": "cueva-de-las-manos-claim",
+          "text": "The cave preserves exceptional rock art, including stencilled hands and hunting scenes made by hunter-gatherer communities over thousands of years.",
+          "sourceIds": [
+            "unesco-cueva-manos"
+          ],
+          "reviewStatus": "draft",
+          "uncertainty": "low"
+        }
+      ],
+      "locales": {
+        "en": {
+          "place": "Cueva de las Manos",
+          "clue": "Hands carry voices across millennia",
+          "reveal": "The cave preserves exceptional rock art, including stencilled hands and hunting scenes made by hunter-gatherer communities over thousands of years."
+        },
+        "fr": {
+          "place": "Cueva de las Manos",
+          "clue": "Des mains parlent à travers les millénaires",
+          "reveal": "La grotte conserve des mains au pochoir et des scènes de chasse créées par des communautés de chasseurs-cueilleurs pendant des millénaires."
+        },
+        "sv": {
+          "place": "Cueva de las Manos",
+          "clue": "Händer talar genom årtusenden",
+          "reveal": "Grottan bevarar schablonhänder och jaktscener som jägare-samlare skapade under tusentals år."
+        }
+      }
+    },
+    {
+      "id": "torres-del-paine",
+      "kind": "field-note",
+      "order": 9,
+      "optional": true,
+      "coordinates": [
+        -72.998,
+        -50.942
+      ],
+      "categories": [
+        "geology"
+      ],
+      "knowledgeReward": {
+        "path": "geology",
+        "points": 1,
+        "unlockLevel": 2
+      },
+      "claims": [
+        {
+          "id": "torres-del-paine-claim",
+          "text": "The Paine towers expose resistant granite sharpened by long erosion and glaciers at the edge of the Andes.",
+          "sourceIds": [
+            "unesco-torres-paine"
+          ],
+          "reviewStatus": "draft",
+          "uncertainty": "low"
+        }
+      ],
+      "locales": {
+        "en": {
+          "place": "Torres del Paine",
+          "clue": "Granite towers reveal uplift and ice",
+          "reveal": "The Paine towers expose resistant granite sharpened by long erosion and glaciers at the edge of the Andes."
+        },
+        "fr": {
+          "place": "Torres del Paine",
+          "clue": "Les tours révèlent le granite et la glace",
+          "reveal": "Les tours du Paine montrent un granite résistant sculpté par une longue érosion et les glaciers."
+        },
+        "sv": {
+          "place": "Torres del Paine",
+          "clue": "Granittorn visar isens arbete",
+          "reveal": "Paines torn visar motståndskraftig granit som lång erosion och glaciärer har skulpterat."
+        }
+      }
+    },
+    {
+      "id": "grey-glacier",
+      "kind": "field-note",
+      "order": 10,
+      "optional": true,
+      "coordinates": [
+        -73.25,
+        -50.96
+      ],
+      "categories": [
+        "ecology"
+      ],
+      "knowledgeReward": {
+        "path": "ecology",
+        "points": 1,
+        "unlockLevel": 1
+      },
+      "claims": [
+        {
+          "id": "grey-glacier-claim",
+          "text": "Grey Glacier carries ice from the Southern Patagonian Ice Field into Lago Grey, supplying meltwater to a wider watershed.",
+          "sourceIds": [
+            "unesco-torres-paine"
+          ],
+          "reviewStatus": "draft",
+          "uncertainty": "low"
+        }
+      ],
+      "locales": {
+        "en": {
+          "place": "Grey Glacier",
+          "clue": "Ice feeds a living watershed",
+          "reveal": "Grey Glacier carries ice from the Southern Patagonian Ice Field into Lago Grey, supplying meltwater to a wider watershed."
+        },
+        "fr": {
+          "place": "Grey Glacier",
+          "clue": "La glace nourrit un bassin vivant",
+          "reveal": "Le glacier Grey transporte la glace vers le lac Grey et alimente en eau de fonte un bassin plus vaste."
+        },
+        "sv": {
+          "place": "Grey Glacier",
+          "clue": "Is försörjer ett levande avrinningsområde",
+          "reveal": "Greyglaciären för is till Lago Grey och smältvatten till ett större avrinningsområde."
+        }
+      }
+    },
+    {
+      "id": "punta-tombo-penguins",
+      "kind": "field-note",
+      "order": 11,
+      "optional": true,
+      "coordinates": [
+        -65.06,
+        -44.04
+      ],
+      "categories": [
+        "wildlife"
+      ],
+      "knowledgeReward": {
+        "path": "wildlife",
+        "points": 1,
+        "unlockLevel": 0
+      },
+      "claims": [
+        {
+          "id": "punta-tombo-penguins-claim",
+          "text": "The protected coast at Punta Tombo supports a major breeding colony of Magellanic penguins that return to land to nest.",
+          "sourceIds": [
+            "argentina-patagonia-parks"
+          ],
+          "reviewStatus": "draft",
+          "uncertainty": "low"
+        }
+      ],
+      "locales": {
+        "en": {
+          "place": "Punta Tombo",
+          "clue": "A coastline becomes a nursery",
+          "reveal": "The protected coast at Punta Tombo supports a major breeding colony of Magellanic penguins that return to land to nest."
+        },
+        "fr": {
+          "place": "Punta Tombo",
+          "clue": "La côte devient une nurserie",
+          "reveal": "La côte protégée de Punta Tombo accueille une importante colonie de manchots de Magellan venus nicher à terre."
+        },
+        "sv": {
+          "place": "Punta Tombo",
+          "clue": "Kusten blir en barnkammare",
+          "reveal": "Den skyddade kusten vid Punta Tombo hyser en stor koloni magellanpingviner som återvänder för att häcka."
+        }
+      }
+    },
+    {
+      "id": "monte-leon-coast",
+      "kind": "field-note",
+      "order": 12,
+      "optional": true,
+      "coordinates": [
+        -68.89,
+        -50.34
+      ],
+      "categories": [
+        "ecology"
+      ],
+      "knowledgeReward": {
+        "path": "ecology",
+        "points": 1,
+        "unlockLevel": 0
+      },
+      "claims": [
+        {
+          "id": "monte-leon-coast-claim",
+          "text": "Monte León protects a continuous meeting of Patagonian steppe, cliffs, tidal shore, and marine wildlife.",
+          "sourceIds": [
+            "argentina-patagonia-parks"
+          ],
+          "reviewStatus": "draft",
+          "uncertainty": "low"
+        }
+      ],
+      "locales": {
+        "en": {
+          "place": "Monte León",
+          "clue": "Steppe meets the Atlantic",
+          "reveal": "Monte León protects a continuous meeting of Patagonian steppe, cliffs, tidal shore, and marine wildlife."
+        },
+        "fr": {
+          "place": "Monte León",
+          "clue": "La steppe rencontre l’Atlantique",
+          "reveal": "Monte León protège la rencontre continue entre steppe patagonienne, falaises, estran et faune marine."
+        },
+        "sv": {
+          "place": "Monte León",
+          "clue": "Stäppen möter Atlanten",
+          "reveal": "Monte León skyddar mötet mellan patagonisk stäpp, klippor, tidvattenstrand och marint liv."
         }
       }
     }

@@ -14,14 +14,22 @@
   },
   "interests": [
     "history",
-    "geology"
+    "geology",
+    "culture",
+    "archaeology",
+    "cartography",
+    "ecology"
   ],
   "knowledgePaths": [
     "geology",
-    "cartography"
+    "cartography",
+    "history",
+    "culture",
+    "archaeology",
+    "ecology"
   ],
   "editorial": {
-    "contentVersion": "1.0.0",
+    "contentVersion": "1.1.0",
     "reviewStatus": "in-review",
     "reviewedBy": null,
     "reviewedAt": null
@@ -70,6 +78,81 @@
         "reviewedAt": "2026-08-23",
         "reviewedBy": "Atlas Beyond rights audit",
         "notes": "UNESCO licenses are work-specific. Retain link and independently written factual summary; verify the source page license before release."
+      }
+    },
+    {
+      "id": "unesco-samarkand",
+      "title": "Samarkand – Crossroad of Cultures",
+      "publisher": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/603/",
+      "accessedAt": "2026-08-23",
+      "license": {
+        "status": "review-required",
+        "usage": "facts-only",
+        "termsUrl": null,
+        "reviewedAt": null,
+        "reviewedBy": null,
+        "notes": "Authoritative public reference; facts paraphrased in original Atlas Beyond language. Rights review remains required before editorial approval."
+      }
+    },
+    {
+      "id": "unesco-bukhara",
+      "title": "Historic Centre of Bukhara",
+      "publisher": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/602/",
+      "accessedAt": "2026-08-23",
+      "license": {
+        "status": "review-required",
+        "usage": "facts-only",
+        "termsUrl": null,
+        "reviewedAt": null,
+        "reviewedBy": null,
+        "notes": "Authoritative public reference; facts paraphrased in original Atlas Beyond language. Rights review remains required before editorial approval."
+      }
+    },
+    {
+      "id": "unesco-central-sites",
+      "title": "Silk Roads heritage sites",
+      "publisher": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/1442/",
+      "accessedAt": "2026-08-23",
+      "license": {
+        "status": "review-required",
+        "usage": "facts-only",
+        "termsUrl": null,
+        "reviewedAt": null,
+        "reviewedBy": null,
+        "notes": "Authoritative public reference; facts paraphrased in original Atlas Beyond language. Rights review remains required before editorial approval."
+      }
+    },
+    {
+      "id": "unesco-merv",
+      "title": "State Historical and Cultural Park Ancient Merv",
+      "publisher": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/886/",
+      "accessedAt": "2026-08-23",
+      "license": {
+        "status": "review-required",
+        "usage": "facts-only",
+        "termsUrl": null,
+        "reviewedAt": null,
+        "reviewedBy": null,
+        "notes": "Authoritative public reference; facts paraphrased in original Atlas Beyond language. Rights review remains required before editorial approval."
+      }
+    },
+    {
+      "id": "nasa-aral",
+      "title": "World of Change: Shrinking Aral Sea",
+      "publisher": "NASA Earth Observatory",
+      "url": "https://earthobservatory.nasa.gov/world-of-change/AralSea",
+      "accessedAt": "2026-08-23",
+      "license": {
+        "status": "review-required",
+        "usage": "facts-only",
+        "termsUrl": null,
+        "reviewedAt": null,
+        "reviewedBy": null,
+        "notes": "Authoritative public reference; facts paraphrased in original Atlas Beyond language. Rights review remains required before editorial approval."
       }
     }
   ],
@@ -508,6 +591,420 @@
           ],
           "correct": 1,
           "reveal": "Oasen gjorde varaktig bosättning möjlig och placerade Merv som centrum i långväga nätverk."
+        }
+      }
+    },
+    {
+      "id": "samarkand-registan",
+      "kind": "field-note",
+      "order": 4,
+      "optional": true,
+      "coordinates": [
+        66.975,
+        39.655
+      ],
+      "categories": [
+        "culture"
+      ],
+      "knowledgeReward": {
+        "path": "culture",
+        "points": 1,
+        "unlockLevel": 0
+      },
+      "claims": [
+        {
+          "id": "samarkand-registan-claim",
+          "text": "Samarkand’s monumental ensembles express its role as a crossroads where cultures, scholarship, trade, and urban design met.",
+          "sourceIds": [
+            "unesco-samarkand"
+          ],
+          "reviewStatus": "draft",
+          "uncertainty": "low"
+        }
+      ],
+      "locales": {
+        "en": {
+          "place": "Registan, Samarkand",
+          "clue": "A square gathers routes and ideas",
+          "reveal": "Samarkand’s monumental ensembles express its role as a crossroads where cultures, scholarship, trade, and urban design met."
+        },
+        "fr": {
+          "place": "Registan, Samarkand",
+          "clue": "Une place rassemble routes et idées",
+          "reveal": "Les ensembles monumentaux de Samarcande expriment son rôle de carrefour des cultures, du savoir, du commerce et de la ville."
+        },
+        "sv": {
+          "place": "Registan, Samarkand",
+          "clue": "Ett torg samlar vägar och idéer",
+          "reveal": "Samarkands monument visar dess roll som korsväg för kulturer, lärande, handel och stadsbyggnad."
+        }
+      }
+    },
+    {
+      "id": "bukhara-old-city",
+      "kind": "field-note",
+      "order": 5,
+      "optional": true,
+      "coordinates": [
+        64.414,
+        39.774
+      ],
+      "categories": [
+        "history"
+      ],
+      "knowledgeReward": {
+        "path": "history",
+        "points": 1,
+        "unlockLevel": 0
+      },
+      "claims": [
+        {
+          "id": "bukhara-old-city-claim",
+          "text": "Bukhara preserves a largely intact medieval Central Asian city pattern shaped by trade, religion, water, and civic life.",
+          "sourceIds": [
+            "unesco-bukhara"
+          ],
+          "reviewStatus": "draft",
+          "uncertainty": "low"
+        }
+      ],
+      "locales": {
+        "en": {
+          "place": "Historic Bukhara",
+          "clue": "An urban fabric remembers caravans",
+          "reveal": "Bukhara preserves a largely intact medieval Central Asian city pattern shaped by trade, religion, water, and civic life."
+        },
+        "fr": {
+          "place": "Historic Bukhara",
+          "clue": "Un tissu urbain se souvient des caravanes",
+          "reveal": "Boukhara conserve largement le plan d’une ville médiévale façonnée par commerce, religion, eau et vie civique."
+        },
+        "sv": {
+          "place": "Historic Bukhara",
+          "clue": "En stadsväv minns karavaner",
+          "reveal": "Buchara bevarar ett medeltida centralasiatiskt stadsmönster format av handel, religion, vatten och samhällsliv."
+        }
+      }
+    },
+    {
+      "id": "ancient-merv",
+      "kind": "field-note",
+      "order": 6,
+      "optional": true,
+      "coordinates": [
+        62.18,
+        37.66
+      ],
+      "categories": [
+        "archaeology"
+      ],
+      "knowledgeReward": {
+        "path": "archaeology",
+        "points": 1,
+        "unlockLevel": 0
+      },
+      "claims": [
+        {
+          "id": "ancient-merv-claim",
+          "text": "Merv contains successive walled cities, showing how power, water, and settlement shifted within a strategic oasis.",
+          "sourceIds": [
+            "unesco-merv"
+          ],
+          "reviewStatus": "draft",
+          "uncertainty": "low"
+        }
+      ],
+      "locales": {
+        "en": {
+          "place": "Ancient Merv",
+          "clue": "Cities migrate across one oasis",
+          "reveal": "Merv contains successive walled cities, showing how power, water, and settlement shifted within a strategic oasis."
+        },
+        "fr": {
+          "place": "Ancient Merv",
+          "clue": "Les villes migrent dans une oasis",
+          "reveal": "Merv réunit plusieurs villes fortifiées successives et montre le déplacement du pouvoir, de l’eau et de l’habitat."
+        },
+        "sv": {
+          "place": "Ancient Merv",
+          "clue": "Städer vandrar över en oas",
+          "reveal": "Merv rymmer flera efterföljande muromgärdade städer och visar hur makt, vatten och bosättning flyttade."
+        }
+      }
+    },
+    {
+      "id": "itchan-kala-khiva",
+      "kind": "field-note",
+      "order": 7,
+      "optional": true,
+      "coordinates": [
+        60.36,
+        41.378
+      ],
+      "categories": [
+        "culture"
+      ],
+      "knowledgeReward": {
+        "path": "culture",
+        "points": 1,
+        "unlockLevel": 1
+      },
+      "claims": [
+        {
+          "id": "itchan-kala-khiva-claim",
+          "text": "Itchan Kala’s walls enclose mosques, madrasas, houses, and caravan-era urban spaces in a coherent historic core.",
+          "sourceIds": [
+            "unesco-central-sites"
+          ],
+          "reviewStatus": "draft",
+          "uncertainty": "low"
+        }
+      ],
+      "locales": {
+        "en": {
+          "place": "Itchan Kala, Khiva",
+          "clue": "Walls preserve an inner city",
+          "reveal": "Itchan Kala’s walls enclose mosques, madrasas, houses, and caravan-era urban spaces in a coherent historic core."
+        },
+        "fr": {
+          "place": "Itchan Kala, Khiva",
+          "clue": "Les murs conservent une ville intérieure",
+          "reveal": "Les murs d’Itchan Kala entourent mosquées, madrasas, maisons et espaces urbains liés aux caravanes."
+        },
+        "sv": {
+          "place": "Itchan Kala, Khiva",
+          "clue": "Murar bevarar en innerstad",
+          "reveal": "Itchan Kalas murar omsluter moskéer, madrasor, hus och stadsrum från karavantiden."
+        }
+      }
+    },
+    {
+      "id": "sulaiman-too",
+      "kind": "field-note",
+      "order": 8,
+      "optional": true,
+      "coordinates": [
+        72.78,
+        40.53
+      ],
+      "categories": [
+        "culture"
+      ],
+      "knowledgeReward": {
+        "path": "culture",
+        "points": 1,
+        "unlockLevel": 0
+      },
+      "claims": [
+        {
+          "id": "sulaiman-too-claim",
+          "text": "Sacred places, paths, caves, and long traditions turn Sulaiman-Too into a layered cultural landscape above the Fergana Valley.",
+          "sourceIds": [
+            "unesco-central-sites"
+          ],
+          "reviewStatus": "draft",
+          "uncertainty": "low"
+        }
+      ],
+      "locales": {
+        "en": {
+          "place": "Sulaiman-Too",
+          "clue": "A mountain becomes a cultural map",
+          "reveal": "Sacred places, paths, caves, and long traditions turn Sulaiman-Too into a layered cultural landscape above the Fergana Valley."
+        },
+        "fr": {
+          "place": "Sulaiman-Too",
+          "clue": "Une montagne devient carte culturelle",
+          "reveal": "Lieux sacrés, chemins, grottes et traditions font du Sulaiman-Too un paysage culturel stratifié."
+        },
+        "sv": {
+          "place": "Sulaiman-Too",
+          "clue": "Ett berg blir en kulturell karta",
+          "reveal": "Heliga platser, stigar, grottor och traditioner gör Sulaiman-Too till ett skiktat kulturlandskap."
+        }
+      }
+    },
+    {
+      "id": "tamgaly-petroglyphs",
+      "kind": "field-note",
+      "order": 9,
+      "optional": true,
+      "coordinates": [
+        75.05,
+        43.8
+      ],
+      "categories": [
+        "archaeology"
+      ],
+      "knowledgeReward": {
+        "path": "archaeology",
+        "points": 1,
+        "unlockLevel": 1
+      },
+      "claims": [
+        {
+          "id": "tamgaly-petroglyphs-claim",
+          "text": "Tamgaly’s petroglyphs and archaeological remains document pastoral life, ritual, and changing communities over long periods.",
+          "sourceIds": [
+            "unesco-central-sites"
+          ],
+          "reviewStatus": "draft",
+          "uncertainty": "low"
+        }
+      ],
+      "locales": {
+        "en": {
+          "place": "Tamgaly",
+          "clue": "Rock faces become an archive",
+          "reveal": "Tamgaly’s petroglyphs and archaeological remains document pastoral life, ritual, and changing communities over long periods."
+        },
+        "fr": {
+          "place": "Tamgaly",
+          "clue": "Les rochers deviennent archives",
+          "reveal": "Les pétroglyphes et vestiges de Tamgaly documentent pastoralisme, rites et communautés sur une longue durée."
+        },
+        "sv": {
+          "place": "Tamgaly",
+          "clue": "Klippytor blir ett arkiv",
+          "reveal": "Tamgalys hällbilder och lämningar dokumenterar herdeliv, ritualer och samhällen under lång tid."
+        }
+      }
+    },
+    {
+      "id": "burana-balasagun",
+      "kind": "field-note",
+      "order": 10,
+      "optional": true,
+      "coordinates": [
+        74.6,
+        42.75
+      ],
+      "categories": [
+        "history"
+      ],
+      "knowledgeReward": {
+        "path": "history",
+        "points": 1,
+        "unlockLevel": 2
+      },
+      "claims": [
+        {
+          "id": "burana-balasagun-claim",
+          "text": "The Burana tower and surrounding remains identify Balasagun, an important medieval city on Silk Roads networks.",
+          "sourceIds": [
+            "unesco-central-sites"
+          ],
+          "reviewStatus": "draft",
+          "uncertainty": "low"
+        }
+      ],
+      "locales": {
+        "en": {
+          "place": "Balasagun · Burana",
+          "clue": "A tower marks a vanished city",
+          "reveal": "The Burana tower and surrounding remains identify Balasagun, an important medieval city on Silk Roads networks."
+        },
+        "fr": {
+          "place": "Balasagun · Burana",
+          "clue": "Une tour marque une ville disparue",
+          "reveal": "La tour de Burana et les vestiges voisins signalent Balasagun, importante ville médiévale des routes de la soie."
+        },
+        "sv": {
+          "place": "Balasagun · Burana",
+          "clue": "Ett torn markerar en försvunnen stad",
+          "reveal": "Buranatornet och lämningarna visar Balasagun, en viktig medeltida stad i Sidenvägarnas nätverk."
+        }
+      }
+    },
+    {
+      "id": "suyab-ak-beshim",
+      "kind": "field-note",
+      "order": 11,
+      "optional": true,
+      "coordinates": [
+        75.19,
+        42.81
+      ],
+      "categories": [
+        "cartography"
+      ],
+      "knowledgeReward": {
+        "path": "cartography",
+        "points": 1,
+        "unlockLevel": 0
+      },
+      "claims": [
+        {
+          "id": "suyab-ak-beshim-claim",
+          "text": "At Ak-Beshim, the remains of Suyab mark a place where routes, peoples, faiths, and political frontiers intersected.",
+          "sourceIds": [
+            "unesco-central-sites"
+          ],
+          "reviewStatus": "draft",
+          "uncertainty": "low"
+        }
+      ],
+      "locales": {
+        "en": {
+          "place": "Suyab · Ak-Beshim",
+          "clue": "Ruins reveal a junction",
+          "reveal": "At Ak-Beshim, the remains of Suyab mark a place where routes, peoples, faiths, and political frontiers intersected."
+        },
+        "fr": {
+          "place": "Suyab · Ak-Beshim",
+          "clue": "Les ruines révèlent une jonction",
+          "reveal": "À Ak-Beshim, les vestiges de Suyab marquent l’intersection de routes, peuples, religions et frontières."
+        },
+        "sv": {
+          "place": "Suyab · Ak-Beshim",
+          "clue": "Ruiner visar en knutpunkt",
+          "reveal": "Vid Ak-Beshim visar Suyabs lämningar var vägar, folk, religioner och gränser möttes."
+        }
+      }
+    },
+    {
+      "id": "aral-sea-retreat",
+      "kind": "field-note",
+      "order": 12,
+      "optional": true,
+      "coordinates": [
+        59.5,
+        45
+      ],
+      "categories": [
+        "ecology"
+      ],
+      "knowledgeReward": {
+        "path": "ecology",
+        "points": 1,
+        "unlockLevel": 2
+      },
+      "claims": [
+        {
+          "id": "aral-sea-retreat-claim",
+          "text": "River diversion for irrigation caused the Aral Sea to shrink dramatically, exposing lakebed and transforming communities and ecosystems.",
+          "sourceIds": [
+            "nasa-aral"
+          ],
+          "reviewStatus": "draft",
+          "uncertainty": "low"
+        }
+      ],
+      "locales": {
+        "en": {
+          "place": "Aral Sea",
+          "clue": "A shoreline retreats from the map",
+          "reveal": "River diversion for irrigation caused the Aral Sea to shrink dramatically, exposing lakebed and transforming communities and ecosystems."
+        },
+        "fr": {
+          "place": "Aral Sea",
+          "clue": "Un rivage recule sur la carte",
+          "reveal": "Le détournement des fleuves pour l’irrigation a fortement réduit la mer d’Aral, exposant son fond et transformant sociétés et écosystèmes."
+        },
+        "sv": {
+          "place": "Aral Sea",
+          "clue": "En strandlinje drar sig tillbaka",
+          "reveal": "Flodvatten leddes till bevattning och Aralsjön krympte kraftigt, vilket blottlade sjöbotten och förändrade samhällen och ekosystem."
         }
       }
     }

@@ -17,7 +17,7 @@ for (const file of pages) {
     if (/target=["']_blank["']/i.test(match[1]) && !/rel=["'][^"']*noopener/i.test(match[1])) fail(file, 'new-window link is missing rel="noopener"');
   }
   for (const match of html.matchAll(/tabindex=["'](\d+)["']/gi)) if (Number(match[1]) > 0) fail(file, 'positive tabindex disrupts keyboard order');
-  const shared = /resilience\.js/i.test(html) || file === 'seals.html';
+  const shared = /(?:resilience|accessibility)\.js/i.test(html) || file === 'seals.html';
   if (!shared && file !== 'offline.html') fail(file, 'shared accessibility layer is not loaded');
 }
 

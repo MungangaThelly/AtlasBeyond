@@ -6,6 +6,7 @@ const origin = `http://127.0.0.1:${port}`;
 const server = spawn(process.execPath, ['server.mjs'], { cwd: new URL('../', import.meta.url), env: { ...process.env, ATLAS_PORT: String(port) }, stdio: 'ignore' });
 const required = {
   '/': ['id="onboarding"', 'app.js', 'iceland-expansion.js', 'skills.js', 'skills.css', 'canonical-content.js', 'canonical-adapter.js', 'resilience.js', 'manifest.webmanifest', 'install.js', 'achievements.js'],
+  '/maintenance.html': ['lang="fr"', 'id="maintenance-title"', 'Atlas <i>Beyond</i>', 'maintenance.css'],
   '/atlas.html': ['id="atlas-map"', 'atlas.js', 'resilience.js'],
   '/region-player.html?expedition=patagonia-continents-end': ['id="region-map"', 'class="region-global-nav"', 'id="region-sound-toggle"', 'region-player.js?v=1.2.0', 'region-controls.js?v=1.0.5', 'east-africa-data.js', 'central-asia-data.js', 'resilience.js'],
   '/sw.js': ['atlas-beyond-v39', 'SKIP_WAITING', 'accessibility.js', 'accessibility.css', 'regional-field-notes.js', 'journey-portrait.js', 'community-privacy.js', 'explorer-data.js', 'update-manager.js', 'map-fallback.js', 'offline.js', 'vendor/maplibre-gl/maplibre-gl.js'],
